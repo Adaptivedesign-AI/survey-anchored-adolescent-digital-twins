@@ -1,0 +1,537 @@
+[
+  {
+    "id": "Q1",
+    "text": "How old are you?\nA. 12 years old or younger\nB. 13 years old\nC. 14 years old\nD. 15 years old\nE. 16 years old\nF. 17 years old\nG. 18 years old or older",
+    "type": "choice"
+  },
+  {
+    "id": "Q2",
+    "text": "What is your sex?\nA. Female\nB. Male",
+    "type": "choice"
+  },
+  {
+    "id": "Q3",
+    "text": "In what grade are you?\nA. 9th grade\nB. 10th grade\nC. 11th grade\nD. 12th grade\nE. Ungraded or other grade",
+    "type": "choice"
+  },
+  {
+    "id": "Q4",
+    "text": "Are you Hispanic or Latino?\nA. Yes\nB. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q5",
+    "text": "What is your race? (Select one or more responses.You can choose multiple answers, such as: A, C, E)\nA. American Indian or Alaska Native\nB. Asian\nC. Black or African American\nD. Native Hawaiian or Other Pacific Islander\nE. White",
+    "type": "choice"
+  },
+  {
+    "id": "Q6",
+    "text": "How tall are you without your shoes on? (Enter height in meters)",
+    "type": "numeric"
+  },
+  {
+    "id": "Q7",
+    "text": "How much do you weigh without your shoes on? (Enter weight in kilograms, rounded to two decimal places)",
+    "type": "numeric"
+  },
+  {
+    "id": "Q8",
+    "text": "How often do you wear a seat belt when riding in a car driven by someone else?\nA. Never\nB. Rarely\nC. Sometimes\nD. Most of the time\nE. Always",
+    "type": "choice"
+  },
+  {
+    "id": "Q9",
+    "text": "During the past 30 days, how many times did you ride in a car or other vehicle driven by someone who had been drinking alcohol?\nA. 0 times\nB. 1 time\nC. 2 or 3 times\nD. 4 or 5 times\nE. 6 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q10",
+    "text": "During the past 30 days, how many times did you drive a car or other vehicle when you had been drinking alcohol?\nA. I did not drive a car or other vehicle during the past 30 days\nB. I drove a car or other vehicle, but not when I had been drinking alcohol\nC. 1 time\nD. 2 or 3 times\nE. 4 or 5 times\nF. 6 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q11",
+    "text": "During the past 30 days, on how many days did you text or e-mail while driving a car or other vehicle?\nA. I did not drive a car or other vehicle during the past 30 days\nB. I drove a car or other vehicle, but did not text or e-mail while driving\nC. 1 or 2 days\nD. 3 to 5 days\nE. 6 to 9 days\nF. 10 to 19 days\nG. 20 to 29 days\nH. All 30 days",
+    "type": "choice"
+  },
+  {
+    "id": "Q12",
+    "text": "During the past 30 days, on how many days did you carry a weapon such as a gun, knife, or club on school property?\nA. 0 days\nB. 1 day\nC. 2 or 3 days\nD. 4 or 5 days\nE. 6 or more days",
+    "type": "choice"
+  },
+  {
+    "id": "Q13",
+    "text": "During the past 12 months, on how many days did you carry a gun? (Do not count the days when you carried a gun only for hunting or for a sport, such as target shooting.)\nA. 0 days\nB. 1 day\nC. 2 or 3 days\nD. 4 or 5 days\nE. 6 or more days",
+    "type": "choice"
+  },
+  {
+    "id": "Q14",
+    "text": "During the past 30 days, on how many days did you not go to school because you felt you would be unsafe at school or on your way to or from school?\nA. 0 days\nB. 1 day\nC. 2 or 3 days\nD. 4 or 5 days\nE. 6 or more days",
+    "type": "choice"
+  },
+  {
+    "id": "Q15",
+    "text": "During the past 12 months, how many times has someone threatened or injured you with a weapon such as a gun, knife, or club on school property?\nA. 0 times\nB. 1 time\nC. 2 or 3 times\nD. 4 or 5 times\nE. 6 or 7 times\nF. 8 or 9 times\nG. 10 or 11 times\nH. 12 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q16",
+    "text": "During the past 12 months, how many times were you in a physical fight?\nA. 0 times\nB. 1 time\nC. 2 or 3 times\nD. 4 or 5 times\nE. 6 or 7 times\nF. 8 or 9 times\nG. 10 or 11 times\nH. 12 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q17",
+    "text": "During the past 12 months, how many times were you in a physical fight on school property?\nA. 0 times\nB. 1 time\nC. 2 or 3 times\nD. 4 or 5 times\nE. 6 or 7 times\nF. 8 or 9 times\nG. 10 or 11 times\nH. 12 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q18",
+    "text": "Have you ever seen someone get physically attacked, beaten, stabbed, or shot in your neighborhood?\nA. Yes\nB. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q19",
+    "text": "Have you ever been physically forced to have sexual intercourse when you did not want to?\nA. Yes\nB. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q20",
+    "text": "During the past 12 months, how many times did anyone force you to do sexual things that you did not want to do? (Count such things as kissing, touching, or being physically forced to have sexual intercourse.)\nA. 0 times\nB. 1 time\nC. 2 or 3 times\nD. 4 or 5 times\nE. 6 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q21",
+    "text": "During the past 12 months, how many times did someone you were dating or going out with force you to do sexual things that you did not want to do? (Count such things as kissing, touching, or being physically forced to have sexual intercourse.)\nA. I did not date or go out with anyone during the past 12 months\nB. 0 times\nC. 1 time\nD. 2 or 3 times\nE. 4 or 5 times\nF. 6 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q22",
+    "text": "During the past 12 months, how many times did someone you were dating or going out with physically hurt you on purpose? (Count such things as being hit, slammed into something, or injured with an object or weapon.)\nA. I did not date or go out with anyone during the past 12 months\nB. 0 times\nC. 1 time\nD. 2 or 3 times\nE. 4 or 5 times\nF. 6 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q23",
+    "text": "During your life, how often have you felt that you were treated badly or unfairly in school because of your race or ethnicity?\nA. Never\nB. Rarely\nC. Sometimes\nD. Most of the time\nE. Always",
+    "type": "choice"
+  },
+  {
+    "id": "Q24",
+    "text": "During the past 12 months, have you ever been bullied on school property?\nA. Yes\nB. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q25",
+    "text": "During the past 12 months, have you ever been electronically bullied? (Count being bullied through texting, Instagram, Facebook, or other social media.)\nA. Yes\nB. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q26",
+    "text": "During the past 12 months, did you ever feel so sad or hopeless almost every day for two weeks or more in a row that you stopped doing some usual activities?\nA. Yes\nB. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q27",
+    "text": "During the past 12 months, did you ever seriously consider attempting suicide?\nA. Yes\nB. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q28",
+    "text": "During the past 12 months, did you make a plan about how you would attempt suicide?\nA. Yes\nB. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q29",
+    "text": "During the past 12 months, how many times did you actually attempt suicide?\nA. 0 times\nB. 1 time\nC. 2 or 3 times\nD. 4 or 5 times\nE. 6 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q30",
+    "text": "If you attempted suicide during the past 12 months, did any attempt result in an injury, poisoning, or overdose that had to be treated by a doctor or nurse?\nA. I did not attempt suicide during the past 12 months\nB. Yes\nC. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q31",
+    "text": "Have you ever smoked a cigarette, even one or two puffs?\nA. Yes\nB. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q32",
+    "text": "How old were you when you first smoked a cigarette, even one or two puffs?\nA. I have never smoked a cigarette, not even one or two puffs\nB. 8 years old or younger\nC. 9 or 10 years old\nD. 11 or 12 years old\nE. 13 or 14 years old\nF. 15 or 16 years old\nG. 17 years old or older",
+    "type": "choice"
+  },
+  {
+    "id": "Q33",
+    "text": "During the past 30 days, on how many days did you smoke cigarettes?\nA. 0 days\nB. 1 or 2 days\nC. 3 to 5 days\nD. 6 to 9 days\nE. 10 to 19 days\nF. 20 to 29 days\nG. All 30 days",
+    "type": "choice"
+  },
+  {
+    "id": "Q34",
+    "text": "During the past 30 days, on the days you smoked, how many cigarettes did you smoke per day?\nA. I did not smoke cigarettes during the past 30 days\nB. Less than 1 cigarette per day\nC. 1 cigarette per day\nD. 2 to 5 cigarettes per day\nE. 6 to 10 cigarettes per day\nF. 11 to 20 cigarettes per day\nG. More than 20 cigarettes per day",
+    "type": "choice"
+  },
+  {
+    "id": "Q35",
+    "text": "Have you ever used an electronic vapor product?\nA. Yes\nB. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q36",
+    "text": "During the past 30 days, on how many days did you use an electronic vapor product?\nA. 0 days\nB. 1 or 2 days\nC. 3 to 5 days\nD. 6 to 9 days\nE. 10 to 19 days\nF. 20 to 29 days\nG. All 30 days",
+    "type": "choice"
+  },
+  {
+    "id": "Q37",
+    "text": "During the past 30 days, how did you usually get your electronic vapor products? (Select only one response.)\nA. I did not use any electronic vapor products during the past 30 days\nB. I got or bought them from a friend, family member, or someone else\nC. I bought them myself in a vape shop or tobacco shop\nD. I bought them myself in a convenience store, supermarket, discount store, or gas station\nE. I bought them myself at a mall or shopping center kiosk or stand\nF. I bought them myself on the Internet, such as from a product website, vape store website, or other website like eBay, Amazon, Facebook Marketplace, or Craigslist\nG. I took them from a store or another person\nH. I got them in some other way",
+    "type": "choice"
+  },
+  {
+    "id": "Q38",
+    "text": "During the past 30 days, on how many days did you use chewing tobacco, snuff, dip, snus, or dissolvable tobacco products, such as Copenhagen, Grizzly, Skoal, Camel Snus, or Velo Nicotine Lozenges? (Do not count any electronic vapor products.)\nA. 0 days\nB. 1 or 2 days\nC. 3 to 5 days\nD. 6 to 9 days\nE. 10 to 19 days\nF. 20 to 29 days\nG. All 30 days",
+    "type": "choice"
+  },
+  {
+    "id": "Q39",
+    "text": "During the past 30 days, on how many days did you smoke cigars, cigarillos, or little cigars, such as Swisher Sweets, Middleton's (including Black & Mild), or Backwoods?\nA. 0 days\nB. 1 or 2 days\nC. 3 to 5 days\nD. 6 to 9 days\nE. 10 to 19 days\nF. 20 to 29 days\nG. All 30 days",
+    "type": "choice"
+  },
+  {
+    "id": "Q40",
+    "text": "During the past 12 months, did you ever try to quit using all tobacco products?\nA. I did not use cigarettes, electronic vapor products, smokeless tobacco, cigars, shisha or hookah tobacco, pipe tobacco, heated tobacco products, or nicotine pouches during the past 12 months\nB. Yes\nC. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q41",
+    "text": "How old were you when you had your first drink of alcohol other than a few sips?\nA. I have never had a drink of alcohol other than a few sips\nB. 8 years old or younger\nC. 9 or 10 years old\nD. 11 or 12 years old\nE. 13 or 14 years old\nF. 15 or 16 years old\nG. 17 years old or older",
+    "type": "choice"
+  },
+  {
+    "id": "Q42",
+    "text": "During the past 30 days, on how many days did you have at least one drink of alcohol?\nA. 0 days\nB. 1 or 2 days\nC. 3 to 5 days\nD. 6 to 9 days\nE. 10 to 19 days\nF. 20 to 29 days\nG. All 30 days",
+    "type": "choice"
+  },
+  {
+    "id": "Q43",
+    "text": "During the past 30 days, on how many days did you have 4 or more drinks of alcohol in a row, that is, within a couple of hours (if you are female) or 5 or more drinks of alcohol in a row, that is, within a couple of hours (if you are male)?\nA. 0 days\nB. 1 day\nC. 2 days\nD. 3 to 5 days\nE. 6 to 9 days\nF. 10 to 19 days\nG. 20 or more days",
+    "type": "choice"
+  },
+  {
+    "id": "Q44",
+    "text": "During the past 30 days, what is the largest number of alcoholic drinks you had in a row, that is, within a couple of hours?\nA. I did not drink alcohol during the past 30 days\nB. 1 or 2 drinks\nC. 3 drinks\nD. 4 drinks\nE. 5 drinks\nF. 6 or 7 drinks\nG. 8 or 9 drinks\nH. 10 or more drinks",
+    "type": "choice"
+  },
+  {
+    "id": "Q45",
+    "text": "During the past 30 days, how did you usually get the alcohol you drank?\nA. I did not drink alcohol during the past 30 days\nB. I bought it in a store such as a liquor store, convenience store, supermarket, discount store, or gas station\nC. I bought it at a restaurant, bar, or club\nD. I bought it at a public event such as a concert or sporting event\nE. I gave someone else money to buy it for me\nF. Someone gave it to me\nG. I took it from a store or family member\nH. I got it some other way",
+    "type": "choice"
+  },
+  {
+    "id": "Q46",
+    "text": "During your life, how many times have you used marijuana?\nA. 0 times\nB. 1 or 2 times\nC. 3 to 9 times\nD. 10 to 19 times\nE. 20 to 39 times\nF. 40 to 99 times\nG. 100 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q47",
+    "text": "How old were you when you tried marijuana for the first time?\nA. I have never tried marijuana\nB. 8 years old or younger\nC. 9 or 10 years old\nD. 11 or 12 years old\nE. 13 or 14 years old\nF. 15 or 16 years old\nG. 17 years old or older",
+    "type": "choice"
+  },
+  {
+    "id": "Q48",
+    "text": "During the past 30 days, how many times did you use marijuana?\nA. 0 times\nB. 1 or 2 times\nC. 3 to 9 times\nD. 10 to 19 times\nE. 20 to 39 times\nF. 40 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q49",
+    "text": "During your life, how many times have you taken prescription pain medicine without a doctor's prescription or differently than how a doctor told you to use it?\nA. 0 times\nB. 1 or 2 times\nC. 3 to 9 times\nD. 10 to 19 times\nE. 20 to 39 times\nF. 40 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q50",
+    "text": "During your life, how many times have you used any form of cocaine, including powder, crack, or freebase?\nA. 0 times\nB. 1 or 2 times\nC. 3 to 9 times\nD. 10 to 19 times\nE. 20 to 39 times\nF. 40 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q51",
+    "text": "During your life, how many times have you sniffed glue, breathed the contents of aerosol spray cans, or inhaled any paints or sprays to get high?\nA. 0 times\nB. 1 or 2 times\nC. 3 to 9 times\nD. 10 to 19 times\nE. 20 to 39 times\nF. 40 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q52",
+    "text": "During your life, how many times have you used heroin (also called smack, junk, or China White)?\nA. 0 times\nB. 1 or 2 times\nC. 3 to 9 times\nD. 10 to 19 times\nE. 20 to 39 times\nF. 40 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q53",
+    "text": "During your life, how many times have you used methamphetamines (also called speed, crystal meth, crank, ice, or meth)?\nA. 0 times\nB. 1 or 2 times\nC. 3 to 9 times\nD. 10 to 19 times\nE. 20 to 39 times\nF. 40 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q54",
+    "text": "During your life, how many times have you used ecstasy (also called MDMA or Molly)?\nA. 0 times\nB. 1 or 2 times\nC. 3 to 9 times\nD. 10 to 19 times\nE. 20 to 39 times\nF. 40 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q55",
+    "text": "During your life, how many times have you used a needle to inject any illegal drug into your body?\nA. 0 times\nB. 1 time\nC. 2 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q56",
+    "text": "Have you ever had sexual intercourse?\nA. Yes\nB. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q57",
+    "text": "How old were you when you had sexual intercourse for the first time?\nA. I have never had sexual intercourse\nB. 11 years old or younger\nC. 12 years old\nD. 13 years old\nE. 14 years old\nF. 15 years old\nG. 16 years old\nH. 17 years old or older",
+    "type": "choice"
+  },
+  {
+    "id": "Q58",
+    "text": "During your life, with how many people have you had sexual intercourse?\nA. I have never had sexual intercourse\nB. 1 person\nC. 2 people\nD. 3 people\nE. 4 people\nF. 5 people\nG. 6 or more people",
+    "type": "choice"
+  },
+  {
+    "id": "Q59",
+    "text": "During the past 3 months, with how many people did you have sexual intercourse?\nA. I have never had sexual intercourse\nB. I have had sexual intercourse, but not during the past 3 months\nC. 1 person\nD. 2 people\nE. 3 people\nF. 4 people\nG. 5 people\nH. 6 or more people",
+    "type": "choice"
+  },
+  {
+    "id": "Q60",
+    "text": "Did you drink alcohol or use drugs before you had sexual intercourse the last time?\nA. I have never had sexual intercourse\nB. Yes\nC. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q61",
+    "text": "The last time you had sexual intercourse, did you or your partner use a condom?\nA. I have never had sexual intercourse\nB. Yes\nC. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q62",
+    "text": "The last time you had sexual intercourse with an opposite-sex partner, what one method did you or your partner use to prevent pregnancy? (Select only one response.)\nA. I have never had sexual intercourse with an opposite-sex partner\nB. No method was used to prevent pregnancy\nC. Birth control pills (Do not count emergency contraception such as Plan B or the 'morning after' pill.)\nD. Condoms\nE. An IUD (such as Mirena or ParaGard) or implant (such as Implanon or Nexplanon)\nF. A shot (such as Depo-Provera), patch (such as Ortho Evra), or birth control ring (such as NuvaRing)\nG. Withdrawal or some other method\nH. Not sure",
+    "type": "choice"
+  },
+  {
+    "id": "Q63",
+    "text": "During your life, with whom have you had sexual contact?\nA. I have never had sexual contact\nB. Females\nC. Males\nD. Females and males",
+    "type": "choice"
+  },
+  {
+    "id": "Q64",
+    "text": "Which of the following best describes you?\nA. Heterosexual (straight)\nB. Gay or lesbian\nC. Bisexual\nD. I describe my sexual identity some other way\nE. I am not sure about my sexual identity (questioning)\nF. I do not know what this question is asking",
+    "type": "choice"
+  },
+  {
+    "id": "Q65",
+    "text": "Some people describe themselves as transgender when their sex at birth does not match the way they think or feel about their gender. Are you transgender?\nA. No, I am not transgender\nB. Yes, I am transgender\nC. I am not sure if I am transgender\nD. I do not know what this question is asking",
+    "type": "choice"
+  },
+  {
+    "id": "Q66",
+    "text": "How do you describe your weight?\nA. Very underweight\nB. Slightly underweight\nC. About the right weight\nD. Slightly overweight\nE. Very overweight",
+    "type": "choice"
+  },
+  {
+    "id": "Q67",
+    "text": "Which of the following are you trying to do about your weight?\nA. Lose weight\nB. Gain weight\nC. Stay the same weight\nD. I am not trying to do anything about my weight",
+    "type": "choice"
+  },
+  {
+    "id": "Q68",
+    "text": "During the past 7 days, how many times did you drink 100% fruit juices such as orange juice, apple juice, or grape juice? (Do not count punch, Kool-Aid, sports drinks, or other fruit-flavored drinks.)\nA. I did not drink 100% fruit juice during the past 7 days\nB. 1 to 3 times during the past 7 days\nC. 4 to 6 times during the past 7 days\nD. 1 time per day\nE. 2 times per day\nF. 3 times per day\nG. 4 or more times per day",
+    "type": "choice"
+  },
+  {
+    "id": "Q69",
+    "text": "During the past 7 days, how many times did you eat fruit? (Do not count fruit juice.)\nA. I did not eat fruit during the past 7 days\nB. 1 to 3 times during the past 7 days\nC. 4 to 6 times during the past 7 days\nD. 1 time per day\nE. 2 times per day\nF. 3 times per day\nG. 4 or more times per day",
+    "type": "choice"
+  },
+  {
+    "id": "Q70",
+    "text": "During the past 7 days, how many times did you eat green salad?\nA. I did not eat green salad during the past 7 days\nB. 1 to 3 times during the past 7 days\nC. 4 to 6 times during the past 7 days\nD. 1 time per day\nE. 2 times per day\nF. 3 times per day\nG. 4 or more times per day",
+    "type": "choice"
+  },
+  {
+    "id": "Q71",
+    "text": "During the past 7 days, how many times did you eat potatoes? (Do not count french fries, fried potatoes, or potato chips.)\nA. I did not eat potatoes during the past 7 days\nB. 1 to 3 times during the past 7 days\nC. 4 to 6 times during the past 7 days\nD. 1 time per day\nE. 2 times per day\nF. 3 times per day\nG. 4 or more times per day",
+    "type": "choice"
+  },
+  {
+    "id": "Q72",
+    "text": "During the past 7 days, how many times did you eat carrots?\nA. I did not eat carrots during the past 7 days\nB. 1 to 3 times during the past 7 days\nC. 4 to 6 times during the past 7 days\nD. 1 time per day\nE. 2 times per day\nF. 3 times per day\nG. 4 or more times per day",
+    "type": "choice"
+  },
+  {
+    "id": "Q73",
+    "text": "During the past 7 days, how many times did you eat other vegetables? (Do not count green salad, potatoes, or carrots.)\nA. I did not eat other vegetables during the past 7 days\nB. 1 to 3 times during the past 7 days\nC. 4 to 6 times during the past 7 days\nD. 1 time per day\nE. 2 times per day\nF. 3 times per day\nG. 4 or more times per day",
+    "type": "choice"
+  },
+  {
+    "id": "Q74",
+    "text": "During the past 7 days, how many times did you drink a can, bottle, or glass of soda or pop, such as Coke, Pepsi, or Sprite? (Do not count diet soda or diet pop.)\nA. I did not drink soda or pop during the past 7 days\nB. 1 to 3 times during the past 7 days\nC. 4 to 6 times during the past 7 days\nD. 1 time per day\nE. 2 times per day\nF. 3 times per day\nG. 4 or more times per day",
+    "type": "choice"
+  },
+  {
+    "id": "Q75",
+    "text": "During the past 7 days, on how many days did you eat breakfast?\nA. 0 days\nB. 1 day\nC. 2 days\nD. 3 days\nE. 4 days\nF. 5 days\nG. 6 days\nH. 7 days",
+    "type": "choice"
+  },
+  {
+    "id": "Q76",
+    "text": "During the past 7 days, on how many days were you physically active for a total of at least 60 minutes per day? (Add up all the time you spent in any kind of physical activity that increased your heart rate and made you breathe hard some of the time.)\nA. 0 days\nB. 1 day\nC. 2 days\nD. 3 days\nE. 4 days\nF. 5 days\nG. 6 days\nH. 7 days",
+    "type": "choice"
+  },
+  {
+    "id": "Q77",
+    "text": "In an average week when you are in school, on how many days do you go to physical education (PE) classes?\nA. 0 days\nB. 1 day\nC. 2 days\nD. 3 days\nE. 4 days\nF. 5 days",
+    "type": "choice"
+  },
+  {
+    "id": "Q78",
+    "text": "During the past 12 months, on how many sports teams did you play? (Count any teams run by your school or community groups.)\nA. 0 teams\nB. 1 team\nC. 2 teams\nD. 3 or more teams",
+    "type": "choice"
+  },
+  {
+    "id": "Q79",
+    "text": "During the past 12 months, how many times did you have a concussion from playing a sport or being physically active?\nA. 0 times\nB. 1 time\nC. 2 times\nD. 3 times\nE. 4 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q80",
+    "text": "How often do you use social media?\nA. I do not use social media\nB. A few times a month\nC. About once a week\nD. A few times a week\nE. About once a day\nF. Several times a day\nG. About once an hour\nH. More than once an hour",
+    "type": "choice"
+  },
+  {
+    "id": "Q81",
+    "text": "Have you ever been tested for HIV, the virus that causes AIDS? (Do not count tests done if you donated blood.)\nA. Yes\nB. No\nC. Not sure",
+    "type": "choice"
+  },
+  {
+    "id": "Q82",
+    "text": "During the past 12 months, have you been tested for a sexually transmitted disease (STD) other than HIV, such as chlamydia or gonorrhea?\nA. Yes\nB. No\nC. Not sure",
+    "type": "choice"
+  },
+  {
+    "id": "Q83",
+    "text": "When was the last time you saw a dentist for a check-up, exam, teeth cleaning, or other dental work?\nA. During the past 12 months\nB. Between 12 and 24 months ago\nC. More than 24 months ago\nD. Never\nE. Not sure",
+    "type": "choice"
+  },
+  {
+    "id": "Q84",
+    "text": "During the past 30 days, how often was your mental health not good? (Poor mental health includes stress, anxiety, and depression.)\nA. Never\nB. Rarely\nC. Sometimes\nD. Most of the time\nE. Always",
+    "type": "choice"
+  },
+  {
+    "id": "Q85",
+    "text": "On an average school night, how many hours of sleep do you get?\nA. 4 or less hours\nB. 5 hours\nC. 6 hours\nD. 7 hours\nE. 8 hours\nF. 9 hours\nG. 10 or more hours",
+    "type": "choice"
+  },
+  {
+    "id": "Q86",
+    "text": "During the past 30 days, where did you usually sleep?\nA. In my parent's or guardian's home\nB. In the home of a friend, family member, or other person because I had to leave my home or my parent or guardian cannot afford housing\nC. In a shelter or emergency housing\nD. In a motel or hotel\nE. In a car, park, campground, or other public place\nF. I do not have a usual place to sleep\nG. Somewhere else",
+    "type": "choice"
+  },
+  {
+    "id": "Q87",
+    "text": "During the past 12 months, how would you describe your grades in school?\nA. Mostly A's\nB. Mostly B's\nC. Mostly C's\nD. Mostly D's\nE. Mostly F's\nF. None of these grades\nG. Not sure",
+    "type": "choice"
+  },
+  {
+    "id": "Q88",
+    "text": "Has an adult or person at least 5 years older than you ever made you do sexual things that you did not want to do?\n1. Yes\n2. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q89",
+    "text": "During your life, how often has a parent or other adult in your home insulted you or put you down?\n1. Never\n2. Rarely\n3. Sometimes\n4. Most of the time\n5. Always",
+    "type": "choice"
+  },
+  {
+    "id": "Q90",
+    "text": "During your life, how often has a parent or other adult in your home hit, beat, kicked, or physically hurt you in any way?\n1. Never\n2. Rarely\n3. Sometimes\n4. Most of the time\n5. Always",
+    "type": "choice"
+  },
+  {
+    "id": "Q91",
+    "text": "During your life, how often have your parents or other adults in your home slapped, hit, kicked, punched, or beat each other up?\n1. Never\n2. Rarely\n3. Sometimes\n4. Most of the time\n5. Always",
+    "type": "choice"
+  },
+  {
+    "id": "Q92",
+    "text": "During the past 30 days, how many times did you take prescription pain medicine without a doctor's prescription or differently than how a doctor told you to use it?\n1. 0 times\n2. 1 or 2 times\n3. 3 to 9 times\n4. 10 to 19 times\n5. 20 to 39 times\n6. 40 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q93",
+    "text": "During your life, how many times have you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms?\n1. 0 times\n2. 1 or 2 times\n3. 3 to 9 times\n4. 10 to 19 times\n5. 20 to 39 times\n6. 40 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q94",
+    "text": "The last time you had sexual contact, did you ask for consent verbally?\n1. I have never had sexual contact\n2. Yes\n3. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q95",
+    "text": "During the past 7 days, how many times did you drink a can, bottle, or glass of a sports drink such as Gatorade or PowerAde?\n1. I did not drink sports drinks during the past 7 days\n2. 1 to 3 times during the past 7 days\n3. 4 to 6 times during the past 7 days\n4. 1 time per day\n5. 2 times per day\n6. 3 times per day\n7. 4 or more times per day",
+    "type": "choice"
+  },
+  {
+    "id": "Q96",
+    "text": "During the past 7 days, how many times did you drink a bottle or glass of plain water?\n1. I did not drink water during the past 7 days\n2. 1 to 3 times during the past 7 days\n3. 4 to 6 times during the past 7 days\n4. 1 time per day\n5. 2 times per day\n6. 3 times per day\n7. 4 or more times per day",
+    "type": "choice"
+  },
+  {
+    "id": "Q97",
+    "text": "During the past 7 days, on how many days did you do exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting?\n1. 0 days\n2. 1 day\n3. 2 days\n4. 3 days\n5. 4 days\n6. 5 days\n7. 6 days\n8. 7 days",
+    "type": "choice"
+  },
+  {
+    "id": "Q98",
+    "text": "During the past 12 months, how many times have you had a sunburn?\n1. 0 times\n2. 1 time\n3. 2 times\n4. 3 times\n5. 4 times\n6. 5 or more times",
+    "type": "choice"
+  },
+  {
+    "id": "Q99",
+    "text": "During your life, how often has there been an adult in your household who tried hard to make sure your basic needs were met, such as looking after your safety and making sure you had clean clothes and enough to eat?\n1. Never\n2. Rarely\n3. Sometimes\n4. Most of the time\n5. Always",
+    "type": "choice"
+  },
+  {
+    "id": "Q100",
+    "text": "Have you ever lived with a parent or guardian who was having a problem with alcohol or drug use?\n1. Yes\n2. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q101",
+    "text": "Have you ever lived with a parent or guardian who had severe depression, anxiety, or another mental illness, or was suicidal?\n1. Yes\n2. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q102",
+    "text": "Have you ever been separated from a parent or guardian because they went to jail, prison, or a detention center?\n1. Yes\n2. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q103",
+    "text": "Do you agree or disagree that you feel close to people at your school?\n1. Strongly agree\n2. Agree\n3. Not sure\n4. Disagree\n5. Strongly disagree",
+    "type": "choice"
+  },
+  {
+    "id": "Q104",
+    "text": "How often do your parents or other adults in your family know where you are going or with whom you will be?\n1. Never\n2. Rarely\n3. Sometimes\n4. Most of the time\n5. Always",
+    "type": "choice"
+  },
+  {
+    "id": "Q105",
+    "text": "During the past 12 months, have you been unfairly disciplined at school?\n1. Yes\n2. No\nMissing",
+    "type": "choice"
+  },
+  {
+    "id": "Q106",
+    "text": "Because of a physical, mental, or emotional problem, do you have serious difficulty concentrating, remembering, or making decisions?\n1. Yes\n2. No",
+    "type": "choice"
+  },
+  {
+    "id": "Q107",
+    "text": "How well do you speak English?\n1. Very well\n2. Well\n3. Not well\n4. Not at all",
+    "type": "choice"
+  }
+]

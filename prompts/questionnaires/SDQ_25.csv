@@ -1,0 +1,226 @@
+id,text
+SDQ1,"Are you considerate of other people’s feelings? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ2,"Do you often feel restless, overactive, and unable to stay still for long? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ3,"Do you often complain of headaches, stomachaches, or feeling sick? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ4,"Do you share easily with other youth (e.g., books, games, food)?Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ5,"Do you often lose your temper? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ6,"Would you rather be alone than spend time with other people your age? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ7,"Are you generally well-behaved and do what adults ask you to do? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ8,"Do you often worry or seem worried? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ9,"Are you helpful when someone is hurt, upset, or feeling sick? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ10,"Are you constantly fidgeting or squirming? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ11,"Do you have at least one good friend? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ12,"Do you often fight with others or bully them? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ13,"Do you often feel unhappy, depressed, or tearful? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ14,"Are you generally liked by other youth? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ15,"Are you easily distracted, and does your concentration wander? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ16,"Do you feel nervous in new situations and easily lose confidence? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ17,"Are you kind to younger children? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ18,"Do you often lie or cheat? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ19,"Are you picked on or bullied by other youth? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ20,"Do you often offer to help others (like parents, teachers, or friends)? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ21,"Do you think things through before acting? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ22,"Do you steal from home, school, or other places? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ23,"Do you get along better with adults than with people your own age? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ24,"Do you have many fears and get scared easily? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."
+SDQ25,"Do you have a good attention span and finish what you start? Please answer each question honestly.
+
+SDQ-25 Scoring Rules:
+0 = Not True  
+1 = Somewhat True  
+2 = Certainly True  
+
+You must choose only one option for each question.  
+At the end of your answer, confirm it in this format exactly: Answer: 1 (for example)."

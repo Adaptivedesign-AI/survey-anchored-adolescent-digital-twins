@@ -1,0 +1,433 @@
+id,prompt,domain
+ASRI01,"Over the past six months, how true is the following statement for you personally?
+
+""You calm yourself down when you’re excited or all wound up.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI02,"Over the past six months, how true is the following statement for you personally?
+
+""You fidget or can’t sit still when you’re bored.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI03,"Over the past six months, how true is the following statement for you personally?
+
+""You can continue working where you left off after being distracted.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI04,"Over the past six months, how true is the following statement for you personally?
+
+""It’s hard for you to pay attention.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI05,"Over the past six months, how true is the following statement for you personally?
+
+""You stick with things until they’re finished.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI06,"Over the past six months, how true is the following statement for you personally?
+
+""You lose control when you’re frustrated.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI07,"Over the past six months, how true is the following statement for you personally?
+
+""You can stop right away when someone tells you to stop doing something.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI08,"Over the past six months, how true is the following statement for you personally?
+
+""You can wait before doing anything when something makes you angry.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI09,"Over the past six months, how true is the following statement for you personally?
+
+""You have trouble sitting still.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI10,"Over the past six months, how true is the following statement for you personally?
+
+""You act without thinking about the consequences.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI11,"Over the past six months, how true is the following statement for you personally?
+
+""You stay calm when someone is bothering you.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI12,"Over the past six months, how true is the following statement for you personally?
+
+""It’s hard for you to stay focused on things.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI13,"Over the past six months, how true is the following statement for you personally?
+
+""You keep working on something even when it’s boring or hard.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Short-Term
+ASRI14,"Over the past six months, how true is the following statement for you personally?
+
+""You stop yourself from doing something when you know you shouldn’t.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI15,"Over the past six months, how true is the following statement for you personally?
+
+""You stay on track even when something fun comes up.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI16,"Over the past six months, how true is the following statement for you personally?
+
+""You motivate yourself to study even when you’d rather do something else.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI17,"Over the past six months, how true is the following statement for you personally?
+
+""You give up when things get too difficult.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI18,"Over the past six months, how true is the following statement for you personally?
+
+""You plan ahead and follow through on your goals.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI19,"Over the past six months, how true is the following statement for you personally?
+
+""You keep working on something until you get it right.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI20,"Over the past six months, how true is the following statement for you personally?
+
+""You save money instead of spending it right away.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI21,"Over the past six months, how true is the following statement for you personally?
+
+""You finish boring tasks even when you don’t feel like it.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI22,"Over the past six months, how true is the following statement for you personally?
+
+""You work on big projects even when you’re tired or bored.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI23,"Over the past six months, how true is the following statement for you personally?
+
+""You resist distractions when focusing on something important.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI24,"Over the past six months, how true is the following statement for you personally?
+
+""You have trouble sticking with long-term goals.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI25,"Over the past six months, how true is the following statement for you personally?
+
+""You follow through with planned steps to reach your goals.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI26,"Over the past six months, how true is the following statement for you personally?
+
+""You motivate yourself to do things you don’t enjoy.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI27,"Over the past six months, how true is the following statement for you personally?
+
+""You control yourself when you’re really tempted by something.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Long-Term
+ASRI28,"Over the past six months, how true is the following statement for you personally?
+
+""You lose control whenever you don’t get your way.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Other
+ASRI29,"Over the past six months, how true is the following statement for you personally?
+
+""You ignore others’ requests when you’re busy doing something fun.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Other
+ASRI30,"Over the past six months, how true is the following statement for you personally?
+
+""You give up if you don’t finish quickly.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Other
+ASRI31,"Over the past six months, how true is the following statement for you personally?
+
+""You avoid things that are hard.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Other
+ASRI32,"Over the past six months, how true is the following statement for you personally?
+
+""You keep trying even when your friends laugh at you for failing.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Other
+ASRI33,"Over the past six months, how true is the following statement for you personally?
+
+""You work carefully when you know something will be tricky.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Other
+ASRI34,"Over the past six months, how true is the following statement for you personally?
+
+""You need things to be fun to keep your attention.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Other
+ASRI35,"Over the past six months, how true is the following statement for you personally?
+
+""You give up when things take too long.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Other
+ASRI36,"Over the past six months, how true is the following statement for you personally?
+
+""You give up when something doesn’t go your way.""
+
+Please answer on a scale from 1 to 5:
+1 = Not at all true for you
+2 = Slightly true
+3 = Somewhat true
+4 = Mostly true
+5 = Really true
+
+Answer: ",Other

@@ -1,0 +1,333 @@
+﻿type,prompt
+Online Victimization,"Please think about your experiences online during the past 12 months.
+
+""Online"" includes social media, messaging apps, online games, forums, email, and text messages.
+
+For each question below, please evaluate how often this has happened to you personally in the past 12 months. Choose the integer that best matches your experience based on this scale:
+
+1 = Never
+
+2 = Once or twice
+
+3 = A few times
+
+4 = About once a week
+
+5 = Several times a week
+
+6 = Almost every day
+
+Questions:
+
+
+
+Q1: Have people posted or shared unkind remarks (such as teasing, rumors, or name-calling) about how you look, act, or dress online?
+
+Q2: Have people made mean or rude comments online about the way you talk or write?
+
+Q3: Has someone posted or shared hurtful messages about you on the internet (for example on social media, in chats, or in games)?
+
+Q4: Have you been bothered or harassed online for no clear reason?
+
+Q5: Have you been bothered or harassed online because of something that happened at school?
+
+Q6: Have you felt embarrassed or humiliated by something others did to you online?
+
+Q7: Do you feel that you have been bullied online?
+
+Q8: Has someone threatened you online because of the way you look, act, or dress?
+
+Q9: Has someone asked you to do sexual things with them online (for example, to “cyber” or engage in sexual chatting)?
+
+Q10: Has someone kept bringing up sexual topics with you online even after you told them you did not want to talk about it?
+
+Q11: Have people spread rumors online about your sexual behavior or sexual life?
+
+Q12: Has someone asked you online to send them sexual or revealing pictures of yourself?
+
+Q13: Has someone shown you sexual pictures or videos online that you did not ask to see?
+
+Q14: Have you received unwanted sexual spam, emails, or messages?
+
+Q15: Have people said mean or rude things about you online because of your race or ethnic group?
+
+Q16: Have you been left out of, or blocked from, an online site or group because of your race or ethnic group?
+
+Q17: Has someone threatened you with violence online because of your race or ethnic group?
+
+Q18: Has someone shown you a racist picture or image online that targeted your race or ethnic group?
+
+Q19: Have people told jokes online that insult or make fun of people from your race or ethnic group?
+
+Q20: Have you seen people say untrue or negative things online about people from your race or ethnic group?
+
+Q21: Have you seen people say mean or rude things online about another racial or ethnic group (even if it was not your own group)?
+
+Output Requirement:
+
+Please submit your answers in a single JSON object.
+
+For each question (1 through 21), you must provide two fields:
+
+
+
+reason_Q#: A brief text explanation of your answer.
+
+item_Q#: The integer score (1–6).
+
+Example JSON format:
+
+
+
+{
+
+  ""reason_Q1"": ""I have not experienced any negative comments about my appearance online."",
+
+  ""item_Q1"": 1,
+
+  ""reason_Q2"": ""I recall a few instances where people mocked my grammar in a forum."",
+
+  ""item_Q2"": 3,
+
+  ""reason_Q3"": ""This has never happened to me."",
+
+  ""item_Q3"": 1
+
+  // ... continue for all 21 questions
+
+}"
+Depression,"Please think about how you have felt or behaved during the past week, including today.
+
+For each question below, please evaluate how often you have felt this way. Choose the integer that best matches your experience based on this scale:
+
+0 = Rarely or none of the time (less than 1 day)
+
+1 = Some or a little of the time (1–2 days)
+
+2 = Occasionally or a moderate amount of time (3–4 days)
+
+3 = Most or all of the time (5–7 days)
+
+Questions:
+
+Q1: Were you bothered by things that usually don’t bother you?
+
+Q2: Did you not feel like eating, or was your appetite poor?
+
+Q3: Did you feel that you could not shake off the blues even with help from your family or friends?
+
+Q4: Did you feel that you were just as good as other people?
+
+Q5: Did you have trouble keeping your mind on what you were doing?
+
+Q6: Did you feel depressed?
+
+Q7: Did you feel that everything you did was an effort?
+
+Q8: Did you feel hopeful about the future?
+
+Q9: Did you think your life had been a failure?
+
+Q10: Did you feel fearful?
+
+Q11: Was your sleep restless?
+
+Q12: Were you happy?
+
+Q13: Did you talk less than usual?
+
+Q14: Did you feel lonely?
+
+Q15: Were people unfriendly?
+
+Q16: Did you enjoy life?
+
+Q17: Did you have crying spells?
+
+Q18: Did you feel sad?
+
+Q19: Did you feel that people disliked you?
+
+Q20: Did you feel that you could not get “going”?
+
+Output Requirement:
+
+Please submit your answers in a single JSON object.
+
+For each question (1 through 20), you must provide two fields:
+
+
+
+reason_Q#: A brief text explanation of why you chose that score.
+
+item_Q#: The integer score (0–3).
+
+Example JSON format:
+
+{
+
+  ""reason_Q1"": ""I felt quite calm this week and handled stress well."",
+
+  ""item_Q1"": 0,
+
+  ""reason_Q2"": ""My appetite was normal, no changes."",
+
+  ""item_Q2"": 0,
+
+  ""reason_Q3"": ""I had one bad day, but talking to my friend helped immediately."",
+
+  ""item_Q3"": 1
+
+  // ... continue for all 20 questions
+
+}"
+Self-Esteem,"The following questions ask about how you might feel about yourself.
+
+Please read each question carefully and decide how much you agree or disagree with it.
+
+For each question below, choose the integer that best matches your opinion based on this scale:
+
+1 = Strongly agree
+
+2 = Agree
+
+3 = Disagree
+
+4 = Strongly disagree
+
+Questions:
+
+Q1: On the whole, are you satisfied with yourself?
+
+Q2: At times, do you think you are no good at all?
+
+Q3: Do you feel that you have a number of good qualities?
+
+Q4: Are you able to do things as well as most other people?
+
+Q5: Do you feel you do not have much to be proud of?
+
+Q6: Do you certainly feel useless at times?
+
+Q7: Do you feel that you are a person of worth, at least on an equal plane with others?
+
+Q8: Do you wish you could have more respect for yourself?
+
+Q9: All in all, are you inclined to think that you are a failure?
+
+Q10: Do you take a positive attitude toward yourself?
+
+Output Requirement:
+
+Please submit your answers in a single JSON object.
+
+For each question (1 through 10), you must provide two fields:
+
+
+
+reason_Q#: A brief text explanation of your answer.
+
+item_Q#: The integer score (1–4).
+
+Example JSON format:
+
+{
+
+  ""reason_Q1"": ""I generally feel good about my achievements and who I am."",
+
+  ""item_Q1"": 2,
+
+  ""reason_Q2"": ""I rarely have thoughts like that."",
+
+  ""item_Q2"": 3,
+
+  ""reason_Q3"": ""I believe I am kind and hardworking."",
+
+  ""item_Q3"": 1
+
+  // ... continue for all 10 questions
+
+}"
+Social Anxiety ,"The following questions ask about how you usually feel in situations with people your age.
+
+Please read each question and decide how true it is for you.
+
+For each question below, choose the integer that best matches your experience based on this scale:
+
+1 = Not at all
+
+2 = Hardly ever
+
+3 = Sometimes
+
+4 = Often
+
+5 = All the time
+
+Questions:
+
+Q1: Do you worry about what others say about you?
+
+Q2: Do you worry that others don’t like you?
+
+Q3: Do you worry about what others think of you?
+
+Q4: Are you afraid that others will not like you?
+
+Q5: Do you worry about being teased?
+
+Q6: If you get into an argument, do you worry that the other person will not like you?
+
+Q7: Do you feel that others make fun of you?
+
+Q8: Do you feel that your peers talk about you behind your back?
+
+Q9: Do you get nervous when you talk to peers you don’t know very well?
+
+Q10: Do you feel shy around people you don’t know?
+
+Q11: Do you get nervous when you meet new people?
+
+Q12: Do you feel nervous when you are around certain people?
+
+Q13: Do you worry about doing something new in front of others?
+
+Q14: Do you only talk to people you know really well?
+
+Q15: Are you afraid to invite others to do things with you because they might say no?
+
+Q16: Is it hard for you to ask others to do things with you?
+
+Q17: Are you quiet when you are with a group of people?
+
+Q18: Do you feel shy even with peers you know well?
+
+Output Requirement:
+
+Please submit your answers in a single JSON object.
+
+For each question (1 through 18), you must provide two fields:
+
+
+
+reason_Q#: A brief text explanation of your answer.
+
+item_Q#: The integer score (1–5).
+
+{
+
+  ""reason_Q1"": ""I sometimes care about opinions, but I try not to let it bother me."",
+
+  ""item_Q1"": 3,
+
+  ""reason_Q2"": ""I am generally confident that my friends like me."",
+
+  ""item_Q2"": 2,
+
+  ""reason_Q3"": ""This is a frequent worry of mine at school."",
+
+  ""item_Q3"": 4
+
+  // ... continue for all 18 questions
+
+}"

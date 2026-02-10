@@ -119,9 +119,34 @@ These folders store the CSV outputs used in the paper figures/tables:
 
 ---
 
-## Minimal run (high level)
+## Minimal reproduction (high level)
 
-Survey fidelity:
-```bash
-python scripts/validation/01_run_internal_validation.py
-python scripts/validation/02_run_external_validation.py
+Survey fidelity (internal + external):
+
+    python scripts/validation/01_run_internal_validation.py
+    python scripts/validation/02_run_external_validation.py
+
+Developmental coherence (questionnaires):
+
+    python scripts/validation/03_run_psychological_validation.py
+    python scripts/validation/06_analyze_psychological.py
+
+Virtual RCT replications (10 studies):
+
+    python scripts/rct/01_run_all_simulations.py
+    python scripts/rct/12_analyze_all_rct.py
+
+For model/backbone selection, RAG toggles, and output paths:
+
+    python <script.py> -h
+
+## Notes on data release
+
+- YRBS: this repo includes the mapping table, item JSON, and the stratified cohort file used for the experiments.
+- YouTube: this repo includes the video list and the full scene-extraction and knowledge-base pipeline. Depending on your setup, you may need to fetch transcripts locally before running the enrichment scripts.
+
+## Intended use
+
+This codebase is for methodological evaluation and early-stage hypothesis testing with synthetic, survey-anchored agents. It is not intended for clinical decision-making, individual risk assessment, or estimating real-world prevalence.
+
+

@@ -1,4 +1,4 @@
-# Code & data for “Ethical AI Experiments on Adolescent Mental Health Using Generative Digital Twins”
+# Code for survey-anchored adolescent digital twins with RAG memory enrichment and multi-layer validation.
 
 This repository contains the code, prompts, and derived artifacts used in our Nature Human Behaviour submission.  
 It is a working research repo (still being cleaned up), but the main pipelines reported in the paper are here.

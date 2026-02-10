@@ -143,7 +143,7 @@ For model/backbone selection, RAG toggles, and output paths:
 ## Notes on data release
 
 - YRBS: this repo includes the mapping table, item JSON, and the stratified cohort file used for the experiments.
-- YouTube: this repo includes the video list and the full scene-extraction and knowledge-base pipeline. Depending on your setup, you may need to fetch transcripts locally before running the enrichment scripts.
+- YouTube: this repo includes the video list and the full scene-extraction and knowledge-base pipeline.
 
 ## Intended use
 

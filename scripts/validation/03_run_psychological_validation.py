@@ -7,11 +7,11 @@ Description:
     to the Digital Twins.
     
     Work flow:
-    1. Load all CSV questionnaires from data/raw/questionnaires/
+    1. Load all CSV questionnaires from prompts/questionnaires/
     2. For each Model (3) x DT Type (3):
        3. For each Questionnaire (8):
           4. Ask all 1000 DTs the questions in that questionnaire.
-          5. Save results to results/validation/psychological/...
+          5. Save results to results/psychological_validation/...
 
 Usage:
     python 03_run_psychological_validation.py
@@ -50,17 +50,15 @@ class ProjectPaths:
         self.config_file = self.root / "config.yaml"
         
         # Inputs
-        self.questionnaires_dir = self.root / "data" / "raw" / "questionnaires"
-        self.cohort_dir = self.root / "data" / "processed" / "cohort"
-        self.prompts_dir = self.root / "configs" / "prompts"
-        
+        self.questionnaires_dir = self.root / "prompts" / "questionnaires"
+
         # Data files
-        self.baseline_profiles = self.cohort_dir / "baseline_profiles_1000.json"
-        self.enriched_profiles = self.cohort_dir / "enriched_prompts_1000.json"
-        self.shared_prompt = self.prompts_dir / "personas" / "shared_base_prompt.txt"
-        
+        self.baseline_profiles = self.root / "data" / "processed" / "baseline_profiles_1000.json"
+        self.enriched_profiles = self.root / "data" / "processed" / "enriched_profiles_final.json"
+        self.shared_prompt = self.root / "prompts" / "dt_shared" / "shared_prompt.txt"
+
         # Outputs
-        self.results_dir = self.root / "results" / "validation" / "psychological"
+        self.results_dir = self.root / "results" / "psychological_validation"
         self.results_dir.mkdir(parents=True, exist_ok=True)
 
 class PsychologicalValidator:
@@ -120,17 +118,20 @@ class PsychologicalValidator:
                 
                 # Normalize column names
                 df.columns = [c.lower() for c in df.columns]
-                
-                # Identify text column
-                text_col = next((c for c in df.columns if 'question' in c or 'text' in c), None)
+
+                # Identify text column (supports 'prompt', 'question', 'text')
+                text_col = next((c for c in df.columns if c in ('prompt', 'question', 'text') or 'question' in c or 'text' in c), None)
                 if not text_col:
                     logger.warning(f"Skipping {csv_file.name}: Could not identify question text column.")
                     continue
-                
+
+                # Identify name/type column for questionnaire names
+                name_col = next((c for c in df.columns if c in ('type', 'name', 'scale')), None)
+
                 questions = []
                 for idx, row in df.iterrows():
                     q_text = row[text_col]
-                    q_id = row.get('id', row.get('question_id', f"Q{idx+1}"))
+                    q_id = row.get('id', row.get('question_id', row.get(name_col, f"Q{idx+1}") if name_col else f"Q{idx+1}"))
                     questions.append({'id': str(q_id), 'text': str(q_text)})
                 
                 self.questionnaires[csv_file.stem] = questions

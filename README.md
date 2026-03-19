@@ -1,152 +1,314 @@
-# Code for survey-anchored adolescent digital twins with RAG memory enrichment and multi-layer validation.
+# Survey-Anchored Adolescent Digital Twins
 
-This repository contains the code, prompts, and derived artifacts used in our Nature Human Behaviour submission.  
-It is a working research repo (still being cleaned up), but the main pipelines reported in the paper are here.
+Code, data, and results for the paper:
 
----
+> **Where Do Adolescent Digital Twins Succeed and Fail? A Multi-layer Validation of Survey-Anchored Generative Agents with an LLM Backbone**
+> Yueshan Zhang, Marcell Borhi, Waverly Wei, Hangqi Li, Rebecca Hémono, Joseph Giorgio, John Su, Katy Ashe, Zeyu Zheng, Julianna Deardorff, Feng Ji, Xiaoya Zhang, Jingshen Wang
+> *Preprint (Research Square), February 2026.* DOI: [10.21203/rs.3.rs-8823969/v1](https://doi.org/10.21203/rs.3.rs-8823969/v1)
 
-## How this repo maps to the paper
-
-The paper has four main technical pieces, and the repo mirrors them:
-
-1) **Survey-anchored cohort + baseline digital twins**  
-2) **Memory enrichment (YouTube micro-scenes + retrieval + profile enrichment)**  
-3) **Validation suite (survey fidelity + developmental coherence + human chat study analysis)**  
-4) **Virtual RCT replications (10 studies)**
+Live chat interface: <https://aidigitalyouth.onrender.com>
 
 ---
 
-## Data (`data/`)
+## Overview
 
-### YRBS anchoring (`data/raw/yrbs/`)
-- `Final_Mapping_Table__Q1_Q107_.csv`  
-  Mapping from 107 YRBS items to second-person persona statements (used to build DT profiles).
-- `questions_107_converted.json`  
-  Canonical JSON of the 107 items used throughout prompt generation.
-- `stratified_sample_1000_DTs.csv`  
-  The stratified N=1000 cohort used for the main experiments.
+We construct **survey-anchored adolescent digital twins (DTs)** from the 2023 Youth Risk Behavior Survey (YRBS) and enrich them with narrative memory derived from adolescent YouTube videos via retrieval-augmented generation (RAG). We validate these twins across four layers:
 
-**Paper:** DT construction + cohort description (Methods; Appendix details).
+| Layer | What is tested |
+|-------|---------------|
+| 1 — Survey-profile fidelity | Internal (re-ask all 107 items) and external (5 domain hold-outs) agreement with YRBS ground truth |
+| 2 — Developmental coherence | Pearson correlations within self-regulation and online-victimization benchmark networks vs. published human norms |
+| 3 — Real adolescent–DT interactions | 40 late adolescents rate perceived realism after 30-min text chats (3×2×2 factorial design) |
+| 4 — Virtual RCT replication | 10 published adolescent RCTs replicated with 1:1 demographic-matched DT cohorts |
 
-### YouTube corpus list (`data/raw/youtube/`)
-- `video_list.csv`  
-  Video list used for transcript/scene extraction and knowledge base construction.
+Three DT variants are compared throughout:
 
-**Paper:** memory enrichment data source (Methods; Appendix).
-
----
-
-## Prompts (`prompts/`)
-
-### Shared DT rules
-- `prompts/dt_shared/shared_prompt.txt`  
-  Shared system-level rules used across DT interactions.
-
-### Survey fidelity prompts (1000-DT cohort)
-- `prompts/1000 DT baseline persona/internal_validation_prompts.csv`  
-  Internal agreement (re-asking YRBS items).
-- `prompts/1000 DT baseline persona/external_validation_prompts_*.csv`  
-  External holdout sets (selected items removed; file name indicates the holdout).
-
-**Paper:** Layer 1 internal + external agreement (Methods + Results; Appendix holdouts).
-
-### Questionnaire prompts (developmental coherence)
-- `prompts/questionnaires/ASRI_36.csv`, `BFI_10.csv`, `SDQ_25.csv`, `Online Victimization.csv`
-
-**Paper:** Layer 2 developmental coherence (Methods + Results; Appendix prompts).
-
-### Scene extraction templates
-- `prompts/scene_extraction/*.prompt.md`  
-  Genre-specific templates used when extracting micro-scenes.
-
-**Paper:** memory extraction protocol (Appendix).
-
-### RCT replication metadata
-- `prompts/rct_replication/study list.csv`  
-  List and definitions for the 10 RCT-style replications.
-
-**Paper:** Layer 4 RCT replication (Methods; Appendix study list).
+| Variant | System prompt | YRBS profile | RAG memory |
+|---------|--------------|--------------|------------|
+| **Base DT** | Yes | No | No |
+| **Survey DT** | Yes | Yes | No |
+| **Survey+Memory DT** | Yes | Yes | Yes |
 
 ---
 
-## Scripts (`scripts/`)
+## Repository structure
 
-### 1) Cohort + baseline profiles (`scripts/cohort_generation/`)
-- `01_stratified_sampling.py`  
-- `02_baseline_profiles.py`  
-- `03_dt_chat_interface.py` (utility)
+```
+survey-anchored-adolescent-digital-twins/
+├── config.yaml.example          # Copy to config.yaml and fill in API keys
+├── requirements.txt             # Python dependencies
+│
+├── data/
+│   ├── raw/
+│   │   ├── yrbs/
+│   │   │   ├── Final_Mapping_Table__Q1_Q107_.csv   # YRBS code → persona statement mapping
+│   │   │   ├── questions_107_converted.json        # Canonical 107-item YRBS question list
+│   │   │   └── stratified_sample_1000_DTs.csv      # Stratified N=1000 cohort (main experiments)
+│   │   └── youtube/
+│   │       └── video_list.csv                      # 48 curated videos (title, URL, category, duration)
+│   │
+│   ├── knowledge_base/
+│   │   └── merged_knowledge_base.json              # 323 micro-scenes extracted from YouTube videos
+│   │
+│   └── processed/                                  # Generated by pipeline (see scripts below)
+│       ├── baseline_profiles_1000.json             # Output of 02_baseline_profiles.py
+│       ├── memory_matches_1000.json                # Output of 04_retrieve_top2_memories.py
+│       └── enriched_profiles_final.json            # Output of 05_enrich_profiles_and_conversations.py
+│
+├── prompts/
+│   ├── dt_shared/
+│   │   └── shared_prompt.txt                       # System-level role-play rules shared by all DTs
+│   ├── dt_baseline_persona/
+│   │   ├── internal_validation_prompts.csv         # Full YRBS re-ask (107 items per DT)
+│   │   └── external_validation_prompts_no_*.csv    # 5 domain hold-out sets (item lists below)
+│   ├── questionnaires/
+│   │   ├── ASRI_36.csv                             # Adolescent Self-Regulatory Inventory (36 items)
+│   │   ├── BFI_10.csv                              # Big Five Inventory – 10 (conscientiousness)
+│   │   ├── SDQ_25.csv                              # Strengths and Difficulties Questionnaire
+│   │   └── online_victimization_network.csv        # 4 scales: Online Victimization (Tynes et al.),
+│   │                                               #   Depression (CES-D-20), Self-Esteem (Rosenberg),
+│   │                                               #   Social Anxiety (SAS-A), Life Satisfaction (SLSS)
+│   ├── scene_extraction/
+│   │   └── *.prompt.md                             # Genre-specific Gemini extraction templates
+│   └── rct_replication/
+│       └── study_list.csv                          # Metadata for the 10 replicated RCTs
+│
+├── scripts/
+│   ├── cohort_generation/       # Pipeline 1: DT cohort creation
+│   │   ├── 01_stratified_sampling.py
+│   │   ├── 02_baseline_profiles.py
+│   │   └── 03_dt_chat_interface.py   (reusable chat utility)
+│   ├── enrich_memory/           # Pipeline 2: RAG memory enrichment
+│   │   ├── 01_collect_youtube.py
+│   │   ├── 02_extract_scenes.py
+│   │   ├── 03_build_knowledge_base.py
+│   │   ├── 04_retrieve_top2_memories.py
+│   │   └── 05_enrich_profiles_and_conversations.py
+│   ├── validation/              # Pipeline 3: Multi-layer validation
+│   │   ├── 01_run_internal_validation.py
+│   │   ├── 02_run_external_validation.py
+│   │   ├── 03_run_psychological_validation.py
+│   │   ├── 04_run_heterogeneity_analysis.py
+│   │   ├── 05_analyze_internal_external.py
+│   │   ├── 06_analyze_psychological.py
+│   │   └── 07_analyze_human_experiment.py
+│   └── rct/                     # Pipeline 4: Virtual RCT replications
+│       ├── 01_run_all_simulations.py
+│       ├── 02_process_study_01.py … 11_process_study_10.py
+│       └── 12_analyze_all_rct.py
+│
+└── results/
+    ├── internal_validation/           # Per-model, per-DT-type internal agreement CSVs
+    │   └── clear_<model>-<dt_type>.csv
+    ├── external_validation/           # Per-model, per-DT-type hold-out accuracy CSVs
+    │   └── <model>-<dt_type>/no_*.csv
+    ├── psychological_validation/
+    │   ├── asri_bfi_sdq/              # ASRI / BFI / SDQ questionnaire responses
+    │   ├── online_victimization/      # Online-victimization-network questionnaire responses
+    │   └── risk_taking/               # YRBS risk-taking item responses
+    ├── rct_replication/
+    │   ├── base_dt/                   # Raw simulation outputs — Base DT
+    │   ├── survey_dt/                 # Raw simulation outputs — Survey DT
+    │   └── survey_memory_dt/          # Raw simulation outputs — Survey+Memory DT
+    └── figures/                       # Output figures (generated by analysis scripts; not committed)
+```
 
-**Paper:** survey-anchored DT construction (Methods; Appendix mapping).
+### Hold-out domain mapping (external validation)
 
-### 2) Memory enrichment (`scripts/enrich_memory/`)
-- `01_collect_youtube.py` → `02_extract_scenes.py` → `03_build_knowledge_base.py`  
-- `04_retrieve_top2_memories.py` → `05_enrich_profiles_and_conversations.py`
+| File suffix | Withheld items | Domain |
+|---|---|---|
+| `no_Q8_Q11` | Q8–Q11 | Safety behaviors (seat belt, helmet, etc.) |
+| `no_Q19_Q22_and_Q88_Q91` | Q19–Q22, Q88–Q91 | Suicidal thoughts & behaviors |
+| `no_Q26_Q84` | Q26, Q84 | Substance use |
+| `no_Q27_Q30` | Q27–Q30 | Violence and abuse exposure |
+| `no_Q35_Q37_Q49_Q92` | Q35–Q37, Q49, Q92 | Mood and mental-health status |
 
-**Paper:** Survey+Memory DT variant (Methods; Appendix).
+### Result file naming convention
 
-### 3) Validation suite (`scripts/validation/`)
-- `01_run_internal_validation.py`  
-- `02_run_external_validation.py`  
-- `03_run_psychological_validation.py`  
-- `04_run_heterogeneity_analysis.py`  
-- `05_analyze_internal_external.py`  
-- `06_analyze_psychological.py`  
-- `07_analyze_human_experiment.py`
-
-**Paper:** Layer 1–3 validations (Methods + Results; Appendix).
-
-### 4) RCT replications (`scripts/rct/`)
-- `01_run_all_simulations.py`  
-- `02_process_study_01.py` … `11_process_study_10.py`  
-- `12_analyze_all_rct.py`
-
-**Paper:** Layer 4 RCT replications (Methods + Results; Appendix per-study ops).
+All result files use the pattern `<model>-<dt_type>`:
+- **Models:** `gemini-2.0-flash`, `gemini-2.5-flash`, `gemini-2.5-flash-lite`
+- **DT types:** `base_dt`, `survey_dt`, `survey_memory_dt`
 
 ---
 
-## Results (`results/`)
+## Setup
 
-These folders store the CSV outputs used in the paper figures/tables:
+### 1. Install dependencies
 
-- `results/internal validation/clear_*.csv`  
-  Internal agreement outputs across model/DT variants.
-- `results/external validation/<model>/*.csv`  
-  External holdout agreement outputs.
-- `results/psychological validation/`  
-  Questionnaire outputs (ASRI/BFI/SDQ, online victimization, risk-taking).
-- `results/rct_replication_results/`  
-  Raw simulation outputs for Base-DT / Survey-DT / Survey+Memory DT.
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Configure API keys
+
+```bash
+cp config.yaml.example config.yaml
+# Edit config.yaml and add your Gemini and YouTube API keys
+```
+
+Get a Gemini API key at <https://aistudio.google.com/app/apikey>.
+Get a YouTube Data API v3 key at <https://console.cloud.google.com/>.
+
+### 3. Download YRBS data
+
+The YRBS 2023 microdata are available from the CDC:
+<https://www.cdc.gov/yrbs/data/index.html>
+
+Place the raw YRBS CSV in `data/raw/yrbs/` and run the stratified sampler (step 1 below) to reproduce `stratified_sample_1000_DTs.csv`. The 1,000-student cohort used in the paper is already included.
 
 ---
 
-## Minimal reproduction (high level)
+## Reproducing the results
 
-Survey fidelity (internal + external):
+The four pipelines should be run in order. Steps 1 and 2 are needed only if you want to rebuild the DT cohort from scratch; the outputs (`stratified_sample_1000_DTs.csv`, `merged_knowledge_base.json`, `enriched_profiles_final.json`) are already included in the repository.
 
-    python scripts/validation/01_run_internal_validation.py
-    python scripts/validation/02_run_external_validation.py
+### Pipeline 1 — Cohort and baseline profiles
 
-Developmental coherence (questionnaires):
+```bash
+python scripts/cohort_generation/01_stratified_sampling.py
+python scripts/cohort_generation/02_baseline_profiles.py
+```
 
-    python scripts/validation/03_run_psychological_validation.py
-    python scripts/validation/06_analyze_psychological.py
+Outputs → `data/processed/baseline_profiles_1000.json`
 
-Virtual RCT replications (10 studies):
+### Pipeline 2 — Memory enrichment (Survey+Memory DT only)
 
-    python scripts/rct/01_run_all_simulations.py
-    python scripts/rct/12_analyze_all_rct.py
+```bash
+python scripts/enrich_memory/01_collect_youtube.py
+python scripts/enrich_memory/02_extract_scenes.py
+python scripts/enrich_memory/03_build_knowledge_base.py
+python scripts/enrich_memory/04_retrieve_top2_memories.py
+python scripts/enrich_memory/05_enrich_profiles_and_conversations.py
+```
 
-For model/backbone selection, RAG toggles, and output paths:
+Outputs → `data/knowledge_base/merged_knowledge_base.json`,
+`data/processed/memory_matches_1000.json`,
+`data/processed/enriched_profiles_final.json`
 
-    python <script.py> -h
+### Pipeline 3 — Validation
 
-## Notes on data release
+```bash
+# Run data-collection steps (costs API calls)
+python scripts/validation/01_run_internal_validation.py
+python scripts/validation/02_run_external_validation.py
+python scripts/validation/03_run_psychological_validation.py
+python scripts/validation/04_run_heterogeneity_analysis.py
 
-- YRBS: this repo includes the mapping table, item JSON, and the stratified cohort file used for the experiments.
-- YouTube: this repo includes the video list and the full scene-extraction and knowledge-base pipeline.
+# Analysis and figures
+python scripts/validation/05_analyze_internal_external.py
+python scripts/validation/06_analyze_psychological.py
+python scripts/validation/07_analyze_human_experiment.py
+```
 
-## Intended use
+Outputs → `results/internal_validation/`, `results/external_validation/`,
+`results/psychological_validation/`, `results/figures/`
 
-This codebase is for methodological evaluation and early-stage hypothesis testing with synthetic, survey-anchored agents. It is not intended for clinical decision-making, individual risk assessment, or estimating real-world prevalence.
+### Pipeline 4 — Virtual RCT replications
 
+```bash
+# Run simulations (costs API calls)
+python scripts/rct/01_run_all_simulations.py
 
+# Process each study
+python scripts/rct/02_process_study_01.py
+# ... (run 02 through 11)
+python scripts/rct/11_process_study_10.py
+
+# Aggregate and plot
+python scripts/rct/12_analyze_all_rct.py
+```
+
+Outputs → `results/rct_replication/`, `results/figures/`
+
+### CLI options
+
+All data-collection scripts support at minimum:
+
+```
+--model     {gemini-2.0-flash, gemini-2.5-flash, gemini-2.5-flash-lite}
+--dt_type   {base_dt, survey_dt, survey_memory_dt}
+--limit     N           process only the first N digital twins
+--resume                skip DTs whose output already exists
+```
+
+Run `python <script.py> -h` for the full list.
+
+---
+
+## Using the chat interface
+
+`scripts/cohort_generation/03_dt_chat_interface.py` provides a reusable `DigitalTwinChat` class used by all downstream validation and simulation scripts.
+
+```python
+from scripts.cohort_generation.dt_chat_interface import DigitalTwinChat
+
+dt = DigitalTwinChat()                          # reads config.yaml
+dt.start_session(student_id=1,
+                 dt_type='survey_memory_dt',
+                 model='gemini-2.5-flash')
+
+response = dt.chat("How are you feeling today?")
+print(response)
+dt.end_session()
+```
+
+`dt_type` choices: `'base_dt'`, `'survey_dt'`, `'survey_memory_dt'`
+
+---
+
+## Data availability
+
+| Resource | Location |
+|---|---|
+| YRBS mapping table | `data/raw/yrbs/Final_Mapping_Table__Q1_Q107_.csv` |
+| YRBS canonical questions | `data/raw/yrbs/questions_107_converted.json` |
+| Stratified N=1000 cohort | `data/raw/yrbs/stratified_sample_1000_DTs.csv` |
+| YouTube video list | `data/raw/youtube/video_list.csv` |
+| Merged knowledge base | `data/knowledge_base/merged_knowledge_base.json` |
+| Enriched DT profiles | `data/processed/enriched_profiles_final.json` |
+| All validation results | `results/` |
+
+**YRBS 2023** microdata and documentation: <https://www.cdc.gov/yrbs/data/index.html>
+
+**YouTube corpus:** Collected via the YouTube Data API under its Terms of Service. Only de-identified scene-level text is redistributed here; no original video files or audio are included.
+
+**Human participant data** (Layer 3 chat logs and post-interaction surveys) are not publicly released because they contain personally identifiable and sensitive content; only aggregated results are reported.
+
+---
+
+## Ethics
+
+The UC Berkeley Digital Adolescent Experience Research Study (Layer 3) was reviewed and approved by the University of California, Berkeley Committee for Protection of Human Subjects (Protocol #2025-08-18856). Participants were undergraduates aged 18–19 who provided informed electronic consent.
+
+---
+
+## Intended use and limitations
+
+This codebase is for **methodological evaluation and early-stage hypothesis testing** with synthetic, survey-anchored agents. It is **not** intended for:
+- Clinical decision-making or individual risk assessment
+- Estimating real-world prevalence
+- Generating subgroup-level conclusions without confirmatory human data (see paper Discussion for details on subgroup replication failures)
+
+---
+
+## Citation
+
+```bibtex
+@article{zhang2026adolescent,
+  title   = {Where Do Adolescent Digital Twins Succeed and Fail? A Multi-layer
+             Validation of Survey-Anchored Generative Agents with an {LLM} Backbone},
+  author  = {Zhang, Yueshan and Borhi, Marcell and Wei, Waverly and Li, Hangqi and
+             H{\'e}mono, Rebecca and Giorgio, Joseph and Su, John and Ashe, Katy and
+             Zheng, Zeyu and Deardorff, Julianna and Ji, Feng and Zhang, Xiaoya and
+             Wang, Jingshen},
+  journal = {Research Square (preprint)},
+  year    = {2026},
+  doi     = {10.21203/rs.3.rs-8823969/v1}
+}
+```
+
+---
+
+## Funding
+
+Gemma Academic Program; Neuromatch (MEXA2025-002b).

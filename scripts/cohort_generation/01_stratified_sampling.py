@@ -18,7 +18,7 @@ class YRBSSampler:
     def _setup_paths(self):
         """Setup input and output paths"""
         self.input_file = self.project_root / "data" / "raw" / "yrbs" / "yrbs_original.csv"
-        self.output_file = self.project_root / "data" / "processed" / "cohort" / "sampled_1000.csv"
+        self.output_file = self.project_root / "data" / "raw" / "yrbs" / "stratified_sample_1000_DTs.csv"
         self.output_file.parent.mkdir(parents=True, exist_ok=True)
     
     def preprocess_q5(self, df: pd.DataFrame) -> pd.DataFrame:

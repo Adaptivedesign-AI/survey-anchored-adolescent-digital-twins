@@ -50,10 +50,10 @@ class InternalValidation:
     def _setup_paths(self):
         """Setup paths for inputs and outputs"""
         self.data_dir = self.project_root / "data"
-        self.results_dir = self.project_root / "results" / "validation" / "internal"
-        
+        self.results_dir = self.project_root / "results" / "internal_validation"
+
         # Input files
-        self.questions_file = self.data_dir / "raw" / "yrbs" / "yrbs_questions.json"
+        self.questions_file = self.data_dir / "raw" / "yrbs" / "questions_107_converted.json"
     
     def _load_questions(self):
         """Load YRBS questions"""
@@ -162,25 +162,68 @@ class InternalValidation:
     
     def _get_output_file(self, dt_type: str, model: str) -> Path:
         """Get output file path for a specific DT type and model"""
-        output_dir = self.results_dir / model / dt_type
-        output_dir.mkdir(parents=True, exist_ok=True)
-        return output_dir / "responses.json"
-    
+        self.results_dir.mkdir(parents=True, exist_ok=True)
+        return self.results_dir / f"clear_{model}-{dt_type}.csv"
+
+    @staticmethod
+    def _parse_answer(raw: str) -> str:
+        """Extract the answer token from a raw model response.
+
+        Handles formats like 'Answer: E', 'Answer: 1.75', or bare values.
+        """
+        import re
+        if not raw:
+            return ''
+        m = re.search(r'Answer:\s*([A-H0-9][0-9.]*)', raw, re.IGNORECASE)
+        if m:
+            return m.group(1).upper()
+        # Fall back: return the first token
+        return raw.strip().split()[0].upper() if raw.strip() else ''
+
     def _load_existing_results(self, output_file: Path) -> Dict:
-        """Load existing results if file exists"""
-        if output_file.exists():
-            try:
-                with open(output_file, 'r', encoding='utf-8') as f:
-                    return json.load(f)
-            except Exception as e:
-                logger.warning(f"Could not load existing results: {e}")
-        return {}
-    
+        """Load existing results from the flat CSV if it exists."""
+        import pandas as pd
+        if not output_file.exists():
+            return {}
+        try:
+            df = pd.read_csv(output_file, dtype=str)
+            if 'student_ID' not in df.columns:
+                return {}
+            results = {}
+            q_cols = [c for c in df.columns if c.startswith('Q')]
+            for _, row in df.iterrows():
+                sid = str(int(float(row['student_ID'])))
+                results[sid] = [{
+                    'question_id': q,
+                    'response': row[q],
+                    'success': True
+                } for q in q_cols]
+            return results
+        except Exception as e:
+            logger.warning(f"Could not load existing results: {e}")
+            return {}
+
     def _save_results(self, output_file: Path, results: Dict):
-        """Save results to JSON file"""
-        output_file.parent.mkdir(parents=True, exist_ok=True)
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(results, f, indent=2, ensure_ascii=False)
+        """Save results as a flat CSV: student_ID, Q1, Q2, ..., Q107."""
+        import pandas as pd
+        rows = []
+        for sid, resps in results.items():
+            row = {'student_ID': int(sid)}
+            for r in resps:
+                if isinstance(r, dict) and r.get('success'):
+                    qid = r.get('question_id', '')
+                    raw = r.get('response', '')
+                    row[qid] = self._parse_answer(raw)
+            rows.append(row)
+        if rows:
+            df = pd.DataFrame(rows)
+            # Ensure columns are ordered student_ID, Q1..Q107
+            q_cols = sorted(
+                [c for c in df.columns if c.startswith('Q')],
+                key=lambda x: int(x[1:])
+            )
+            df = df[['student_ID'] + q_cols]
+            df.to_csv(output_file, index=False)
     
     async def run_validation(
         self, 

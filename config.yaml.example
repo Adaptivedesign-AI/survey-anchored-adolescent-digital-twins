@@ -1,0 +1,29 @@
+# Copy this file to config.yaml and fill in your credentials.
+# config.yaml is listed in .gitignore and will NOT be committed.
+
+# Google Gemini API key (https://aistudio.google.com/app/apikey)
+gemini_api_key: "YOUR_GEMINI_API_KEY_HERE"
+
+# YouTube Data API v3 key (https://console.cloud.google.com/)
+youtube_api_key: "YOUR_YOUTUBE_API_KEY_HERE"
+
+# Gemini model used for scene extraction and enrichment
+# Options: gemini-2.5-pro, gemini-2.5-flash, gemini-2.0-flash
+enrichment_model: "gemini-2.5-pro"
+
+# Embedding model for RAG retrieval
+embedding_model: "text-embedding-004"
+
+# Paths (relative to repo root; override only if needed)
+paths:
+  yrbs_data:        "data/raw/yrbs/stratified_sample_1000_DTs.csv"
+  mapping_table:    "data/raw/yrbs/Final_Mapping_Table__Q1_Q107_.csv"
+  questions_json:   "data/raw/yrbs/questions_107_converted.json"
+  video_list:       "data/raw/youtube/video_list.csv"
+  knowledge_base:   "data/knowledge_base/merged_knowledge_base.json"
+  baseline_profiles: "data/processed/baseline_profiles_1000.json"
+  memory_matches:   "data/processed/memory_matches_1000.json"
+  enriched_profiles: "data/processed/enriched_profiles_final.json"
+  shared_prompt:    "prompts/dt_shared/shared_prompt.txt"
+  results_dir:      "results"
+  figures_dir:      "results/figures"

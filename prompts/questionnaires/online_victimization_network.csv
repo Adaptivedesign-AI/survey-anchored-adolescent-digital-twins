@@ -248,7 +248,7 @@ Example JSON format:
   // ... continue for all 10 questions
 
 }"
-Social Anxiety ,"The following questions ask about how you usually feel in situations with people your age.
+Social Anxiety,"The following questions ask about how you usually feel in situations with people your age.
 
 Please read each question and decide how true it is for you.
 
@@ -329,5 +329,70 @@ item_Q#: The integer score (1–5).
   ""item_Q3"": 4
 
   // ... continue for all 18 questions
+
+}"
+Life Satisfaction,"The following questions ask about how you feel about your life.
+
+Please read each question and decide how much you agree or disagree with each statement.
+
+For each question below, choose the integer that best matches your opinion based on this scale:
+
+1 = Strongly Disagree
+
+2 = Disagree
+
+3 = Slightly Disagree
+
+4 = Slightly Agree
+
+5 = Agree
+
+6 = Strongly Agree
+
+Questions:
+
+Q1: My life is going well.
+
+Q2: My life is just right.
+
+Q3: I would like to change many things in my life.
+
+Q4: I wish I had a different kind of life.
+
+Q5: I have a good life.
+
+Q6: I have what I want in life.
+
+Q7: My life is better than most kids my age.
+
+Output Requirement:
+
+Please submit your answers in a single JSON object.
+
+For each question (1 through 7), you must provide two fields:
+
+
+
+reason_Q#: A brief text explanation of your answer.
+
+item_Q#: The integer score (1–6).
+
+Example JSON format:
+
+{
+
+  ""reason_Q1"": ""Overall I feel my life is going well and I am happy."",
+
+  ""item_Q1"": 5,
+
+  ""reason_Q2"": ""Most things in my life are the way I want them to be."",
+
+  ""item_Q2"": 5,
+
+  ""reason_Q3"": ""There are a few things I would change, but not many."",
+
+  ""item_Q3"": 2
+
+  // ... continue for all 7 questions
 
 }"

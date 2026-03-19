@@ -11,7 +11,7 @@ class ProjectPaths:
     def __init__(self):
         self.root = Path(__file__).parent.parent.parent.resolve()
         # Output directory for figures
-        self.figures_dir = self.root / "results" / "figures" / "validation" / "psychological"
+        self.figures_dir = self.root / "results" / "figures"
         self.figures_dir.mkdir(parents=True, exist_ok=True)
 
 # ============================================================

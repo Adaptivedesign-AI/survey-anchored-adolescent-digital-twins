@@ -20,13 +20,13 @@ class ProjectPaths:
         self.root = Path(__file__).parent.parent.parent.resolve()
         
         # Inputs
-        self.gt_file = self.root / "data" / "processed" / "cohort" / "sampled_1000.csv"
-        self.questions_file = self.root / "data" / "raw" / "yrbs" / "yrbs_questions.json"
-        self.external_results_root = self.root / "results" / "validation" / "external"
-        
+        self.gt_file = self.root / "data" / "raw" / "yrbs" / "stratified_sample_1000_DTs.csv"
+        self.questions_file = self.root / "data" / "raw" / "yrbs" / "questions_107_converted.json"
+        self.external_results_root = self.root / "results" / "external_validation"
+
         # Outputs
-        self.output_dir = self.root / "results" / "validation" / "heterogeneity"
-        self.figures_dir = self.root / "results" / "figures" / "validation" / "heterogeneity"
+        self.output_dir = self.root / "results" / "external_validation" / "heterogeneity"
+        self.figures_dir = self.root / "results" / "figures"
         
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.figures_dir.mkdir(parents=True, exist_ok=True)
@@ -319,7 +319,7 @@ class HeterogeneityAnalysis:
         FRAME_COLOR = '#666666'
         PALETTE = {'Survey DT': '#0056b3', 'Survey+Memory DT': '#d62728'}
         DOMAIN_ORDER = list(self.EXTERNAL_DOMAIN_MAP.keys())
-        MODEL_ORDER = ['gemini-2.0-flash', 'gemini-2.5-lite-flash', 'gemini-2.5-flash']
+        MODEL_ORDER = ['gemini-2.0-flash', 'gemini-2.5-flash-lite', 'gemini-2.5-flash']
         DOMAIN_SHORT_NAMES = {
             'Suicidality & Self-Harm': 'Suicidality &\nSelf-Harm',
             'Substance Use': 'Substance\nUse',

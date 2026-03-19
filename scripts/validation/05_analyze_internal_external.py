@@ -19,16 +19,16 @@ class ProjectPaths:
         self.root = Path(__file__).parent.parent.parent.resolve()
         
         # Inputs
-        self.gt_file = self.root / "data" / "processed" / "cohort" / "sampled_1000.csv"
-        self.questions_file = self.root / "data" / "raw" / "yrbs" / "yrbs_questions.json"
-        
+        self.gt_file = self.root / "data" / "raw" / "yrbs" / "stratified_sample_1000_DTs.csv"
+        self.questions_file = self.root / "data" / "raw" / "yrbs" / "questions_107_converted.json"
+
         # Results Directories
-        self.internal_dir = self.root / "results" / "validation" / "internal"
-        self.external_dir = self.root / "results" / "validation" / "external"
-        
+        self.internal_dir = self.root / "results" / "internal_validation"
+        self.external_dir = self.root / "results" / "external_validation"
+
         # Outputs
-        self.output_dir = self.root / "results" / "validation" / "summary"
-        self.figures_dir = self.root / "results" / "figures" / "validation" / "summary"
+        self.output_dir = self.root / "results" / "internal_validation" / "summary"
+        self.figures_dir = self.root / "results" / "figures"
         
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.figures_dir.mkdir(parents=True, exist_ok=True)
@@ -135,113 +135,77 @@ class DataProcessor:
             
         return np.nanmean(scores) if scores else np.nan
 
-    def _process_directory(self, base_dir: Path, domain_name: str, is_internal: bool) -> List[Dict]:
-        results = []
-        
-        # Walk through Model / DT_Type structure
-        if not base_dir.exists(): return []
-        
-        for model_dir in base_dir.iterdir():
-            if not model_dir.is_dir(): continue
-            model_name = model_dir.name
-            
-            for dt_dir in model_dir.iterdir():
-                if not dt_dir.is_dir(): continue
-                dt_type_raw = dt_dir.name
-                dt_type = self.DT_TYPE_MAP.get(dt_type_raw, dt_type_raw)
-                
-                # Identify Target Files
-                if is_internal:
-                    # Internal: Usually "responses.json" or "responses.csv"
-                    files = list(dt_dir.glob("responses.json")) + list(dt_dir.glob("responses.csv"))
-                    q_list = [f"Q{i}" for i in range(1, 108)] # All questions
-                else:
-                    # External: Look for specific domain files
-                    files = []
-                    # Find file matching domain questions (e.g., "no_Q27_Q30...")
-                    # Logic: We check if any file in this dir matches the domain mapping logic
-                    # Simplified: We iterate the MAP and find files
-                    pass # Handled below
-                
-                # Logic split
-                if is_internal:
-                    if not files: continue
-                    # Load Internal Data
-                    try:
-                        if files[0].suffix == '.json':
-                            with open(files[0]) as f:
-                                data = json.load(f)
-                                # Convert JSON {sid: [{qid, response}]} to DataFrame
-                                rows = []
-                                for sid, resps in data.items():
-                                    row = {'student_ID': int(sid)}
-                                    for r in resps:
-                                        row[r['question_id']] = r['response']
-                                    rows.append(row)
-                                df_pred = pd.DataFrame(rows)
-                        else:
-                            df_pred = pd.read_csv(files[0])
-                        
-                        # Calculate Score
-                        # For internal, we score all available questions
-                        # But for heterogeneity/big plot, we treat "Internal" as one domain
-                        acc = self._calculate_accuracy(df_pred, q_list)
-                        results.append({
-                            'Model_Base': model_name,
-                            'Condition': dt_type,
-                            'Domain': 'Internal Validation',
-                            'Accuracy': acc
-                        })
-                    except Exception as e:
-                        print(f"Error processing internal {dt_dir}: {e}")
+    @staticmethod
+    def _parse_model_dt(folder_name: str):
+        """Parse '<model>-<dt_type>' folder names into (model, dt_type).
 
-        return results
+        DT types are: base_dt, survey_dt, survey_memory_dt.
+        Model names contain dashes too, so we split from the right on known suffixes.
+        """
+        for suffix in ('survey_memory_dt', 'survey_dt', 'base_dt'):
+            if folder_name.endswith(f'-{suffix}'):
+                model = folder_name[: -(len(suffix) + 1)]
+                return model, suffix
+        return folder_name, 'unknown'
+
+    def _load_df_from_csv(self, csv_file: Path) -> pd.DataFrame:
+        df = pd.read_csv(csv_file, dtype=str)
+        id_col = next((c for c in df.columns if 'student' in c.lower()), None)
+        if id_col:
+            df.rename(columns={id_col: 'student_ID'}, inplace=True)
+            df['student_ID'] = pd.to_numeric(df['student_ID'], errors='coerce')
+            df = df.dropna(subset=['student_ID']).copy()
+            df['student_ID'] = df['student_ID'].astype(int)
+        return df
 
     def get_summary_data(self):
         all_results = []
-        
-        # 1. Internal Validation
+
+        # 1. Internal Validation — flat files: clear_<model>-<dt_type>.csv
         print("Processing Internal Validation...")
-        all_results.extend(self._process_directory(self.paths.internal_dir, "Internal Validation", True))
-        
-        # 2. External Validation
+        if self.paths.internal_dir.exists():
+            for csv_file in self.paths.internal_dir.glob("clear_*.csv"):
+                stem = csv_file.stem[len('clear_'):]   # strip 'clear_' prefix
+                model_name, dt_type_raw = self._parse_model_dt(stem)
+                dt_type = self.DT_TYPE_MAP.get(dt_type_raw, dt_type_raw)
+                try:
+                    df_pred = self._load_df_from_csv(csv_file)
+                    q_list = [f"Q{i}" for i in range(1, 108)]
+                    acc = self._calculate_accuracy(df_pred, q_list)
+                    all_results.append({
+                        'Model_Base': model_name,
+                        'Condition': dt_type,
+                        'Domain': 'Internal Validation',
+                        'Accuracy': acc
+                    })
+                except Exception as e:
+                    print(f"Error processing internal {csv_file.name}: {e}")
+
+        # 2. External Validation — folders: <model>-<dt_type>/no_*.csv
         print("Processing External Validation...")
         if self.paths.external_dir.exists():
-            for model_dir in self.paths.external_dir.iterdir():
-                if not model_dir.is_dir(): continue
-                
-                for dt_dir in model_dir.iterdir():
-                    if not dt_dir.is_dir(): continue
-                    dt_type = self.DT_TYPE_MAP.get(dt_dir.name, dt_dir.name)
-                    
-                    for domain, q_list in self.EXTERNAL_DOMAIN_MAP.items():
-                        # Find matching file (e.g., contains "Q27")
-                        # This relies on the naming convention from script 02
-                        found = False
-                        for csv_file in dt_dir.glob("*.csv"):
-                            # Check if filename implies this domain (e.g., "no_Q27_Q30")
-                            # Heuristic: Check if the first Q in q_list is in filename
-                            if q_list[0] in csv_file.name: 
-                                found = True
-                                try:
-                                    df_pred = pd.read_csv(csv_file)
-                                    # Normalize ID
-                                    id_col = next((c for c in df_pred.columns if 'student' in c.lower()), 'student_ID')
-                                    df_pred.rename(columns={id_col: 'student_ID'}, inplace=True)
-                                    df_pred['student_ID'] = pd.to_numeric(df_pred['student_ID'], errors='coerce')
-                                    df_pred = df_pred.dropna(subset=['student_ID']).astype({'student_ID': int})
+            for folder in self.paths.external_dir.iterdir():
+                if not folder.is_dir():
+                    continue
+                model_name, dt_type_raw = self._parse_model_dt(folder.name)
+                dt_type = self.DT_TYPE_MAP.get(dt_type_raw, dt_type_raw)
 
-                                    acc = self._calculate_accuracy(df_pred, q_list)
-                                    all_results.append({
-                                        'Model_Base': model_dir.name,
-                                        'Condition': dt_type,
-                                        'Domain': domain,
-                                        'Accuracy': acc
-                                    })
-                                except Exception as e:
-                                    print(f"Error reading {csv_file}: {e}")
-                                break # Found the file for this domain
-        
+                for domain, q_list in self.EXTERNAL_DOMAIN_MAP.items():
+                    for csv_file in folder.glob("*.csv"):
+                        if q_list[0] in csv_file.name:
+                            try:
+                                df_pred = self._load_df_from_csv(csv_file)
+                                acc = self._calculate_accuracy(df_pred, q_list)
+                                all_results.append({
+                                    'Model_Base': model_name,
+                                    'Condition': dt_type,
+                                    'Domain': domain,
+                                    'Accuracy': acc
+                                })
+                            except Exception as e:
+                                print(f"Error reading {csv_file}: {e}")
+                            break
+
         return pd.DataFrame(all_results)
 
     def get_improvement_data(self):
@@ -278,35 +242,28 @@ class DataProcessor:
             merged['row_acc'] = correct_counts
             return merged.groupby('Ethnicity_Group')['row_acc'].mean()
 
-        # Iterate External Directories again for Improvement
+        # Iterate External Directories again for Improvement — <model>-<dt_type>/no_*.csv
         if self.paths.external_dir.exists():
-            for model_dir in self.paths.external_dir.iterdir():
-                if not model_dir.is_dir(): continue
-                for dt_dir in model_dir.iterdir():
-                    if not dt_dir.is_dir(): continue
-                    dt_type = self.DT_TYPE_MAP.get(dt_dir.name, dt_dir.name)
-                    
-                    for domain, q_list in self.EXTERNAL_DOMAIN_MAP.items():
-                         for csv_file in dt_dir.glob("*.csv"):
-                            if q_list[0] in csv_file.name:
-                                try:
-                                    df = pd.read_csv(csv_file)
-                                    # Fix ID
-                                    id_col = next((c for c in df.columns if 'student' in c.lower()), 'student_ID')
-                                    df.rename(columns={id_col: 'student_ID'}, inplace=True)
-                                    df['student_ID'] = pd.to_numeric(df['student_ID'], errors='coerce')
-                                    df = df.dropna().astype({'student_ID': int})
-                                    
-                                    eth_acc = get_eth_acc(df, q_list)
-                                    for eth, val in eth_acc.items():
-                                        imp_results.append({
-                                            'Model_Base': model_dir.name,
-                                            'Condition': dt_type,
-                                            'Domain': domain,
-                                            'Ethnicity_Group': eth,
-                                            'Accuracy': val
-                                        })
-                                except: pass
+            for folder in self.paths.external_dir.iterdir():
+                if not folder.is_dir(): continue
+                model_name, dt_type_raw = self._parse_model_dt(folder.name)
+                dt_type = self.DT_TYPE_MAP.get(dt_type_raw, dt_type_raw)
+
+                for domain, q_list in self.EXTERNAL_DOMAIN_MAP.items():
+                    for csv_file in folder.glob("*.csv"):
+                        if q_list[0] in csv_file.name:
+                            try:
+                                df = self._load_df_from_csv(csv_file)
+                                eth_acc = get_eth_acc(df, q_list)
+                                for eth, val in eth_acc.items():
+                                    imp_results.append({
+                                        'Model_Base': model_name,
+                                        'Condition': dt_type,
+                                        'Domain': domain,
+                                        'Ethnicity_Group': eth,
+                                        'Accuracy': val
+                                    })
+                            except: pass
         
         df = pd.DataFrame(imp_results)
         

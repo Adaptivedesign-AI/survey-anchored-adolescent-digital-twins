@@ -1,3 +1,39 @@
+# ============================================================
+# Research repo additions
+# ============================================================
+
+# Secrets and credentials – NEVER commit these
+config.yaml
+configs/secrets.yaml
+*.env
+
+# Downloaded YouTube videos and audio (large binary files)
+data/raw/youtube/videos/
+data/raw/youtube/audio/
+*.mp4
+*.mkv
+*.webm
+*.mp3
+*.m4a
+
+# Per-video extraction working directories
+data/raw/youtube/extracted_data/
+
+# Generated intermediate files (reproduced by running the pipeline)
+data/processed/baseline_profiles_1000.json
+data/processed/memory_matches_1000.json
+
+# Output figures (reproducible from analysis scripts)
+results/figures/
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# ============================================================
+# Standard Python
+# ============================================================
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

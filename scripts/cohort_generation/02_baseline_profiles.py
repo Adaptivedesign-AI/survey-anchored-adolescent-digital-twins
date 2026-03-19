@@ -19,11 +19,11 @@ class BaselineProfileGenerator:
     def _setup_paths(self):
         """Setup input and output paths"""
         # Input files
-        self.survey_file = self.project_root / "data" / "processed" / "cohort" / "sampled_1000.csv"
-        self.mapping_file = self.project_root / "prompts" / "mapping" / "yrbs_to_profile_map.json"
-        
+        self.survey_file = self.project_root / "data" / "raw" / "yrbs" / "stratified_sample_1000_DTs.csv"
+        self.mapping_file = self.project_root / "data" / "raw" / "yrbs" / "Final_Mapping_Table__Q1_Q107_.csv"
+
         # Output file
-        self.output_file = self.project_root / "data" / "processed" / "cohort" / "baseline_profiles_1000.json"
+        self.output_file = self.project_root / "data" / "processed" / "baseline_profiles_1000.json"
         self.output_file.parent.mkdir(parents=True, exist_ok=True)
     
     def _load_data(self):
@@ -39,32 +39,32 @@ class BaselineProfileGenerator:
         
         # Load mapping table
         print(f"\nLoading mapping table: {self.mapping_file}")
-        
+
         # Check if mapping file exists
         if not self.mapping_file.exists():
             raise FileNotFoundError(
                 f"Mapping file not found: {self.mapping_file}\n"
-                f"Please place the YRBS-to-profile mapping JSON in: {self.mapping_file.parent}"
+                f"Please place the YRBS mapping CSV in: {self.mapping_file.parent}"
             )
-        
-        with open(self.mapping_file, 'r', encoding='utf-8') as f:
-            self.mapping_data = json.load(f)
-        
+
+        mapping_df = pd.read_csv(self.mapping_file)
+        mapping_df['code'] = mapping_df['code'].astype(str).str.replace('.0', '', regex=False)
+
         # Build prompt dictionary: {question -> {code -> prompt_fragment}}
         self.prompt_dict = {}
-        for item in self.mapping_data:
-            question = item['question']
+        for _, item in mapping_df.iterrows():
+            question = str(item['question'])
             code = str(item['code']).strip()
             fragment = item['prompt_fragment']
-            
+
             if code.lower() in ['nan', '', 'none']:
                 continue
-            
+
             if question not in self.prompt_dict:
                 self.prompt_dict[question] = {}
-            
+
             self.prompt_dict[question][code] = fragment
-        
+
         print(f"✓ Loaded mapping for {len(self.prompt_dict)} questions")
     
     def _clean_code(self, val) -> str:

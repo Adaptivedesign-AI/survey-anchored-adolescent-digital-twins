@@ -19,15 +19,15 @@ from google.genai import types
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 KB_PATH = REPO_ROOT / "data" / "knowledge_base" / "merged_knowledge_base.json"
-DT_CSV_PATH = REPO_ROOT / "data" / "digital_twins" / "baseline_profiles" / "1000_DTs_prompts.csv"
+DT_CSV_PATH = REPO_ROOT / "data" / "processed" / "baseline_profiles_1000.json"
 
-OUT_DIR = REPO_ROOT / "outputs" / "dt_memory_retrieval"
-CACHE_DIR = REPO_ROOT / "outputs" / "kb_cache"
+OUT_DIR = REPO_ROOT / "data" / "processed"
+CACHE_DIR = REPO_ROOT / "data" / "processed" / "kb_cache"
 
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
-OUT_PATH = OUT_DIR / "04_matched_memories_top2.json"
+OUT_PATH = OUT_DIR / "memory_matches_1000.json"
 
 KB_DOMAIN_CACHE_PATH = CACHE_DIR / "kb_domain_labels.jsonl"
 KB_EMBED_CACHE_PATH = CACHE_DIR / "kb_embeddings.jsonl"

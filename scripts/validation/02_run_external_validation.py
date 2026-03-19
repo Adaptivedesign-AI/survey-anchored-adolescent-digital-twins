@@ -46,20 +46,18 @@ class ProjectPaths:
         self.config_file = self.root / "config.yaml"
         self.data_raw = self.root / "data" / "raw"
         self.data_processed = self.root / "data" / "processed"
-        self.results_dir = self.root / "results" / "validation" / "external"
-        self.prompts_dir = self.root / "configs" / "prompts"
-        
+        self.results_dir = self.root / "results" / "external_validation"
+
         # Inputs
-        self.yrbs_data = self.data_processed / "cohort" / "sampled_1000.csv"
-        self.mapping_table = self.root / "configs" / "prompt_maps" / "yrbs_to_profile_map.csv"
-        self.questions_json = self.data_raw / "yrbs" / "yrbs_questions.json"
-        
+        self.yrbs_data = self.data_raw / "yrbs" / "stratified_sample_1000_DTs.csv"
+        self.mapping_table = self.data_raw / "yrbs" / "Final_Mapping_Table__Q1_Q107_.csv"
+        self.questions_json = self.data_raw / "yrbs" / "questions_107_converted.json"
+
         # Shared Prompt
-        self.shared_prompt = self.prompts_dir / "personas" / "shared_base_prompt.txt"
-        
-        # [NEW] Directory specifically for the 5 sets of External Validation Memories
-        # 假设你把那5个对应的memory json文件放在这个文件夹里
-        self.external_memories_dir = self.data_processed / "cohort" / "external_memories"
+        self.shared_prompt = self.root / "prompts" / "dt_shared" / "shared_prompt.txt"
+
+        # Directory for masked enriched memories (one file per hold-out group, generated manually)
+        self.external_memories_dir = self.data_processed / "external_memories"
         
         # Ensure directories exist
         self.results_dir.mkdir(parents=True, exist_ok=True)
@@ -238,9 +236,9 @@ class ValidationManager:
         masked_profiles = self.prompt_gen.generate_masked_profiles(group['drop'])
 
         # 3. Setup Output
-        output_dir = self.paths.results_dir / model / dt_type
+        output_dir = self.paths.results_dir / f"{model}-{dt_type}"
         output_dir.mkdir(parents=True, exist_ok=True)
-        output_file = output_dir / f"{task_name}_responses.csv"
+        output_file = output_dir / f"{task_name}.csv"
         
         processed_ids = set()
         if output_file.exists():

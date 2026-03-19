@@ -22,8 +22,8 @@ class ProjectPaths:
     def __init__(self):
         self.root = Path(__file__).parent.parent.parent.resolve()
         self.config_file = self.root / "config.yaml"
-        self.data_raw_rct = self.root / "data" / "raw" / "rct_studies"
-        self.prompts_dir = self.root / "configs" / "prompts" / "personas"
+        self.data_raw_rct = self.root / "prompts" / "rct_replication"
+        self.prompts_dir = self.root / "prompts" / "dt_shared"
         self.results_dir = self.root / "results" / "rct_replication"
         
         self.results_dir.mkdir(parents=True, exist_ok=True)
@@ -161,7 +161,7 @@ class DigitalTwinExperiment:
             return yaml.safe_load(f)
 
     def _load_shared_prompt(self) -> str:
-        prompt_path = self.paths.prompts_dir / "shared_base_prompt.txt"
+        prompt_path = self.paths.prompts_dir / "shared_prompt.txt"
         with open(prompt_path, 'r', encoding='utf-8') as f:
             return f.read()
 

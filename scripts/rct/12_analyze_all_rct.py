@@ -11,7 +11,7 @@ from pathlib import Path
 class ProjectPaths:
     def __init__(self):
         self.root = Path(__file__).parent.parent.parent.resolve()
-        self.input_excel = self.root / "data" / "processed" / "rct" / "DT_replication_reorganized_effects.xlsx"
+        self.input_excel = self.root / "data" / "processed" / "rct" / "Study1_Wide_Final_clean.xlsx"
         self.figures_dir = self.root / "results" / "figures" / "rct"
         self.figures_dir.mkdir(parents=True, exist_ok=True)
 
@@ -47,7 +47,7 @@ EFFECT_TYPES = ['Overall', 'Main effect', 'Interaction effect']
 
 print(f"Reading data from: {FILE_STUDY}")
 try:
-    df = pd.read_excel(FILE_STUDY, sheet_name='All_effects')
+    df = pd.read_excel(FILE_STUDY, sheet_name='Sheet1').dropna(how='all')
     print(f"Successfully loaded {len(df)} rows.")
 except Exception as e:
     print(f"Error reading file: {e}")

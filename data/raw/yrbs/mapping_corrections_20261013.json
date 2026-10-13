@@ -1,0 +1,2006 @@
+{
+  "date": "2026-10-13",
+  "scope": "Mapping text and valid option coverage; no model results regenerated",
+  "changes": [
+    {
+      "question": "Q3",
+      "code": "5",
+      "previous_fragments": [
+        "You are in an ungraded or alternative grade."
+      ],
+      "corrected_fragment": "You are ungraded or in another grade."
+    },
+    {
+      "question": "Q11",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You did not drive a car or other vehicle during the past 30 days."
+    },
+    {
+      "question": "Q11",
+      "code": "2",
+      "previous_fragments": [
+        "You did not text or email while driving in the past 30 days."
+      ],
+      "corrected_fragment": "You drove a car or other vehicle during the past 30 days, but did not text or email while driving."
+    },
+    {
+      "question": "Q13",
+      "code": "1",
+      "previous_fragments": [
+        "You did not carry a gun in the past 12 months."
+      ],
+      "corrected_fragment": "You did not carry a gun in the past 12 months (excluding days when you carried a gun only for hunting or a sport such as target shooting)."
+    },
+    {
+      "question": "Q13",
+      "code": "2",
+      "previous_fragments": [
+        "You carried a gun on 1 day in the past 12 months."
+      ],
+      "corrected_fragment": "You carried a gun on 1 day in the past 12 months (excluding days when you carried a gun only for hunting or a sport such as target shooting)."
+    },
+    {
+      "question": "Q13",
+      "code": "3",
+      "previous_fragments": [
+        "You carried a gun on 2 or 3 days in the past 12 months."
+      ],
+      "corrected_fragment": "You carried a gun on 2 or 3 days in the past 12 months (excluding days when you carried a gun only for hunting or a sport such as target shooting)."
+    },
+    {
+      "question": "Q13",
+      "code": "4",
+      "previous_fragments": [
+        "You carried a gun on 4 or 5 days in the past 12 months."
+      ],
+      "corrected_fragment": "You carried a gun on 4 or 5 days in the past 12 months (excluding days when you carried a gun only for hunting or a sport such as target shooting)."
+    },
+    {
+      "question": "Q13",
+      "code": "5",
+      "previous_fragments": [
+        "You carried a gun on 6 or more days in the past 12 months."
+      ],
+      "corrected_fragment": "You carried a gun on 6 or more days in the past 12 months (excluding days when you carried a gun only for hunting or a sport such as target shooting)."
+    },
+    {
+      "question": "Q18",
+      "code": "1",
+      "previous_fragments": [
+        "You have seen someone get physically attacked in your neighborhood."
+      ],
+      "corrected_fragment": "You have seen someone get physically attacked, beaten, stabbed, or shot in your neighborhood."
+    },
+    {
+      "question": "Q18",
+      "code": "2",
+      "previous_fragments": [
+        "You have not seen someone get physically attacked in your neighborhood."
+      ],
+      "corrected_fragment": "You have never seen someone get physically attacked, beaten, stabbed, or shot in your neighborhood."
+    },
+    {
+      "question": "Q22",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You did not date or go out with anyone during the past 12 months."
+    },
+    {
+      "question": "Q22",
+      "code": "2",
+      "previous_fragments": [
+        "No one you dated physically hurt you in the past 12 months."
+      ],
+      "corrected_fragment": "No one you dated physically hurt you on purpose in the past 12 months."
+    },
+    {
+      "question": "Q22",
+      "code": "3",
+      "previous_fragments": [
+        "Someone you dated physically hurt you once in the past 12 months."
+      ],
+      "corrected_fragment": "Someone you dated physically hurt you on purpose once in the past 12 months."
+    },
+    {
+      "question": "Q22",
+      "code": "4",
+      "previous_fragments": [
+        "Someone you dated physically hurt you 2 or 3 times in the past 12 months."
+      ],
+      "corrected_fragment": "Someone you dated physically hurt you on purpose 2 or 3 times in the past 12 months."
+    },
+    {
+      "question": "Q22",
+      "code": "5",
+      "previous_fragments": [
+        "Someone you dated physically hurt you 4 or 5 times in the past 12 months."
+      ],
+      "corrected_fragment": "Someone you dated physically hurt you on purpose 4 or 5 times in the past 12 months."
+    },
+    {
+      "question": "Q23",
+      "code": "1",
+      "previous_fragments": [
+        "You were never treated badly in school because of your race or ethnicity."
+      ],
+      "corrected_fragment": "During your life, you have never felt treated badly or unfairly in school because of your race or ethnicity."
+    },
+    {
+      "question": "Q23",
+      "code": "2",
+      "previous_fragments": [
+        "You were rarely treated badly in school because of your race or ethnicity."
+      ],
+      "corrected_fragment": "During your life, you have rarely felt treated badly or unfairly in school because of your race or ethnicity."
+    },
+    {
+      "question": "Q23",
+      "code": "3",
+      "previous_fragments": [
+        "You were sometimes treated badly in school because of your race or ethnicity."
+      ],
+      "corrected_fragment": "During your life, you have sometimes felt treated badly or unfairly in school because of your race or ethnicity."
+    },
+    {
+      "question": "Q23",
+      "code": "4",
+      "previous_fragments": [
+        "You were treated badly most of the time in school because of your race or ethnicity."
+      ],
+      "corrected_fragment": "During your life, you have felt treated badly or unfairly in school because of your race or ethnicity most of the time."
+    },
+    {
+      "question": "Q23",
+      "code": "5",
+      "previous_fragments": [
+        "You were always treated badly in school because of your race or ethnicity."
+      ],
+      "corrected_fragment": "During your life, you have always felt treated badly or unfairly in school because of your race or ethnicity."
+    },
+    {
+      "question": "Q26",
+      "code": "1",
+      "previous_fragments": [
+        "You felt sad or hopeless for two or more weeks in a row and stopped doing usual activities in the past 12 months."
+      ],
+      "corrected_fragment": "During the past 12 months, you felt so sad or hopeless almost every day for at least two weeks in a row that you stopped doing some usual activities."
+    },
+    {
+      "question": "Q26",
+      "code": "2",
+      "previous_fragments": [
+        "You did not feel sad or hopeless for two or more weeks in a row in the past 12 months."
+      ],
+      "corrected_fragment": "During the past 12 months, you did not experience feeling so sad or hopeless almost every day for at least two weeks in a row that you stopped doing some usual activities."
+    },
+    {
+      "question": "Q30",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You did not attempt suicide during the past 12 months."
+    },
+    {
+      "question": "Q30",
+      "code": "2",
+      "previous_fragments": [
+        "You were treated by a doctor or nurse for a suicide attempt in the past 12 months."
+      ],
+      "corrected_fragment": "During the past 12 months, a suicide attempt resulted in an injury, poisoning, or overdose that had to be treated by a doctor or nurse."
+    },
+    {
+      "question": "Q30",
+      "code": "3",
+      "previous_fragments": [
+        "You were not treated for your suicide attempt in the past 12 months."
+      ],
+      "corrected_fragment": "During the past 12 months, you attempted suicide, but no attempt resulted in an injury, poisoning, or overdose that had to be treated by a doctor or nurse."
+    },
+    {
+      "question": "Q32",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You have never smoked a cigarette, not even one or two puffs."
+    },
+    {
+      "question": "Q32",
+      "code": "2",
+      "previous_fragments": [
+        "You first smoked a cigarette at age 8 or younger."
+      ],
+      "corrected_fragment": "You first smoked a cigarette, even one or two puffs, at age 8 or younger."
+    },
+    {
+      "question": "Q32",
+      "code": "3",
+      "previous_fragments": [
+        "You first smoked a cigarette at age 9 or 10."
+      ],
+      "corrected_fragment": "You first smoked a cigarette, even one or two puffs, at age 9 or 10."
+    },
+    {
+      "question": "Q32",
+      "code": "4",
+      "previous_fragments": [
+        "You first smoked a cigarette at age 11 or 12."
+      ],
+      "corrected_fragment": "You first smoked a cigarette, even one or two puffs, at age 11 or 12."
+    },
+    {
+      "question": "Q32",
+      "code": "5",
+      "previous_fragments": [
+        "You first smoked a cigarette at age 13 or 14."
+      ],
+      "corrected_fragment": "You first smoked a cigarette, even one or two puffs, at age 13 or 14."
+    },
+    {
+      "question": "Q32",
+      "code": "6",
+      "previous_fragments": [
+        "You first smoked a cigarette at age 15 or 16."
+      ],
+      "corrected_fragment": "You first smoked a cigarette, even one or two puffs, at age 15 or 16."
+    },
+    {
+      "question": "Q32",
+      "code": "7",
+      "previous_fragments": [
+        "You first smoked a cigarette at age 17 or older."
+      ],
+      "corrected_fragment": "You first smoked a cigarette, even one or two puffs, at age 17 or older."
+    },
+    {
+      "question": "Q34",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You did not smoke cigarettes during the past 30 days."
+    },
+    {
+      "question": "Q34",
+      "code": "2",
+      "previous_fragments": [
+        "You smoked less than 1 cigarette per day when you smoked."
+      ],
+      "corrected_fragment": "During the past 30 days, on the days you smoked, you smoked less than 1 cigarette per day."
+    },
+    {
+      "question": "Q34",
+      "code": "3",
+      "previous_fragments": [
+        "You smoked 1 cigarette per day when you smoked."
+      ],
+      "corrected_fragment": "During the past 30 days, on the days you smoked, you smoked 1 cigarette per day."
+    },
+    {
+      "question": "Q34",
+      "code": "4",
+      "previous_fragments": [
+        "You smoked 2 to 5 cigarettes per day when you smoked."
+      ],
+      "corrected_fragment": "During the past 30 days, on the days you smoked, you smoked 2 to 5 cigarettes per day."
+    },
+    {
+      "question": "Q34",
+      "code": "5",
+      "previous_fragments": [
+        "You smoked 6 to 10 cigarettes per day when you smoked."
+      ],
+      "corrected_fragment": "During the past 30 days, on the days you smoked, you smoked 6 to 10 cigarettes per day."
+    },
+    {
+      "question": "Q34",
+      "code": "6",
+      "previous_fragments": [
+        "You smoked 11 to 20 cigarettes per day when you smoked."
+      ],
+      "corrected_fragment": "During the past 30 days, on the days you smoked, you smoked 11 to 20 cigarettes per day."
+    },
+    {
+      "question": "Q34",
+      "code": "7",
+      "previous_fragments": [
+        "You smoked more than 20 cigarettes per day when you smoked."
+      ],
+      "corrected_fragment": "During the past 30 days, on the days you smoked, you smoked more than 20 cigarettes per day."
+    },
+    {
+      "question": "Q37",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You did not use any electronic vapor products during the past 30 days."
+    },
+    {
+      "question": "Q37",
+      "code": "2",
+      "previous_fragments": [
+        "You got or bought your electronic vapor products from a friend, family member, or someone else."
+      ],
+      "corrected_fragment": "During the past 30 days, you usually got or bought your electronic vapor products from a friend, family member, or someone else."
+    },
+    {
+      "question": "Q37",
+      "code": "3",
+      "previous_fragments": [
+        "You bought your electronic vapor products yourself in a vape shop or tobacco shop."
+      ],
+      "corrected_fragment": "During the past 30 days, you usually bought your electronic vapor products yourself in a vape shop or tobacco shop."
+    },
+    {
+      "question": "Q37",
+      "code": "4",
+      "previous_fragments": [
+        "You bought your electronic vapor products yourself in a convenience store, supermarket, discount store, or gas station."
+      ],
+      "corrected_fragment": "During the past 30 days, you usually bought your electronic vapor products yourself in a convenience store, supermarket, discount store, or gas station."
+    },
+    {
+      "question": "Q37",
+      "code": "5",
+      "previous_fragments": [
+        "You bought your electronic vapor products yourself at a mall or shopping center kiosk or stand."
+      ],
+      "corrected_fragment": "During the past 30 days, you usually bought your electronic vapor products yourself at a mall or shopping center kiosk or stand."
+    },
+    {
+      "question": "Q37",
+      "code": "6",
+      "previous_fragments": [
+        "You bought your electronic vapor products yourself on the Internet, such as from a product website, vape store website, or marketplace like eBay, Amazon, or Craigslist."
+      ],
+      "corrected_fragment": "During the past 30 days, you usually bought your electronic vapor products yourself on the Internet, such as from a product website, vape store website, or marketplace like eBay, Amazon, or Craigslist."
+    },
+    {
+      "question": "Q37",
+      "code": "7",
+      "previous_fragments": [
+        "You took your electronic vapor products from a store or another person."
+      ],
+      "corrected_fragment": "During the past 30 days, you usually took your electronic vapor products from a store or another person."
+    },
+    {
+      "question": "Q37",
+      "code": "8",
+      "previous_fragments": [
+        "You got your electronic vapor products in some other way."
+      ],
+      "corrected_fragment": "During the past 30 days, you usually got your electronic vapor products in some other way."
+    },
+    {
+      "question": "Q38",
+      "code": "1",
+      "previous_fragments": [
+        "During the past 30 days, you did not use chewing tobacco, snuff, dip, snus, or dissolvable tobacco products."
+      ],
+      "corrected_fragment": "During the past 30 days, you did not use chewing tobacco, snuff, dip, snus, or dissolvable tobacco products (not counting electronic vapor products)."
+    },
+    {
+      "question": "Q38",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 1 or 2 days."
+      ],
+      "corrected_fragment": "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 1 or 2 days (not counting electronic vapor products)."
+    },
+    {
+      "question": "Q38",
+      "code": "3",
+      "previous_fragments": [
+        "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 3 to 5 days."
+      ],
+      "corrected_fragment": "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 3 to 5 days (not counting electronic vapor products)."
+    },
+    {
+      "question": "Q38",
+      "code": "4",
+      "previous_fragments": [
+        "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 6 to 9 days."
+      ],
+      "corrected_fragment": "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 6 to 9 days (not counting electronic vapor products)."
+    },
+    {
+      "question": "Q38",
+      "code": "5",
+      "previous_fragments": [
+        "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 10 to 19 days."
+      ],
+      "corrected_fragment": "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 10 to 19 days (not counting electronic vapor products)."
+    },
+    {
+      "question": "Q38",
+      "code": "6",
+      "previous_fragments": [
+        "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 20 to 29 days."
+      ],
+      "corrected_fragment": "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 20 to 29 days (not counting electronic vapor products)."
+    },
+    {
+      "question": "Q38",
+      "code": "7",
+      "previous_fragments": [
+        "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on all 30 days."
+      ],
+      "corrected_fragment": "During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on all 30 days (not counting electronic vapor products)."
+    },
+    {
+      "question": "Q39",
+      "code": "2",
+      "previous_fragments": [
+        "You smoked cigars on 1\u20132 days in the past 30 days."
+      ],
+      "corrected_fragment": "You smoked cigars, cigarillos, or little cigars on 1\u20132 days in the past 30 days."
+    },
+    {
+      "question": "Q39",
+      "code": "3",
+      "previous_fragments": [
+        "You smoked cigars on 3\u20135 days in the past 30 days."
+      ],
+      "corrected_fragment": "You smoked cigars, cigarillos, or little cigars on 3\u20135 days in the past 30 days."
+    },
+    {
+      "question": "Q39",
+      "code": "4",
+      "previous_fragments": [
+        "You smoked cigars on 6\u20139 days in the past 30 days."
+      ],
+      "corrected_fragment": "You smoked cigars, cigarillos, or little cigars on 6\u20139 days in the past 30 days."
+    },
+    {
+      "question": "Q39",
+      "code": "5",
+      "previous_fragments": [
+        "You smoked cigars on 10\u201319 days in the past 30 days."
+      ],
+      "corrected_fragment": "You smoked cigars, cigarillos, or little cigars on 10\u201319 days in the past 30 days."
+    },
+    {
+      "question": "Q39",
+      "code": "6",
+      "previous_fragments": [
+        "You smoked cigars on 20\u201329 days in the past 30 days."
+      ],
+      "corrected_fragment": "You smoked cigars, cigarillos, or little cigars on 20\u201329 days in the past 30 days."
+    },
+    {
+      "question": "Q39",
+      "code": "7",
+      "previous_fragments": [
+        "You smoked cigars every day in the past month."
+      ],
+      "corrected_fragment": "You smoked cigars, cigarillos, or little cigars every day in the past 30 days."
+    },
+    {
+      "question": "Q41",
+      "code": "2",
+      "previous_fragments": [
+        "You had your first alcoholic drink at age 8 or younger."
+      ],
+      "corrected_fragment": "You had your first drink of alcohol other than a few sips at age 8 or younger."
+    },
+    {
+      "question": "Q41",
+      "code": "3",
+      "previous_fragments": [
+        "You had your first alcoholic drink at age 9 or 10."
+      ],
+      "corrected_fragment": "You had your first drink of alcohol other than a few sips at age 9 or 10."
+    },
+    {
+      "question": "Q41",
+      "code": "4",
+      "previous_fragments": [
+        "You had your first alcoholic drink at age 11 or 12."
+      ],
+      "corrected_fragment": "You had your first drink of alcohol other than a few sips at age 11 or 12."
+    },
+    {
+      "question": "Q41",
+      "code": "5",
+      "previous_fragments": [
+        "You had your first alcoholic drink at age 13 or 14."
+      ],
+      "corrected_fragment": "You had your first drink of alcohol other than a few sips at age 13 or 14."
+    },
+    {
+      "question": "Q41",
+      "code": "6",
+      "previous_fragments": [
+        "You had your first alcoholic drink at age 15 or 16."
+      ],
+      "corrected_fragment": "You had your first drink of alcohol other than a few sips at age 15 or 16."
+    },
+    {
+      "question": "Q41",
+      "code": "7",
+      "previous_fragments": [
+        "You had your first alcoholic drink at age 17 or older."
+      ],
+      "corrected_fragment": "You had your first drink of alcohol other than a few sips at age 17 or older."
+    },
+    {
+      "question": "Q42",
+      "code": "1",
+      "previous_fragments": [
+        "You did not drink any alcohol in the past 30 days."
+      ],
+      "corrected_fragment": "You did not have at least one drink of alcohol on any day in the past 30 days."
+    },
+    {
+      "question": "Q42",
+      "code": "2",
+      "previous_fragments": [
+        "You drank alcohol on 1\u20132 days in the past 30 days."
+      ],
+      "corrected_fragment": "You had at least one drink of alcohol on 1\u20132 days in the past 30 days."
+    },
+    {
+      "question": "Q42",
+      "code": "3",
+      "previous_fragments": [
+        "You drank alcohol on 3\u20135 days in the past 30 days."
+      ],
+      "corrected_fragment": "You had at least one drink of alcohol on 3\u20135 days in the past 30 days."
+    },
+    {
+      "question": "Q42",
+      "code": "4",
+      "previous_fragments": [
+        "You drank alcohol on 6\u20139 days in the past 30 days."
+      ],
+      "corrected_fragment": "You had at least one drink of alcohol on 6\u20139 days in the past 30 days."
+    },
+    {
+      "question": "Q42",
+      "code": "5",
+      "previous_fragments": [
+        "You drank alcohol on 10\u201319 days in the past 30 days."
+      ],
+      "corrected_fragment": "You had at least one drink of alcohol on 10\u201319 days in the past 30 days."
+    },
+    {
+      "question": "Q42",
+      "code": "6",
+      "previous_fragments": [
+        "You drank alcohol on 20\u201329 days in the past 30 days."
+      ],
+      "corrected_fragment": "You had at least one drink of alcohol on 20\u201329 days in the past 30 days."
+    },
+    {
+      "question": "Q42",
+      "code": "7",
+      "previous_fragments": [
+        "You drank alcohol every day in the past month."
+      ],
+      "corrected_fragment": "You had at least one drink of alcohol every day in the past 30 days."
+    },
+    {
+      "question": "Q43",
+      "code": "1",
+      "previous_fragments": [
+        "You did not binge drink in the past 30 days."
+      ],
+      "corrected_fragment": "During the past 30 days, on 0 days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+    },
+    {
+      "question": "Q43",
+      "code": "2",
+      "previous_fragments": [
+        "You binge drank on 1 day in the past 30 days."
+      ],
+      "corrected_fragment": "During the past 30 days, on 1 day, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+    },
+    {
+      "question": "Q43",
+      "code": "3",
+      "previous_fragments": [
+        "You binge drank on 2 days in the past 30 days."
+      ],
+      "corrected_fragment": "During the past 30 days, on 2 days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+    },
+    {
+      "question": "Q43",
+      "code": "4",
+      "previous_fragments": [
+        "You binge drank on 3\u20135 days in the past 30 days."
+      ],
+      "corrected_fragment": "During the past 30 days, on 3 to 5 days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+    },
+    {
+      "question": "Q43",
+      "code": "5",
+      "previous_fragments": [
+        "You binge drank on 6\u20139 days in the past 30 days."
+      ],
+      "corrected_fragment": "During the past 30 days, on 6 to 9 days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+    },
+    {
+      "question": "Q43",
+      "code": "6",
+      "previous_fragments": [
+        "You binge drank on 10\u201319 days in the past 30 days."
+      ],
+      "corrected_fragment": "During the past 30 days, on 10 to 19 days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+    },
+    {
+      "question": "Q43",
+      "code": "7",
+      "previous_fragments": [
+        "You binge drank on 20 or more days in the past month."
+      ],
+      "corrected_fragment": "During the past 30 days, on 20 or more days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+    },
+    {
+      "question": "Q44",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You did not drink alcohol during the past 30 days."
+    },
+    {
+      "question": "Q44",
+      "code": "2",
+      "previous_fragments": [
+        "The most drinks you had in a row was 1 or 2."
+      ],
+      "corrected_fragment": "During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 1 or 2."
+    },
+    {
+      "question": "Q44",
+      "code": "3",
+      "previous_fragments": [
+        "The most drinks you had in a row was 3."
+      ],
+      "corrected_fragment": "During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 3."
+    },
+    {
+      "question": "Q44",
+      "code": "4",
+      "previous_fragments": [
+        "The most drinks you had in a row was 4."
+      ],
+      "corrected_fragment": "During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 4."
+    },
+    {
+      "question": "Q44",
+      "code": "5",
+      "previous_fragments": [
+        "The most drinks you had in a row was 5."
+      ],
+      "corrected_fragment": "During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 5."
+    },
+    {
+      "question": "Q44",
+      "code": "6",
+      "previous_fragments": [
+        "The most drinks you had in a row was 6 or 7."
+      ],
+      "corrected_fragment": "During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 6 or 7."
+    },
+    {
+      "question": "Q44",
+      "code": "7",
+      "previous_fragments": [
+        "The most drinks you had in a row was 8 or 9."
+      ],
+      "corrected_fragment": "During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 8 or 9."
+    },
+    {
+      "question": "Q44",
+      "code": "8",
+      "previous_fragments": [
+        "The most drinks you had in a row was 10 or more."
+      ],
+      "corrected_fragment": "During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 10 or more."
+    },
+    {
+      "question": "Q45",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You did not drink alcohol during the past 30 days."
+    },
+    {
+      "question": "Q45",
+      "code": "2",
+      "previous_fragments": [
+        "You bought alcohol from a store like a supermarket or gas station."
+      ],
+      "corrected_fragment": "During the past 30 days, the usual way you got the alcohol you drank was buying it in a store such as a liquor store, convenience store, supermarket, discount store, or gas station."
+    },
+    {
+      "question": "Q45",
+      "code": "3",
+      "previous_fragments": [
+        "You bought alcohol at a restaurant, bar, or club."
+      ],
+      "corrected_fragment": "During the past 30 days, the usual way you got the alcohol you drank was buying it at a restaurant, bar, or club."
+    },
+    {
+      "question": "Q45",
+      "code": "4",
+      "previous_fragments": [
+        "You bought alcohol at a public event such as a concert or sports game."
+      ],
+      "corrected_fragment": "During the past 30 days, the usual way you got the alcohol you drank was buying it at a public event such as a concert or sporting event."
+    },
+    {
+      "question": "Q45",
+      "code": "5",
+      "previous_fragments": [
+        "You gave someone money to buy alcohol for you."
+      ],
+      "corrected_fragment": "During the past 30 days, the usual way you got the alcohol you drank was giving someone else money to buy it for you."
+    },
+    {
+      "question": "Q45",
+      "code": "6",
+      "previous_fragments": [
+        "Someone gave you the alcohol."
+      ],
+      "corrected_fragment": "During the past 30 days, the usual way you got the alcohol you drank was having someone give it to you."
+    },
+    {
+      "question": "Q45",
+      "code": "7",
+      "previous_fragments": [
+        "You took the alcohol from a store or a family member."
+      ],
+      "corrected_fragment": "During the past 30 days, the usual way you got the alcohol you drank was taking it from a store or family member."
+    },
+    {
+      "question": "Q45",
+      "code": "8",
+      "previous_fragments": [
+        "You got the alcohol in some other way."
+      ],
+      "corrected_fragment": "During the past 30 days, the usual way you got the alcohol you drank was some other way."
+    },
+    {
+      "question": "Q49",
+      "code": "2",
+      "previous_fragments": [
+        "You took prescription pain medicine 1 or 2 times without a doctor\u2019s prescription or against directions."
+      ],
+      "corrected_fragment": "During your life, you took prescription pain medicine 1 or 2 times without a doctor\u2019s prescription or against directions."
+    },
+    {
+      "question": "Q49",
+      "code": "3",
+      "previous_fragments": [
+        "You took prescription pain medicine 3 to 9 times without a doctor\u2019s prescription or against directions."
+      ],
+      "corrected_fragment": "During your life, you took prescription pain medicine 3 to 9 times without a doctor\u2019s prescription or against directions."
+    },
+    {
+      "question": "Q49",
+      "code": "4",
+      "previous_fragments": [
+        "You took prescription pain medicine 10 to 19 times without a doctor\u2019s prescription or against directions."
+      ],
+      "corrected_fragment": "During your life, you took prescription pain medicine 10 to 19 times without a doctor\u2019s prescription or against directions."
+    },
+    {
+      "question": "Q49",
+      "code": "5",
+      "previous_fragments": [
+        "You took prescription pain medicine 20 to 39 times without a doctor\u2019s prescription or against directions."
+      ],
+      "corrected_fragment": "During your life, you took prescription pain medicine 20 to 39 times without a doctor\u2019s prescription or against directions."
+    },
+    {
+      "question": "Q49",
+      "code": "6",
+      "previous_fragments": [
+        "You took prescription pain medicine 40 or more times without a doctor\u2019s prescription or against directions."
+      ],
+      "corrected_fragment": "During your life, you took prescription pain medicine 40 or more times without a doctor\u2019s prescription or against directions."
+    },
+    {
+      "question": "Q57",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You have never had sexual intercourse."
+    },
+    {
+      "question": "Q58",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You have never had sexual intercourse."
+    },
+    {
+      "question": "Q59",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You have never had sexual intercourse."
+    },
+    {
+      "question": "Q59",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 3 months, you had sexual intercourse with you have had sexual intercourse, but not during the past 3 months."
+      ],
+      "corrected_fragment": "You have had sexual intercourse, but not during the past 3 months."
+    },
+    {
+      "question": "Q60",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You have never had sexual intercourse."
+    },
+    {
+      "question": "Q60",
+      "code": "2",
+      "previous_fragments": [
+        "The last time you had sex, you used alcohol or drugs."
+      ],
+      "corrected_fragment": "You drank alcohol or used drugs before you had sexual intercourse the last time."
+    },
+    {
+      "question": "Q60",
+      "code": "3",
+      "previous_fragments": [
+        "The last time you had sex, you did not use alcohol or drugs."
+      ],
+      "corrected_fragment": "You did not drink alcohol or use drugs before you had sexual intercourse the last time."
+    },
+    {
+      "question": "Q61",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You have never had sexual intercourse."
+    },
+    {
+      "question": "Q62",
+      "code": "3",
+      "previous_fragments": [
+        "The last time you had sex with an opposite-sex partner, you or your partner used birth control pills to prevent pregnancy."
+      ],
+      "corrected_fragment": "The last time you had sexual intercourse with an opposite-sex partner, you or your partner used birth control pills, not emergency contraception, to prevent pregnancy."
+    },
+    {
+      "question": "Q63",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You have never had sexual contact."
+    },
+    {
+      "question": "Q64",
+      "code": "4",
+      "previous_fragments": [
+        "You describe your sexual identity as some other way."
+      ],
+      "corrected_fragment": "You describe your sexual identity in another way, rather than as heterosexual, gay or lesbian, or bisexual."
+    },
+    {
+      "question": "Q64",
+      "code": "5",
+      "previous_fragments": [
+        "You describe your sexual identity as not sure (questioning)."
+      ],
+      "corrected_fragment": "You are not sure about your sexual identity and are questioning it."
+    },
+    {
+      "question": "Q64",
+      "code": "6",
+      "previous_fragments": [
+        "You describe your sexual identity as do not know what this question is asking."
+      ],
+      "corrected_fragment": "You do not know what the question about sexual identity is asking."
+    },
+    {
+      "question": "Q68",
+      "code": "1",
+      "previous_fragments": [
+        "During the past 7 days, you never consumed 100% fruit juice."
+      ],
+      "corrected_fragment": "During the past 7 days, you never consumed 100% fruit juice (excluding punch, sports drinks, and other fruit-flavored drinks)."
+    },
+    {
+      "question": "Q68",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 7 days, you consumed 100% fruit juice 1 to 3 times."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed 100% fruit juice 1 to 3 times (excluding punch, sports drinks, and other fruit-flavored drinks)."
+    },
+    {
+      "question": "Q68",
+      "code": "3",
+      "previous_fragments": [
+        "During the past 7 days, you consumed 100% fruit juice 4 to 6 times."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed 100% fruit juice 4 to 6 times (excluding punch, sports drinks, and other fruit-flavored drinks)."
+    },
+    {
+      "question": "Q68",
+      "code": "4",
+      "previous_fragments": [
+        "During the past 7 days, you consumed 100% fruit juice 1 time per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed 100% fruit juice 1 time per day (excluding punch, sports drinks, and other fruit-flavored drinks)."
+    },
+    {
+      "question": "Q68",
+      "code": "5",
+      "previous_fragments": [
+        "During the past 7 days, you consumed 100% fruit juice 2 times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed 100% fruit juice 2 times per day (excluding punch, sports drinks, and other fruit-flavored drinks)."
+    },
+    {
+      "question": "Q68",
+      "code": "6",
+      "previous_fragments": [
+        "During the past 7 days, you consumed 100% fruit juice 3 times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed 100% fruit juice 3 times per day (excluding punch, sports drinks, and other fruit-flavored drinks)."
+    },
+    {
+      "question": "Q68",
+      "code": "7",
+      "previous_fragments": [
+        "During the past 7 days, you consumed 100% fruit juice 4 or more times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed 100% fruit juice 4 or more times per day (excluding punch, sports drinks, and other fruit-flavored drinks)."
+    },
+    {
+      "question": "Q69",
+      "code": "1",
+      "previous_fragments": [
+        "During the past 7 days, you did not eat fruit."
+      ],
+      "corrected_fragment": "During the past 7 days, you did not eat fruit (excluding fruit juice)."
+    },
+    {
+      "question": "Q69",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 7 days, you ate fruit 1 to 3 times."
+      ],
+      "corrected_fragment": "During the past 7 days, you ate fruit 1 to 3 times (excluding fruit juice)."
+    },
+    {
+      "question": "Q69",
+      "code": "3",
+      "previous_fragments": [
+        "During the past 7 days, you ate fruit 4 to 6 times."
+      ],
+      "corrected_fragment": "During the past 7 days, you ate fruit 4 to 6 times (excluding fruit juice)."
+    },
+    {
+      "question": "Q69",
+      "code": "4",
+      "previous_fragments": [
+        "During the past 7 days, you ate fruit 1 time per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you ate fruit 1 time per day (excluding fruit juice)."
+    },
+    {
+      "question": "Q69",
+      "code": "5",
+      "previous_fragments": [
+        "During the past 7 days, you ate fruit 2 times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you ate fruit 2 times per day (excluding fruit juice)."
+    },
+    {
+      "question": "Q69",
+      "code": "6",
+      "previous_fragments": [
+        "During the past 7 days, you ate fruit 3 times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you ate fruit 3 times per day (excluding fruit juice)."
+    },
+    {
+      "question": "Q69",
+      "code": "7",
+      "previous_fragments": [
+        "During the past 7 days, you ate fruit 4 or more times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you ate fruit 4 or more times per day (excluding fruit juice)."
+    },
+    {
+      "question": "Q71",
+      "code": "1",
+      "previous_fragments": [
+        "During the past 7 days, you never consumed potatoes."
+      ],
+      "corrected_fragment": "During the past 7 days, you never consumed potatoes (excluding french fries, fried potatoes, and potato chips)."
+    },
+    {
+      "question": "Q71",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 7 days, you consumed potatoes 1 to 3 times."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed potatoes 1 to 3 times (excluding french fries, fried potatoes, and potato chips)."
+    },
+    {
+      "question": "Q71",
+      "code": "3",
+      "previous_fragments": [
+        "During the past 7 days, you consumed potatoes 4 to 6 times."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed potatoes 4 to 6 times (excluding french fries, fried potatoes, and potato chips)."
+    },
+    {
+      "question": "Q71",
+      "code": "4",
+      "previous_fragments": [
+        "During the past 7 days, you consumed potatoes 1 time per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed potatoes 1 time per day (excluding french fries, fried potatoes, and potato chips)."
+    },
+    {
+      "question": "Q71",
+      "code": "5",
+      "previous_fragments": [
+        "During the past 7 days, you consumed potatoes 2 times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed potatoes 2 times per day (excluding french fries, fried potatoes, and potato chips)."
+    },
+    {
+      "question": "Q71",
+      "code": "6",
+      "previous_fragments": [
+        "During the past 7 days, you consumed potatoes 3 times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed potatoes 3 times per day (excluding french fries, fried potatoes, and potato chips)."
+    },
+    {
+      "question": "Q71",
+      "code": "7",
+      "previous_fragments": [
+        "During the past 7 days, you consumed potatoes 4 or more times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed potatoes 4 or more times per day (excluding french fries, fried potatoes, and potato chips)."
+    },
+    {
+      "question": "Q73",
+      "code": "1",
+      "previous_fragments": [
+        "During the past 7 days, you never consumed other vegetables."
+      ],
+      "corrected_fragment": "During the past 7 days, you never consumed other vegetables (excluding green salad, potatoes, and carrots)."
+    },
+    {
+      "question": "Q73",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 7 days, you consumed other vegetables 1 to 3 times."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed other vegetables 1 to 3 times (excluding green salad, potatoes, and carrots)."
+    },
+    {
+      "question": "Q73",
+      "code": "3",
+      "previous_fragments": [
+        "During the past 7 days, you consumed other vegetables 4 to 6 times."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed other vegetables 4 to 6 times (excluding green salad, potatoes, and carrots)."
+    },
+    {
+      "question": "Q73",
+      "code": "4",
+      "previous_fragments": [
+        "During the past 7 days, you consumed other vegetables 1 time per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed other vegetables 1 time per day (excluding green salad, potatoes, and carrots)."
+    },
+    {
+      "question": "Q73",
+      "code": "5",
+      "previous_fragments": [
+        "During the past 7 days, you consumed other vegetables 2 times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed other vegetables 2 times per day (excluding green salad, potatoes, and carrots)."
+    },
+    {
+      "question": "Q73",
+      "code": "6",
+      "previous_fragments": [
+        "During the past 7 days, you consumed other vegetables 3 times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed other vegetables 3 times per day (excluding green salad, potatoes, and carrots)."
+    },
+    {
+      "question": "Q73",
+      "code": "7",
+      "previous_fragments": [
+        "During the past 7 days, you consumed other vegetables 4 or more times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed other vegetables 4 or more times per day (excluding green salad, potatoes, and carrots)."
+    },
+    {
+      "question": "Q74",
+      "code": "1",
+      "previous_fragments": [
+        "During the past 7 days, you never consumed soda or pop."
+      ],
+      "corrected_fragment": "During the past 7 days, you never consumed soda or pop (excluding diet soda or diet pop)."
+    },
+    {
+      "question": "Q74",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 7 days, you consumed soda or pop 1 to 3 times"
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed soda or pop 1 to 3 times (excluding diet soda or diet pop)."
+    },
+    {
+      "question": "Q74",
+      "code": "3",
+      "previous_fragments": [
+        "During the past 7 days, you consumed soda or pop 4 to 6 times."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed soda or pop 4 to 6 times (excluding diet soda or diet pop)."
+    },
+    {
+      "question": "Q74",
+      "code": "4",
+      "previous_fragments": [
+        "During the past 7 days, you consumed soda or pop 1 time per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed soda or pop 1 time per day (excluding diet soda or diet pop)."
+    },
+    {
+      "question": "Q74",
+      "code": "5",
+      "previous_fragments": [
+        "During the past 7 days, you consumed soda or pop 2 times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed soda or pop 2 times per day (excluding diet soda or diet pop)."
+    },
+    {
+      "question": "Q74",
+      "code": "6",
+      "previous_fragments": [
+        "During the past 7 days, you consumed soda or pop 3 times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed soda or pop 3 times per day (excluding diet soda or diet pop)."
+    },
+    {
+      "question": "Q74",
+      "code": "7",
+      "previous_fragments": [
+        "During the past 7 days, you consumed soda or pop 4 or more times per day."
+      ],
+      "corrected_fragment": "During the past 7 days, you consumed soda or pop 4 or more times per day (excluding diet soda or diet pop)."
+    },
+    {
+      "question": "Q76",
+      "code": "1",
+      "previous_fragments": [
+        "In the past 7 days, you didn\u2019t have any days where you were physically active for at least 60 minutes."
+      ],
+      "corrected_fragment": "During the past 7 days, you were physically active for a total of at least 60 minutes per day on 0 days; count activity that increased your heart rate and made you breathe hard some of the time."
+    },
+    {
+      "question": "Q76",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 7 days, you were physically active for at least 60 minutes per day on 1 day."
+      ],
+      "corrected_fragment": "During the past 7 days, you were physically active for a total of at least 60 minutes per day on 1 day; count activity that increased your heart rate and made you breathe hard some of the time."
+    },
+    {
+      "question": "Q76",
+      "code": "3",
+      "previous_fragments": [
+        "During the past 7 days, you were physically active for at least 60 minutes per day on 2 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you were physically active for a total of at least 60 minutes per day on 2 days; count activity that increased your heart rate and made you breathe hard some of the time."
+    },
+    {
+      "question": "Q76",
+      "code": "4",
+      "previous_fragments": [
+        "During the past 7 days, you were physically active for at least 60 minutes per day on 3 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you were physically active for a total of at least 60 minutes per day on 3 days; count activity that increased your heart rate and made you breathe hard some of the time."
+    },
+    {
+      "question": "Q76",
+      "code": "5",
+      "previous_fragments": [
+        "During the past 7 days, you were physically active for at least 60 minutes per day on 4 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you were physically active for a total of at least 60 minutes per day on 4 days; count activity that increased your heart rate and made you breathe hard some of the time."
+    },
+    {
+      "question": "Q76",
+      "code": "6",
+      "previous_fragments": [
+        "During the past 7 days, you were physically active for at least 60 minutes per day on 5 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you were physically active for a total of at least 60 minutes per day on 5 days; count activity that increased your heart rate and made you breathe hard some of the time."
+    },
+    {
+      "question": "Q76",
+      "code": "7",
+      "previous_fragments": [
+        "During the past 7 days, you were physically active for at least 60 minutes per day on 6 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you were physically active for a total of at least 60 minutes per day on 6 days; count activity that increased your heart rate and made you breathe hard some of the time."
+    },
+    {
+      "question": "Q76",
+      "code": "8",
+      "previous_fragments": [
+        "During the past 7 days, you were physically active for at least 60 minutes per day on 7 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you were physically active for a total of at least 60 minutes per day on 7 days; count activity that increased your heart rate and made you breathe hard some of the time."
+    },
+    {
+      "question": "Q78",
+      "code": "1",
+      "previous_fragments": [
+        "In the past 12 months, you didn\u2019t play on any sports teams."
+      ],
+      "corrected_fragment": "During the past 12 months, you played on 0 sports teams run by your school or community groups."
+    },
+    {
+      "question": "Q78",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 12 months, you played on 1 team."
+      ],
+      "corrected_fragment": "During the past 12 months, you played on 1 sports team run by your school or community groups."
+    },
+    {
+      "question": "Q78",
+      "code": "3",
+      "previous_fragments": [
+        "During the past 12 months, you played on 2 teams."
+      ],
+      "corrected_fragment": "During the past 12 months, you played on 2 sports teams run by your school or community groups."
+    },
+    {
+      "question": "Q78",
+      "code": "4",
+      "previous_fragments": [
+        "During the past 12 months, you played on 3 or more teams."
+      ],
+      "corrected_fragment": "During the past 12 months, you played on 3 or more sports teams run by your school or community groups."
+    },
+    {
+      "question": "Q81",
+      "code": "1",
+      "previous_fragments": [
+        "You have been tested for HIV in the past 12 months."
+      ],
+      "corrected_fragment": "You have been tested for HIV at some point in your life, not counting tests done when donating blood."
+    },
+    {
+      "question": "Q81",
+      "code": "2",
+      "previous_fragments": [
+        "You have not been tested for HIV in the past 12 months."
+      ],
+      "corrected_fragment": "You have never been tested for HIV, not counting tests done when donating blood."
+    },
+    {
+      "question": "Q81",
+      "code": "3",
+      "previous_fragments": [
+        "You\u2019re not sure whether you\u2019ve been tested for HIV in the past 12 months."
+      ],
+      "corrected_fragment": "You are not sure whether you have ever been tested for HIV, not counting tests done when donating blood."
+    },
+    {
+      "question": "Q84",
+      "code": "1",
+      "previous_fragments": [
+        "In the past 30 days, you didn\u2019t experience any mental health issues."
+      ],
+      "corrected_fragment": "During the past 30 days, you never experienced poor mental health; poor mental health includes stress, anxiety, and depression."
+    },
+    {
+      "question": "Q84",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 30 days, your mental health was not good rarely."
+      ],
+      "corrected_fragment": "During the past 30 days, you rarely experienced poor mental health; poor mental health includes stress, anxiety, and depression."
+    },
+    {
+      "question": "Q84",
+      "code": "3",
+      "previous_fragments": [
+        "During the past 30 days, your mental health was not good sometimes."
+      ],
+      "corrected_fragment": "During the past 30 days, you sometimes experienced poor mental health; poor mental health includes stress, anxiety, and depression."
+    },
+    {
+      "question": "Q84",
+      "code": "4",
+      "previous_fragments": [
+        "In the past 30 days, your mental health wasn\u2019t good most of the time."
+      ],
+      "corrected_fragment": "During the past 30 days, you experienced poor mental health most of the time; poor mental health includes stress, anxiety, and depression."
+    },
+    {
+      "question": "Q84",
+      "code": "5",
+      "previous_fragments": [
+        "In the past 30 days, you felt mentally unwell almost every day."
+      ],
+      "corrected_fragment": "During the past 30 days, you always experienced poor mental health; poor mental health includes stress, anxiety, and depression."
+    },
+    {
+      "question": "Q86",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 30 days, you usually slept in the home of a friend/family/other because you had to leave home or couldn't afford housing."
+      ],
+      "corrected_fragment": "During the past 30 days, you usually slept in the home of a friend, family member, or another person because you had to leave your home or your parent or guardian could not afford housing."
+    },
+    {
+      "question": "Q86",
+      "code": "6",
+      "previous_fragments": [
+        "During the past 30 days, you do not have a usual place to sleep."
+      ],
+      "corrected_fragment": "During the past 30 days, you did not have a usual place to sleep."
+    },
+    {
+      "question": "Q87",
+      "code": "6",
+      "previous_fragments": [
+        "In the past 12 months, you would describe your grades in school as none of these grades."
+      ],
+      "corrected_fragment": "Your grades during the past 12 months were not mostly A, B, C, D, or F grades."
+    },
+    {
+      "question": "Q87",
+      "code": "7",
+      "previous_fragments": [
+        "In the past 12 months, you would describe your grades in school as not sure."
+      ],
+      "corrected_fragment": "You are not sure how to describe your grades during the past 12 months."
+    },
+    {
+      "question": "Q87",
+      "code": "8",
+      "previous_fragments": [
+        "In the past 12 months, you would describe your grades in school as missing."
+      ],
+      "corrected_fragment": null
+    },
+    {
+      "question": "Q88",
+      "code": "2",
+      "previous_fragments": [
+        "No one at least 5 years older than you has ever made you do sexual things that you did not want to do."
+      ],
+      "corrected_fragment": "Neither an adult nor a person at least 5 years older than you has ever made you do sexual things you did not want to do."
+    },
+    {
+      "question": "Q89",
+      "code": "1",
+      "previous_fragments": [
+        "An adult in your home has never insulted you."
+      ],
+      "corrected_fragment": "During your life, a parent or another adult in your home has never insulted you or put you down."
+    },
+    {
+      "question": "Q89",
+      "code": "2",
+      "previous_fragments": [
+        "An adult in your home has rarely insulted you."
+      ],
+      "corrected_fragment": "During your life, a parent or another adult in your home has rarely insulted you or put you down."
+    },
+    {
+      "question": "Q89",
+      "code": "3",
+      "previous_fragments": [
+        "An adult in your home has insulted you sometimes."
+      ],
+      "corrected_fragment": "During your life, a parent or another adult in your home has sometimes insulted you or put you down."
+    },
+    {
+      "question": "Q89",
+      "code": "4",
+      "previous_fragments": [
+        "An adult in your home has insulted you most of the time."
+      ],
+      "corrected_fragment": "During your life, a parent or another adult in your home has insulted you or put you down most of the time."
+    },
+    {
+      "question": "Q89",
+      "code": "5",
+      "previous_fragments": [
+        "An adult in your home has always insulted you."
+      ],
+      "corrected_fragment": "During your life, a parent or another adult in your home has always insulted you or put you down."
+    },
+    {
+      "question": "Q90",
+      "code": "1",
+      "previous_fragments": [
+        "An adult in your home has never physically hurt you."
+      ],
+      "corrected_fragment": "During your life, a parent or another adult in your home has never hit, beaten, kicked, or physically hurt you in any way."
+    },
+    {
+      "question": "Q90",
+      "code": "2",
+      "previous_fragments": [
+        "An adult in your home has rarely physically hurt you."
+      ],
+      "corrected_fragment": "During your life, a parent or another adult in your home has rarely hit, beaten, kicked, or physically hurt you in any way."
+    },
+    {
+      "question": "Q90",
+      "code": "3",
+      "previous_fragments": [
+        "An adult in your home has sometimes physically hurt you."
+      ],
+      "corrected_fragment": "During your life, a parent or another adult in your home has sometimes hit, beaten, kicked, or physically hurt you in any way."
+    },
+    {
+      "question": "Q90",
+      "code": "4",
+      "previous_fragments": [
+        "An adult in your home has physically hurt you most of the time."
+      ],
+      "corrected_fragment": "During your life, a parent or another adult in your home has hit, beaten, kicked, or physically hurt you in any way most of the time."
+    },
+    {
+      "question": "Q90",
+      "code": "5",
+      "previous_fragments": [
+        "An adult in your home has always physically hurt you."
+      ],
+      "corrected_fragment": "During your life, a parent or another adult in your home has always hit, beaten, kicked, or physically hurt you in any way."
+    },
+    {
+      "question": "Q91",
+      "code": "1",
+      "previous_fragments": [
+        "Adults in your home have never physically fought with each other."
+      ],
+      "corrected_fragment": "During your life, your parents or other adults in your home have never slapped, hit, kicked, punched, or beaten each other up."
+    },
+    {
+      "question": "Q91",
+      "code": "2",
+      "previous_fragments": [
+        "Adults in your home have rarely physically fought with each other."
+      ],
+      "corrected_fragment": "During your life, your parents or other adults in your home have rarely slapped, hit, kicked, punched, or beaten each other up."
+    },
+    {
+      "question": "Q91",
+      "code": "3",
+      "previous_fragments": [
+        "Adults in your home have sometimes physically fought with each other."
+      ],
+      "corrected_fragment": "During your life, your parents or other adults in your home have sometimes slapped, hit, kicked, punched, or beaten each other up."
+    },
+    {
+      "question": "Q91",
+      "code": "4",
+      "previous_fragments": [
+        "Adults in your home have physically fought with each other most of the time."
+      ],
+      "corrected_fragment": "During your life, your parents or other adults in your home have slapped, hit, kicked, punched, or beaten each other up most of the time."
+    },
+    {
+      "question": "Q91",
+      "code": "5",
+      "previous_fragments": [
+        "Adults in your home have always physically fought with each other."
+      ],
+      "corrected_fragment": "During your life, your parents or other adults in your home have always slapped, hit, kicked, punched, or beaten each other up."
+    },
+    {
+      "question": "Q92",
+      "code": "1",
+      "previous_fragments": [
+        "During the past 30 days, you did not misuse prescription pain medicine."
+      ],
+      "corrected_fragment": "During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 0 times."
+    },
+    {
+      "question": "Q92",
+      "code": "2",
+      "previous_fragments": [
+        "During the past 30 days, you misused prescription pain medicine 1 or 2 times."
+      ],
+      "corrected_fragment": "During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 1 or 2 times."
+    },
+    {
+      "question": "Q92",
+      "code": "3",
+      "previous_fragments": [
+        "During the past 30 days, you misused prescription pain medicine 3 to 9 times."
+      ],
+      "corrected_fragment": "During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 3 to 9 times."
+    },
+    {
+      "question": "Q92",
+      "code": "4",
+      "previous_fragments": [
+        "During the past 30 days, you misused prescription pain medicine 10 to 19 times."
+      ],
+      "corrected_fragment": "During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 10 to 19 times."
+    },
+    {
+      "question": "Q92",
+      "code": "5",
+      "previous_fragments": [
+        "During the past 30 days, you misused prescription pain medicine 20 to 39 times."
+      ],
+      "corrected_fragment": "During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 20 to 39 times."
+    },
+    {
+      "question": "Q92",
+      "code": "6",
+      "previous_fragments": [
+        "During the past 30 days, you misused prescription pain medicine 40 or more times."
+      ],
+      "corrected_fragment": "During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 40 or more times."
+    },
+    {
+      "question": "Q93",
+      "code": "1",
+      "previous_fragments": [
+        "You haven\u2019t missed school because of transportation issues."
+      ],
+      "corrected_fragment": "During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 0 times."
+    },
+    {
+      "question": "Q93",
+      "code": "2",
+      "previous_fragments": [
+        "You have skipped school because you had no transportation 1 or 2 times."
+      ],
+      "corrected_fragment": "During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 1 or 2 times."
+    },
+    {
+      "question": "Q93",
+      "code": "3",
+      "previous_fragments": [
+        "You have skipped school because you had no transportation 3 to 9 times."
+      ],
+      "corrected_fragment": "During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 3 to 9 times."
+    },
+    {
+      "question": "Q93",
+      "code": "4",
+      "previous_fragments": [
+        "You have skipped school because you had no transportation 10 to 19 times."
+      ],
+      "corrected_fragment": "During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 10 to 19 times."
+    },
+    {
+      "question": "Q93",
+      "code": "5",
+      "previous_fragments": [
+        "You have skipped school because you had no transportation 20 to 39 times."
+      ],
+      "corrected_fragment": "During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 20 to 39 times."
+    },
+    {
+      "question": "Q93",
+      "code": "6",
+      "previous_fragments": [
+        "You have skipped school because you had no transportation 40 or more times."
+      ],
+      "corrected_fragment": "During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 40 or more times."
+    },
+    {
+      "question": "Q94",
+      "code": "1",
+      "previous_fragments": [
+        ""
+      ],
+      "corrected_fragment": "You have never had sexual contact."
+    },
+    {
+      "question": "Q96",
+      "code": "1",
+      "previous_fragments": [
+        "During the past 7 days, you did not drink any water."
+      ],
+      "corrected_fragment": "During the past 7 days, you did not drink a bottle or glass of plain water."
+    },
+    {
+      "question": "Q97",
+      "code": "1",
+      "previous_fragments": [
+        "You went the entire week without brushing your teeth."
+      ],
+      "corrected_fragment": "During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 0 days."
+    },
+    {
+      "question": "Q97",
+      "code": "2",
+      "previous_fragments": [
+        "You only brushed your teeth once during the past 7 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 1 day."
+    },
+    {
+      "question": "Q97",
+      "code": "3",
+      "previous_fragments": [
+        "You brushed your teeth on 2 days in the past 7 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 2 days."
+    },
+    {
+      "question": "Q97",
+      "code": "4",
+      "previous_fragments": [
+        "You brushed your teeth on 3 days in the past 7 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 3 days."
+    },
+    {
+      "question": "Q97",
+      "code": "5",
+      "previous_fragments": [
+        "You brushed your teeth on 4 days in the past 7 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 4 days."
+    },
+    {
+      "question": "Q97",
+      "code": "6",
+      "previous_fragments": [
+        "You brushed your teeth on 5 days in the past 7 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 5 days."
+    },
+    {
+      "question": "Q97",
+      "code": "7",
+      "previous_fragments": [
+        "You brushed your teeth on 6 days in the past 7 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 6 days."
+    },
+    {
+      "question": "Q97",
+      "code": "8",
+      "previous_fragments": [
+        "You brushed your teeth on 7 days in the past 7 days."
+      ],
+      "corrected_fragment": "During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 7 days."
+    },
+    {
+      "question": "Q98",
+      "code": "1",
+      "previous_fragments": [
+        "You haven\u2019t seen a doctor or nurse for mental health reasons."
+      ],
+      "corrected_fragment": "During the past 12 months, you had a sunburn 0 times."
+    },
+    {
+      "question": "Q98",
+      "code": "2",
+      "previous_fragments": [
+        "You visited a doctor or nurse for mental health reasons 1 time."
+      ],
+      "corrected_fragment": "During the past 12 months, you had a sunburn 1 time."
+    },
+    {
+      "question": "Q98",
+      "code": "3",
+      "previous_fragments": [
+        "You visited a doctor or nurse for mental health reasons 2 times."
+      ],
+      "corrected_fragment": "During the past 12 months, you had a sunburn 2 times."
+    },
+    {
+      "question": "Q98",
+      "code": "4",
+      "previous_fragments": [
+        "You visited a doctor or nurse for mental health reasons 3 times."
+      ],
+      "corrected_fragment": "During the past 12 months, you had a sunburn 3 times."
+    },
+    {
+      "question": "Q98",
+      "code": "5",
+      "previous_fragments": [
+        "You visited a doctor or nurse for mental health reasons 4 times."
+      ],
+      "corrected_fragment": "During the past 12 months, you had a sunburn 4 times."
+    },
+    {
+      "question": "Q98",
+      "code": "6",
+      "previous_fragments": [
+        "You visited a doctor or nurse for mental health reasons 5 or more times."
+      ],
+      "corrected_fragment": "During the past 12 months, you had a sunburn 5 or more times."
+    },
+    {
+      "question": "Q99",
+      "code": "1",
+      "previous_fragments": [
+        "Youl never feel safe at school."
+      ],
+      "corrected_fragment": "During your life, an adult in your household has never tried hard to meet your basic needs, such as looking after your safety and making sure you had clean clothes and enough to eat."
+    },
+    {
+      "question": "Q99",
+      "code": "2",
+      "previous_fragments": [
+        "You rarely feel safe at school."
+      ],
+      "corrected_fragment": "During your life, an adult in your household has rarely tried hard to meet your basic needs, such as looking after your safety and making sure you had clean clothes and enough to eat."
+    },
+    {
+      "question": "Q99",
+      "code": "3",
+      "previous_fragments": [
+        "You feel safe at school sometimes."
+      ],
+      "corrected_fragment": "During your life, an adult in your household has sometimes tried hard to meet your basic needs, such as looking after your safety and making sure you had clean clothes and enough to eat."
+    },
+    {
+      "question": "Q99",
+      "code": "4",
+      "previous_fragments": [
+        "You feel safe at school most of the time."
+      ],
+      "corrected_fragment": "During your life, an adult in your household has tried hard to meet your basic needs most of the time, such as looking after your safety and making sure you had clean clothes and enough to eat."
+    },
+    {
+      "question": "Q99",
+      "code": "5",
+      "previous_fragments": [
+        "You always feel safe at school."
+      ],
+      "corrected_fragment": "During your life, an adult in your household has always tried hard to meet your basic needs, such as looking after your safety and making sure you had clean clothes and enough to eat."
+    },
+    {
+      "question": "Q100",
+      "code": "1",
+      "previous_fragments": [
+        "You have lived with a parent or guardian who had problems with alcohol or drug use.",
+        "You have lived with a parent or guardian who had a problem with alcohol or drug use."
+      ],
+      "corrected_fragment": "You have lived with a parent or guardian who had a problem with alcohol or drug use."
+    },
+    {
+      "question": "Q100",
+      "code": "2",
+      "previous_fragments": [
+        "You have never lived with a parent or guardian who had problems with alcohol or drug use.",
+        "You have never lived with a parent or guardian who had a problem with alcohol or drug use."
+      ],
+      "corrected_fragment": "You have never lived with a parent or guardian who had a problem with alcohol or drug use."
+    },
+    {
+      "question": "Q101",
+      "code": "1",
+      "previous_fragments": [
+        "You have lived with a parent or guardian who had severe depression, anxiety, another mental illness, or was suicidal.",
+        "You have lived with a parent or guardian who had severe depression, anxiety, another mental illness, or was suicidal."
+      ],
+      "corrected_fragment": "You have lived with a parent or guardian who had severe depression, anxiety, another mental illness, or was suicidal."
+    },
+    {
+      "question": "Q101",
+      "code": "2",
+      "previous_fragments": [
+        "You have never lived with a parent or guardian who had a serious mental health problem.",
+        "You have never lived with a parent or guardian who had serious mental health issues."
+      ],
+      "corrected_fragment": "You have never lived with a parent or guardian who had severe depression, anxiety, another mental illness, or was suicidal."
+    },
+    {
+      "question": "Q102",
+      "code": "1",
+      "previous_fragments": [
+        "You have been separated from a parent or guardian because they went to jail, prison, or a detention center.",
+        "You have been separated from a parent or guardian because they went to jail, prison, or a detention center."
+      ],
+      "corrected_fragment": "You have been separated from a parent or guardian because they went to jail, prison, or a detention center."
+    },
+    {
+      "question": "Q102",
+      "code": "2",
+      "previous_fragments": [
+        "You have never been separated from a parent or guardian due to incarceration.",
+        "You have never been separated from a parent or guardian due to incarceration."
+      ],
+      "corrected_fragment": "You have never been separated from a parent or guardian due to incarceration."
+    },
+    {
+      "question": "Q103",
+      "code": "1",
+      "previous_fragments": [
+        "You strongly feel close to people at your school.",
+        "You strongly agree that you feel close to people at your school."
+      ],
+      "corrected_fragment": "You strongly agree that you feel close to people at your school."
+    },
+    {
+      "question": "Q103",
+      "code": "2",
+      "previous_fragments": [
+        "You feel close to people at your school.",
+        "You feel close to people at your school."
+      ],
+      "corrected_fragment": "You agree that you feel close to people at your school."
+    },
+    {
+      "question": "Q103",
+      "code": "3",
+      "previous_fragments": [
+        "You are not sure whether you feel close to people at your school.",
+        "You are not sure whether you feel close to people at your school."
+      ],
+      "corrected_fragment": "You are not sure whether you feel close to people at your school."
+    },
+    {
+      "question": "Q103",
+      "code": "4",
+      "previous_fragments": [
+        "You disagree that you feel close to people at your school.",
+        "You disagree that you feel close to people at your school."
+      ],
+      "corrected_fragment": "You disagree that you feel close to people at your school."
+    },
+    {
+      "question": "Q103",
+      "code": "5",
+      "previous_fragments": [
+        "You strongly disagree that you feel close to people at your school.",
+        "You strongly disagree that you feel close to people at your school."
+      ],
+      "corrected_fragment": "You strongly disagree that you feel close to people at your school."
+    },
+    {
+      "question": "Q104",
+      "code": "1",
+      "previous_fragments": [
+        "Your parents or other adults in your family never know where you are or who you are with.",
+        "Your parents or other adults in your family never know where you are or who you are with."
+      ],
+      "corrected_fragment": "Your parents or other adults in your family never know where you are going or with whom you will be."
+    },
+    {
+      "question": "Q104",
+      "code": "2",
+      "previous_fragments": [
+        "Your parents or other adults in your family rarely know where you are or who you are with.",
+        "Your parents or other adults in your family rarely know where you are or who you are with."
+      ],
+      "corrected_fragment": "Your parents or other adults in your family rarely know where you are going or with whom you will be."
+    },
+    {
+      "question": "Q104",
+      "code": "3",
+      "previous_fragments": [
+        "Your parents or other adults in your family sometimes know where you are or who you are with.",
+        "Your parents or other adults in your family sometimes know where you are or who you are with."
+      ],
+      "corrected_fragment": "Your parents or other adults in your family sometimes know where you are going or with whom you will be."
+    },
+    {
+      "question": "Q104",
+      "code": "4",
+      "previous_fragments": [
+        "Your parents or other adults in your family most of the time know where you are or who you are with.",
+        "Your parents or other adults in your family most of the time know where you are or who you are with."
+      ],
+      "corrected_fragment": "Your parents or other adults in your family know where you are going or with whom you will be most of the time."
+    },
+    {
+      "question": "Q104",
+      "code": "5",
+      "previous_fragments": [
+        "Your parents or other adults in your family always know where you are or who you are with.",
+        "Your parents or other adults in your family always know where you are or who you are with."
+      ],
+      "corrected_fragment": "Your parents or other adults in your family always know where you are going or with whom you will be."
+    },
+    {
+      "question": "Q105",
+      "code": "1",
+      "previous_fragments": [
+        "You have yes been unfairly disciplined at school during the past 12 months.",
+        "You have been unfairly disciplined at school during the past 12 months."
+      ],
+      "corrected_fragment": "You have been unfairly disciplined at school during the past 12 months."
+    },
+    {
+      "question": "Q105",
+      "code": "2",
+      "previous_fragments": [
+        "You have no been unfairly disciplined at school during the past 12 months.",
+        "You have not been unfairly disciplined at school during the past 12 months."
+      ],
+      "corrected_fragment": "You have not been unfairly disciplined at school during the past 12 months."
+    },
+    {
+      "question": "Q106",
+      "code": "1",
+      "previous_fragments": [
+        "You have yes serious difficulty concentrating, remembering, or making decisions due to a physical, mental, or emotional problem.",
+        "You have serious difficulty concentrating, remembering, or making decisions due to a physical, mental, or emotional problem."
+      ],
+      "corrected_fragment": "You have serious difficulty concentrating, remembering, or making decisions due to a physical, mental, or emotional problem."
+    },
+    {
+      "question": "Q106",
+      "code": "2",
+      "previous_fragments": [
+        "You have no serious difficulty concentrating, remembering, or making decisions due to a physical, mental, or emotional problem.",
+        "You do not have serious difficulty concentrating, remembering, or making decisions."
+      ],
+      "corrected_fragment": "You do not have serious difficulty concentrating, remembering, or making decisions because of a physical, mental, or emotional problem."
+    },
+    {
+      "question": "Q107",
+      "code": "1",
+      "previous_fragments": [
+        "You speak English very well.",
+        "You speak English very well."
+      ],
+      "corrected_fragment": "You speak English very well."
+    },
+    {
+      "question": "Q107",
+      "code": "2",
+      "previous_fragments": [
+        "You speak English well.",
+        "You speak English well."
+      ],
+      "corrected_fragment": "You speak English well."
+    },
+    {
+      "question": "Q107",
+      "code": "3",
+      "previous_fragments": [
+        "You speak English not well.",
+        "You speak English not well."
+      ],
+      "corrected_fragment": "You do not speak English well."
+    },
+    {
+      "question": "Q107",
+      "code": "4",
+      "previous_fragments": [
+        "You speak English not at all.",
+        "You speak English not at all."
+      ],
+      "corrected_fragment": "You do not speak English at all."
+    }
+  ]
+}

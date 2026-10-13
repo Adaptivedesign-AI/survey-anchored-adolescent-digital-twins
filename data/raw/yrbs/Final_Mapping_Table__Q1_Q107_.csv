@@ -12,7 +12,7 @@ Q3,1,You are in 9th grade.
 Q3,2,You are in 10th grade.
 Q3,3,You are in 11th grade.
 Q3,4,You are in 12th grade.
-Q3,5,You are in an ungraded or alternative grade.
+Q3,5,You are ungraded or in another grade.
 Q4,1,You are Hispanic or Latino.
 Q4,2,You are not Hispanic or Latino.
 Q5,A,You identify as American Indian or Alaska Native.
@@ -62,8 +62,8 @@ Q10,3,You drove after drinking alcohol 1 time in the past 30 days.
 Q10,4,You drove after drinking alcohol 2 or 3 times in the past 30 days.
 Q10,5,You drove after drinking alcohol 4 or 5 times in the past 30 days.
 Q10,6,You drove after drinking alcohol 6 or more times in the past 30 days.
-Q11,1,
-Q11,2,You did not text or email while driving in the past 30 days.
+Q11,1,You did not drive a car or other vehicle during the past 30 days.
+Q11,2,"You drove a car or other vehicle during the past 30 days, but did not text or email while driving."
 Q11,3,You texted or emailed while driving on 1 or 2 days in the past 30 days.
 Q11,4,You texted or emailed while driving on 3 to 5 days in the past 30 days.
 Q11,5,You texted or emailed while driving on 6 to 9 days in the past 30 days.
@@ -75,11 +75,11 @@ Q12,2,You carried a weapon on school property on 1 day in the past 30 days.
 Q12,3,You carried a weapon on school property on 2 or 3 days in the past 30 days.
 Q12,4,You carried a weapon on school property on 4 or 5 days in the past 30 days.
 Q12,5,You carried a weapon on school property on 6 or more days in the past 30 days.
-Q13,1,You did not carry a gun in the past 12 months.
-Q13,2,You carried a gun on 1 day in the past 12 months.
-Q13,3,You carried a gun on 2 or 3 days in the past 12 months.
-Q13,4,You carried a gun on 4 or 5 days in the past 12 months.
-Q13,5,You carried a gun on 6 or more days in the past 12 months.
+Q13,1,You did not carry a gun in the past 12 months (excluding days when you carried a gun only for hunting or a sport such as target shooting).
+Q13,2,You carried a gun on 1 day in the past 12 months (excluding days when you carried a gun only for hunting or a sport such as target shooting).
+Q13,3,You carried a gun on 2 or 3 days in the past 12 months (excluding days when you carried a gun only for hunting or a sport such as target shooting).
+Q13,4,You carried a gun on 4 or 5 days in the past 12 months (excluding days when you carried a gun only for hunting or a sport such as target shooting).
+Q13,5,You carried a gun on 6 or more days in the past 12 months (excluding days when you carried a gun only for hunting or a sport such as target shooting).
 Q14,1,You did not miss school due to feeling unsafe in the past 30 days.
 Q14,2,You missed school on 1 day in the past 30 days due to feeling unsafe.
 Q14,3,You missed school on 2 or 3 days in the past 30 days due to feeling unsafe.
@@ -109,8 +109,8 @@ Q17,5,You were in a physical fight on school property 6 or 7 times in the past 1
 Q17,6,You were in a physical fight on school property 8 or 9 times in the past 12 months.
 Q17,7,You were in a physical fight on school property 10 or 11 times in the past 12 months.
 Q17,8,You were in a physical fight on school property 12 or more times in the past 12 months.
-Q18,1,You have seen someone get physically attacked in your neighborhood.
-Q18,2,You have not seen someone get physically attacked in your neighborhood.
+Q18,1,"You have seen someone get physically attacked, beaten, stabbed, or shot in your neighborhood."
+Q18,2,"You have never seen someone get physically attacked, beaten, stabbed, or shot in your neighborhood."
 Q19,1,You have been physically forced to have sexual intercourse.
 Q19,2,You have never been physically forced to have sexual intercourse.
 Q20,1,No one forced you to do sexual things in the past 12 months.
@@ -124,23 +124,23 @@ Q21,3,Someone you were dating forced you to do sexual things once in the past 12
 Q21,4,Someone you were dating forced you to do sexual things 2 or 3 times in the past 12 months.
 Q21,5,Someone you were dating forced you to do sexual things 4 or 5 times in the past 12 months.
 Q21,6,Someone you were dating forced you to do sexual things 6 or more times in the past 12 months.
-Q22,1,
-Q22,2,No one you dated physically hurt you in the past 12 months.
-Q22,3,Someone you dated physically hurt you once in the past 12 months.
-Q22,4,Someone you dated physically hurt you 2 or 3 times in the past 12 months.
-Q22,5,Someone you dated physically hurt you 4 or 5 times in the past 12 months.
+Q22,1,You did not date or go out with anyone during the past 12 months.
+Q22,2,No one you dated physically hurt you on purpose in the past 12 months.
+Q22,3,Someone you dated physically hurt you on purpose once in the past 12 months.
+Q22,4,Someone you dated physically hurt you on purpose 2 or 3 times in the past 12 months.
+Q22,5,Someone you dated physically hurt you on purpose 4 or 5 times in the past 12 months.
 Q22,6,Someone you dated physically hurt you 6 or more times in the past 12 months.
-Q23,1,You were never treated badly in school because of your race or ethnicity.
-Q23,2,You were rarely treated badly in school because of your race or ethnicity.
-Q23,3,You were sometimes treated badly in school because of your race or ethnicity.
-Q23,4,You were treated badly most of the time in school because of your race or ethnicity.
-Q23,5,You were always treated badly in school because of your race or ethnicity.
+Q23,1,"During your life, you have never felt treated badly or unfairly in school because of your race or ethnicity."
+Q23,2,"During your life, you have rarely felt treated badly or unfairly in school because of your race or ethnicity."
+Q23,3,"During your life, you have sometimes felt treated badly or unfairly in school because of your race or ethnicity."
+Q23,4,"During your life, you have felt treated badly or unfairly in school because of your race or ethnicity most of the time."
+Q23,5,"During your life, you have always felt treated badly or unfairly in school because of your race or ethnicity."
 Q24,1,You were bullied on school property in the past 12 months.
 Q24,2,You were not bullied on school property in the past 12 months.
 Q25,1,You were electronically bullied in the past 12 months.
 Q25,2,You were not electronically bullied in the past 12 months.
-Q26,1,You felt sad or hopeless for two or more weeks in a row and stopped doing usual activities in the past 12 months.
-Q26,2,You did not feel sad or hopeless for two or more weeks in a row in the past 12 months.
+Q26,1,"During the past 12 months, you felt so sad or hopeless almost every day for at least two weeks in a row that you stopped doing some usual activities."
+Q26,2,"During the past 12 months, you did not experience feeling so sad or hopeless almost every day for at least two weeks in a row that you stopped doing some usual activities."
 Q27,1,You seriously considered attempting suicide in the past 12 months.
 Q27,2,You did not seriously consider attempting suicide in the past 12 months.
 Q28,1,You made a plan for attempting suicide in the past 12 months.
@@ -150,18 +150,18 @@ Q29,2,You attempted suicide once in the past 12 months.
 Q29,3,You attempted suicide 2 or 3 times in the past 12 months.
 Q29,4,You attempted suicide 4 or 5 times in the past 12 months.
 Q29,5,You attempted suicide 6 or more times in the past 12 months.
-Q30,1,
-Q30,2,You were treated by a doctor or nurse for a suicide attempt in the past 12 months.
-Q30,3,You were not treated for your suicide attempt in the past 12 months.
+Q30,1,You did not attempt suicide during the past 12 months.
+Q30,2,"During the past 12 months, a suicide attempt resulted in an injury, poisoning, or overdose that had to be treated by a doctor or nurse."
+Q30,3,"During the past 12 months, you attempted suicide, but no attempt resulted in an injury, poisoning, or overdose that had to be treated by a doctor or nurse."
 Q31,1,"You have tried smoking a cigarette, even just one or two puffs."
 Q31,2,"You have never smoked a cigarette, not even one or two puffs."
-Q32,1,
-Q32,2,You first smoked a cigarette at age 8 or younger.
-Q32,3,You first smoked a cigarette at age 9 or 10.
-Q32,4,You first smoked a cigarette at age 11 or 12.
-Q32,5,You first smoked a cigarette at age 13 or 14.
-Q32,6,You first smoked a cigarette at age 15 or 16.
-Q32,7,You first smoked a cigarette at age 17 or older.
+Q32,1,"You have never smoked a cigarette, not even one or two puffs."
+Q32,2,"You first smoked a cigarette, even one or two puffs, at age 8 or younger."
+Q32,3,"You first smoked a cigarette, even one or two puffs, at age 9 or 10."
+Q32,4,"You first smoked a cigarette, even one or two puffs, at age 11 or 12."
+Q32,5,"You first smoked a cigarette, even one or two puffs, at age 13 or 14."
+Q32,6,"You first smoked a cigarette, even one or two puffs, at age 15 or 16."
+Q32,7,"You first smoked a cigarette, even one or two puffs, at age 17 or older."
 Q33,1,You did not smoke cigarettes in the past 30 days.
 Q33,2,You smoked cigarettes on 1 or 2 days in the past 30 days.
 Q33,3,You smoked cigarettes on 3 to 5 days in the past 30 days.
@@ -169,13 +169,13 @@ Q33,4,You smoked cigarettes on 6 to 9 days in the past 30 days.
 Q33,5,You smoked cigarettes on 10 to 19 days in the past 30 days.
 Q33,6,You smoked cigarettes on 20 to 29 days in the past 30 days.
 Q33,7,You smoked cigarettes every day in the past 30 days.
-Q34,1,
-Q34,2,You smoked less than 1 cigarette per day when you smoked.
-Q34,3,You smoked 1 cigarette per day when you smoked.
-Q34,4,You smoked 2 to 5 cigarettes per day when you smoked.
-Q34,5,You smoked 6 to 10 cigarettes per day when you smoked.
-Q34,6,You smoked 11 to 20 cigarettes per day when you smoked.
-Q34,7,You smoked more than 20 cigarettes per day when you smoked.
+Q34,1,You did not smoke cigarettes during the past 30 days.
+Q34,2,"During the past 30 days, on the days you smoked, you smoked less than 1 cigarette per day."
+Q34,3,"During the past 30 days, on the days you smoked, you smoked 1 cigarette per day."
+Q34,4,"During the past 30 days, on the days you smoked, you smoked 2 to 5 cigarettes per day."
+Q34,5,"During the past 30 days, on the days you smoked, you smoked 6 to 10 cigarettes per day."
+Q34,6,"During the past 30 days, on the days you smoked, you smoked 11 to 20 cigarettes per day."
+Q34,7,"During the past 30 days, on the days you smoked, you smoked more than 20 cigarettes per day."
 Q35,1,You have used an electronic vapor product.
 Q35,2,You have never used an electronic vapor product.
 Q36,1,"During the past 30 days, you did not use an electronic vapor product."
@@ -185,68 +185,68 @@ Q36,4,"During the past 30 days, you used an electronic vapor product on 6 to 9 d
 Q36,5,"During the past 30 days, you used an electronic vapor product on 10 to 19 days."
 Q36,6,"During the past 30 days, you used an electronic vapor product on 20 to 29 days."
 Q36,7,"During the past 30 days, you used an electronic vapor product on all 30 days."
-Q37,1,
-Q37,2,"You got or bought your electronic vapor products from a friend, family member, or someone else."
-Q37,3,You bought your electronic vapor products yourself in a vape shop or tobacco shop.
-Q37,4,"You bought your electronic vapor products yourself in a convenience store, supermarket, discount store, or gas station."
-Q37,5,You bought your electronic vapor products yourself at a mall or shopping center kiosk or stand.
-Q37,6,"You bought your electronic vapor products yourself on the Internet, such as from a product website, vape store website, or marketplace like eBay, Amazon, or Craigslist."
-Q37,7,You took your electronic vapor products from a store or another person.
-Q37,8,You got your electronic vapor products in some other way.
-Q38,1,"During the past 30 days, you did not use chewing tobacco, snuff, dip, snus, or dissolvable tobacco products."
-Q38,2,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 1 or 2 days."
-Q38,3,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 3 to 5 days."
-Q38,4,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 6 to 9 days."
-Q38,5,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 10 to 19 days."
-Q38,6,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 20 to 29 days."
-Q38,7,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on all 30 days."
+Q37,1,You did not use any electronic vapor products during the past 30 days.
+Q37,2,"During the past 30 days, you usually got or bought your electronic vapor products from a friend, family member, or someone else."
+Q37,3,"During the past 30 days, you usually bought your electronic vapor products yourself in a vape shop or tobacco shop."
+Q37,4,"During the past 30 days, you usually bought your electronic vapor products yourself in a convenience store, supermarket, discount store, or gas station."
+Q37,5,"During the past 30 days, you usually bought your electronic vapor products yourself at a mall or shopping center kiosk or stand."
+Q37,6,"During the past 30 days, you usually bought your electronic vapor products yourself on the Internet, such as from a product website, vape store website, or marketplace like eBay, Amazon, or Craigslist."
+Q37,7,"During the past 30 days, you usually took your electronic vapor products from a store or another person."
+Q37,8,"During the past 30 days, you usually got your electronic vapor products in some other way."
+Q38,1,"During the past 30 days, you did not use chewing tobacco, snuff, dip, snus, or dissolvable tobacco products (not counting electronic vapor products)."
+Q38,2,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 1 or 2 days (not counting electronic vapor products)."
+Q38,3,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 3 to 5 days (not counting electronic vapor products)."
+Q38,4,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 6 to 9 days (not counting electronic vapor products)."
+Q38,5,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 10 to 19 days (not counting electronic vapor products)."
+Q38,6,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on 20 to 29 days (not counting electronic vapor products)."
+Q38,7,"During the past 30 days, you used chewing tobacco, snuff, dip, snus, or dissolvable tobacco products on all 30 days (not counting electronic vapor products)."
 Q39,1,"You did not smoke cigars, cigarillos, or little cigars in the past 30 days."
-Q39,2,You smoked cigars on 1–2 days in the past 30 days.
-Q39,3,You smoked cigars on 3–5 days in the past 30 days.
-Q39,4,You smoked cigars on 6–9 days in the past 30 days.
-Q39,5,You smoked cigars on 10–19 days in the past 30 days.
-Q39,6,You smoked cigars on 20–29 days in the past 30 days.
-Q39,7,You smoked cigars every day in the past month.
+Q39,2,"You smoked cigars, cigarillos, or little cigars on 1–2 days in the past 30 days."
+Q39,3,"You smoked cigars, cigarillos, or little cigars on 3–5 days in the past 30 days."
+Q39,4,"You smoked cigars, cigarillos, or little cigars on 6–9 days in the past 30 days."
+Q39,5,"You smoked cigars, cigarillos, or little cigars on 10–19 days in the past 30 days."
+Q39,6,"You smoked cigars, cigarillos, or little cigars on 20–29 days in the past 30 days."
+Q39,7,"You smoked cigars, cigarillos, or little cigars every day in the past 30 days."
 Q40,1,You did not use any tobacco products in the past 12 months.
 Q40,2,You tried to quit using all tobacco products during the past 12 months.
 Q40,3,You did not try to quit using tobacco products during the past 12 months.
 Q41,1,"You have never had a drink of alcohol, except for a few sips."
-Q41,2,You had your first alcoholic drink at age 8 or younger.
-Q41,3,You had your first alcoholic drink at age 9 or 10.
-Q41,4,You had your first alcoholic drink at age 11 or 12.
-Q41,5,You had your first alcoholic drink at age 13 or 14.
-Q41,6,You had your first alcoholic drink at age 15 or 16.
-Q41,7,You had your first alcoholic drink at age 17 or older.
-Q42,1,You did not drink any alcohol in the past 30 days.
-Q42,2,You drank alcohol on 1–2 days in the past 30 days.
-Q42,3,You drank alcohol on 3–5 days in the past 30 days.
-Q42,4,You drank alcohol on 6–9 days in the past 30 days.
-Q42,5,You drank alcohol on 10–19 days in the past 30 days.
-Q42,6,You drank alcohol on 20–29 days in the past 30 days.
-Q42,7,You drank alcohol every day in the past month.
-Q43,1,You did not binge drink in the past 30 days.
-Q43,2,You binge drank on 1 day in the past 30 days.
-Q43,3,You binge drank on 2 days in the past 30 days.
-Q43,4,You binge drank on 3–5 days in the past 30 days.
-Q43,5,You binge drank on 6–9 days in the past 30 days.
-Q43,6,You binge drank on 10–19 days in the past 30 days.
-Q43,7,You binge drank on 20 or more days in the past month.
-Q44,1,
-Q44,2,The most drinks you had in a row was 1 or 2.
-Q44,3,The most drinks you had in a row was 3.
-Q44,4,The most drinks you had in a row was 4.
-Q44,5,The most drinks you had in a row was 5.
-Q44,6,The most drinks you had in a row was 6 or 7.
-Q44,7,The most drinks you had in a row was 8 or 9.
-Q44,8,The most drinks you had in a row was 10 or more.
-Q45,1,
-Q45,2,You bought alcohol from a store like a supermarket or gas station.
-Q45,3,"You bought alcohol at a restaurant, bar, or club."
-Q45,4,You bought alcohol at a public event such as a concert or sports game.
-Q45,5,You gave someone money to buy alcohol for you.
-Q45,6,Someone gave you the alcohol.
-Q45,7,You took the alcohol from a store or a family member.
-Q45,8,You got the alcohol in some other way.
+Q41,2,You had your first drink of alcohol other than a few sips at age 8 or younger.
+Q41,3,You had your first drink of alcohol other than a few sips at age 9 or 10.
+Q41,4,You had your first drink of alcohol other than a few sips at age 11 or 12.
+Q41,5,You had your first drink of alcohol other than a few sips at age 13 or 14.
+Q41,6,You had your first drink of alcohol other than a few sips at age 15 or 16.
+Q41,7,You had your first drink of alcohol other than a few sips at age 17 or older.
+Q42,1,You did not have at least one drink of alcohol on any day in the past 30 days.
+Q42,2,You had at least one drink of alcohol on 1–2 days in the past 30 days.
+Q42,3,You had at least one drink of alcohol on 3–5 days in the past 30 days.
+Q42,4,You had at least one drink of alcohol on 6–9 days in the past 30 days.
+Q42,5,You had at least one drink of alcohol on 10–19 days in the past 30 days.
+Q42,6,You had at least one drink of alcohol on 20–29 days in the past 30 days.
+Q42,7,You had at least one drink of alcohol every day in the past 30 days.
+Q43,1,"During the past 30 days, on 0 days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+Q43,2,"During the past 30 days, on 1 day, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+Q43,3,"During the past 30 days, on 2 days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+Q43,4,"During the past 30 days, on 3 to 5 days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+Q43,5,"During the past 30 days, on 6 to 9 days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+Q43,6,"During the past 30 days, on 10 to 19 days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+Q43,7,"During the past 30 days, on 20 or more days, you had at least 4 alcoholic drinks in a row if female or at least 5 if male, within a couple of hours."
+Q44,1,You did not drink alcohol during the past 30 days.
+Q44,2,"During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 1 or 2."
+Q44,3,"During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 3."
+Q44,4,"During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 4."
+Q44,5,"During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 5."
+Q44,6,"During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 6 or 7."
+Q44,7,"During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 8 or 9."
+Q44,8,"During the past 30 days, the largest number of alcoholic drinks you had in a row, within a couple of hours, was 10 or more."
+Q45,1,You did not drink alcohol during the past 30 days.
+Q45,2,"During the past 30 days, the usual way you got the alcohol you drank was buying it in a store such as a liquor store, convenience store, supermarket, discount store, or gas station."
+Q45,3,"During the past 30 days, the usual way you got the alcohol you drank was buying it at a restaurant, bar, or club."
+Q45,4,"During the past 30 days, the usual way you got the alcohol you drank was buying it at a public event such as a concert or sporting event."
+Q45,5,"During the past 30 days, the usual way you got the alcohol you drank was giving someone else money to buy it for you."
+Q45,6,"During the past 30 days, the usual way you got the alcohol you drank was having someone give it to you."
+Q45,7,"During the past 30 days, the usual way you got the alcohol you drank was taking it from a store or family member."
+Q45,8,"During the past 30 days, the usual way you got the alcohol you drank was some other way."
 Q46,1,"During your life, you have never used marijuana."
 Q46,2,"During your life, you have used marijuana 1 or 2 times."
 Q46,3,"During your life, you have used marijuana 3 to 9 times."
@@ -268,11 +268,11 @@ Q48,4,You used marijuana 10 to 19 times in the past 30 days.
 Q48,5,You used marijuana 20 to 39 times in the past 30 days.
 Q48,6,You used marijuana 40 or more times in the past 30 days.
 Q49,1,You have never taken prescription pain medicine without a doctor’s prescription or against medical directions.
-Q49,2,You took prescription pain medicine 1 or 2 times without a doctor’s prescription or against directions.
-Q49,3,You took prescription pain medicine 3 to 9 times without a doctor’s prescription or against directions.
-Q49,4,You took prescription pain medicine 10 to 19 times without a doctor’s prescription or against directions.
-Q49,5,You took prescription pain medicine 20 to 39 times without a doctor’s prescription or against directions.
-Q49,6,You took prescription pain medicine 40 or more times without a doctor’s prescription or against directions.
+Q49,2,"During your life, you took prescription pain medicine 1 or 2 times without a doctor’s prescription or against directions."
+Q49,3,"During your life, you took prescription pain medicine 3 to 9 times without a doctor’s prescription or against directions."
+Q49,4,"During your life, you took prescription pain medicine 10 to 19 times without a doctor’s prescription or against directions."
+Q49,5,"During your life, you took prescription pain medicine 20 to 39 times without a doctor’s prescription or against directions."
+Q49,6,"During your life, you took prescription pain medicine 40 or more times without a doctor’s prescription or against directions."
 Q50,1,You have never used any form of cocaine.
 Q50,2,You used cocaine 1 or 2 times in your life.
 Q50,3,You used cocaine 3 to 9 times in your life.
@@ -308,7 +308,7 @@ Q55,2,You used a needle to inject illegal drugs once.
 Q55,3,You used a needle to inject illegal drugs two or more times.
 Q56,1,You have had sexual intercourse.
 Q56,2,You have never had sexual intercourse.
-Q57,1,
+Q57,1,You have never had sexual intercourse.
 Q57,2,You first had sexual intercourse when you were 11 years old or younger.
 Q57,3,You first had sexual intercourse when you were 12 years old.
 Q57,4,You first had sexual intercourse when you were 13 years old.
@@ -316,45 +316,45 @@ Q57,5,You first had sexual intercourse when you were 14 years old.
 Q57,6,You first had sexual intercourse when you were 15 years old.
 Q57,7,You first had sexual intercourse when you were 16 years old.
 Q57,8,You first had sexual intercourse when you were 17 years old or older.
-Q58,1,
+Q58,1,You have never had sexual intercourse.
 Q58,2,You have had sexual intercourse with 1 person in your life.
 Q58,3,You have had sexual intercourse with 2 people in your life.
 Q58,4,You have had sexual intercourse with 3 people in your life.
 Q58,5,You have had sexual intercourse with 4 people in your life.
 Q58,6,You have had sexual intercourse with 5 people in your life.
 Q58,7,You have had sexual intercourse with 6 or more people in your life.
-Q59,1,
-Q59,2,"During the past 3 months, you had sexual intercourse with you have had sexual intercourse, but not during the past 3 months."
+Q59,1,You have never had sexual intercourse.
+Q59,2,"You have had sexual intercourse, but not during the past 3 months."
 Q59,3,"During the past 3 months, you had sexual intercourse with 1 person."
 Q59,4,"During the past 3 months, you had sexual intercourse with 2 people."
 Q59,5,"During the past 3 months, you had sexual intercourse with 3 people."
 Q59,6,"During the past 3 months, you had sexual intercourse with 4 people."
 Q59,7,"During the past 3 months, you had sexual intercourse with 5 people."
 Q59,8,"During the past 3 months, you had sexual intercourse with 6 or more people."
-Q60,1,
-Q60,2,"The last time you had sex, you used alcohol or drugs."
-Q60,3,"The last time you had sex, you did not use alcohol or drugs."
-Q61,1,
+Q60,1,You have never had sexual intercourse.
+Q60,2,You drank alcohol or used drugs before you had sexual intercourse the last time.
+Q60,3,You did not drink alcohol or use drugs before you had sexual intercourse the last time.
+Q61,1,You have never had sexual intercourse.
 Q61,2,"The last time you had sex, you or your partner used a condom."
 Q61,3,"The last time you had sex, you or your partner did not use a condom."
 Q62,1,You have never had sexual intercourse with an opposite-sex partner.
 Q62,2,"The last time you had sex with an opposite-sex partner, no method was used to prevent pregnancy."
-Q62,3,"The last time you had sex with an opposite-sex partner, you or your partner used birth control pills to prevent pregnancy."
+Q62,3,"The last time you had sexual intercourse with an opposite-sex partner, you or your partner used birth control pills, not emergency contraception, to prevent pregnancy."
 Q62,4,"The last time you had sex with an opposite-sex partner, you or your partner used condoms to prevent pregnancy."
 Q62,5,"The last time you had sex with an opposite-sex partner, an IUD or implant was used to prevent pregnancy."
 Q62,6,"The last time you had sex with an opposite-sex partner, a shot, patch, or birth control ring was used to prevent pregnancy."
 Q62,7,"The last time you had sex with an opposite-sex partner, withdrawal or some other method was used to prevent pregnancy."
 Q62,8,You're not sure what method was used to prevent pregnancy the last time you had sex with an opposite-sex partner.
-Q63,1,
+Q63,1,You have never had sexual contact.
 Q63,2,You have had sexual contact only with females.
 Q63,3,You have had sexual contact only with males.
 Q63,4,You have had sexual contact with both females and males.
 Q64,1,You describe your sexual identity as heterosexual (straight).
 Q64,2,You describe your sexual identity as gay or lesbian.
 Q64,3,You describe your sexual identity as bisexual.
-Q64,4,You describe your sexual identity as some other way.
-Q64,5,You describe your sexual identity as not sure (questioning).
-Q64,6,You describe your sexual identity as do not know what this question is asking.
+Q64,4,"You describe your sexual identity in another way, rather than as heterosexual, gay or lesbian, or bisexual."
+Q64,5,You are not sure about your sexual identity and are questioning it.
+Q64,6,You do not know what the question about sexual identity is asking.
 Q65,1,You do not identify as transgender.
 Q65,2,You identify as transgender.
 Q65,3,You’re not sure whether you identify as transgender.
@@ -368,20 +368,20 @@ Q67,1,You are currently trying to lose weight.
 Q67,2,You are currently trying to gain weight.
 Q67,3,You are currently trying to stay the same weight.
 Q67,4,You are currently not trying to do anything about your weight.
-Q68,1,"During the past 7 days, you never consumed 100% fruit juice."
-Q68,2,"During the past 7 days, you consumed 100% fruit juice 1 to 3 times."
-Q68,3,"During the past 7 days, you consumed 100% fruit juice 4 to 6 times."
-Q68,4,"During the past 7 days, you consumed 100% fruit juice 1 time per day."
-Q68,5,"During the past 7 days, you consumed 100% fruit juice 2 times per day."
-Q68,6,"During the past 7 days, you consumed 100% fruit juice 3 times per day."
-Q68,7,"During the past 7 days, you consumed 100% fruit juice 4 or more times per day."
-Q69,1,"During the past 7 days, you did not eat fruit."
-Q69,2,"During the past 7 days, you ate fruit 1 to 3 times."
-Q69,3,"During the past 7 days, you ate fruit 4 to 6 times."
-Q69,4,"During the past 7 days, you ate fruit 1 time per day."
-Q69,5,"During the past 7 days, you ate fruit 2 times per day."
-Q69,6,"During the past 7 days, you ate fruit 3 times per day."
-Q69,7,"During the past 7 days, you ate fruit 4 or more times per day."
+Q68,1,"During the past 7 days, you never consumed 100% fruit juice (excluding punch, sports drinks, and other fruit-flavored drinks)."
+Q68,2,"During the past 7 days, you consumed 100% fruit juice 1 to 3 times (excluding punch, sports drinks, and other fruit-flavored drinks)."
+Q68,3,"During the past 7 days, you consumed 100% fruit juice 4 to 6 times (excluding punch, sports drinks, and other fruit-flavored drinks)."
+Q68,4,"During the past 7 days, you consumed 100% fruit juice 1 time per day (excluding punch, sports drinks, and other fruit-flavored drinks)."
+Q68,5,"During the past 7 days, you consumed 100% fruit juice 2 times per day (excluding punch, sports drinks, and other fruit-flavored drinks)."
+Q68,6,"During the past 7 days, you consumed 100% fruit juice 3 times per day (excluding punch, sports drinks, and other fruit-flavored drinks)."
+Q68,7,"During the past 7 days, you consumed 100% fruit juice 4 or more times per day (excluding punch, sports drinks, and other fruit-flavored drinks)."
+Q69,1,"During the past 7 days, you did not eat fruit (excluding fruit juice)."
+Q69,2,"During the past 7 days, you ate fruit 1 to 3 times (excluding fruit juice)."
+Q69,3,"During the past 7 days, you ate fruit 4 to 6 times (excluding fruit juice)."
+Q69,4,"During the past 7 days, you ate fruit 1 time per day (excluding fruit juice)."
+Q69,5,"During the past 7 days, you ate fruit 2 times per day (excluding fruit juice)."
+Q69,6,"During the past 7 days, you ate fruit 3 times per day (excluding fruit juice)."
+Q69,7,"During the past 7 days, you ate fruit 4 or more times per day (excluding fruit juice)."
 Q70,1,"During the past 7 days, you never consumed green salad."
 Q70,2,"During the past 7 days, you consumed green salad 1 to 3 times."
 Q70,3,"During the past 7 days, you consumed green salad 4 to 6 times."
@@ -389,13 +389,13 @@ Q70,4,"During the past 7 days, you consumed green salad 1 time per day."
 Q70,5,"During the past 7 days, you consumed green salad 2 times per day."
 Q70,6,"During the past 7 days, you consumed green salad 3 times per day."
 Q70,7,"During the past 7 days, you consumed green salad 4 or more times per day."
-Q71,1,"During the past 7 days, you never consumed potatoes."
-Q71,2,"During the past 7 days, you consumed potatoes 1 to 3 times."
-Q71,3,"During the past 7 days, you consumed potatoes 4 to 6 times."
-Q71,4,"During the past 7 days, you consumed potatoes 1 time per day."
-Q71,5,"During the past 7 days, you consumed potatoes 2 times per day."
-Q71,6,"During the past 7 days, you consumed potatoes 3 times per day."
-Q71,7,"During the past 7 days, you consumed potatoes 4 or more times per day."
+Q71,1,"During the past 7 days, you never consumed potatoes (excluding french fries, fried potatoes, and potato chips)."
+Q71,2,"During the past 7 days, you consumed potatoes 1 to 3 times (excluding french fries, fried potatoes, and potato chips)."
+Q71,3,"During the past 7 days, you consumed potatoes 4 to 6 times (excluding french fries, fried potatoes, and potato chips)."
+Q71,4,"During the past 7 days, you consumed potatoes 1 time per day (excluding french fries, fried potatoes, and potato chips)."
+Q71,5,"During the past 7 days, you consumed potatoes 2 times per day (excluding french fries, fried potatoes, and potato chips)."
+Q71,6,"During the past 7 days, you consumed potatoes 3 times per day (excluding french fries, fried potatoes, and potato chips)."
+Q71,7,"During the past 7 days, you consumed potatoes 4 or more times per day (excluding french fries, fried potatoes, and potato chips)."
 Q72,1,"During the past 7 days, you never consumed carrots."
 Q72,2,"During the past 7 days, you consumed carrots 1 to 3 times."
 Q72,3,"During the past 7 days, you consumed carrots 4 to 6 times."
@@ -403,20 +403,20 @@ Q72,4,"During the past 7 days, you consumed carrots 1 time per day."
 Q72,5,"During the past 7 days, you consumed carrots 2 times per day."
 Q72,6,"During the past 7 days, you consumed carrots 3 times per day."
 Q72,7,"During the past 7 days, you consumed carrots 4 or more times per day."
-Q73,1,"During the past 7 days, you never consumed other vegetables."
-Q73,2,"During the past 7 days, you consumed other vegetables 1 to 3 times."
-Q73,3,"During the past 7 days, you consumed other vegetables 4 to 6 times."
-Q73,4,"During the past 7 days, you consumed other vegetables 1 time per day."
-Q73,5,"During the past 7 days, you consumed other vegetables 2 times per day."
-Q73,6,"During the past 7 days, you consumed other vegetables 3 times per day."
-Q73,7,"During the past 7 days, you consumed other vegetables 4 or more times per day."
-Q74,1,"During the past 7 days, you never consumed soda or pop."
-Q74,2,"During the past 7 days, you consumed soda or pop 1 to 3 times"
-Q74,3,"During the past 7 days, you consumed soda or pop 4 to 6 times."
-Q74,4,"During the past 7 days, you consumed soda or pop 1 time per day."
-Q74,5,"During the past 7 days, you consumed soda or pop 2 times per day."
-Q74,6,"During the past 7 days, you consumed soda or pop 3 times per day."
-Q74,7,"During the past 7 days, you consumed soda or pop 4 or more times per day."
+Q73,1,"During the past 7 days, you never consumed other vegetables (excluding green salad, potatoes, and carrots)."
+Q73,2,"During the past 7 days, you consumed other vegetables 1 to 3 times (excluding green salad, potatoes, and carrots)."
+Q73,3,"During the past 7 days, you consumed other vegetables 4 to 6 times (excluding green salad, potatoes, and carrots)."
+Q73,4,"During the past 7 days, you consumed other vegetables 1 time per day (excluding green salad, potatoes, and carrots)."
+Q73,5,"During the past 7 days, you consumed other vegetables 2 times per day (excluding green salad, potatoes, and carrots)."
+Q73,6,"During the past 7 days, you consumed other vegetables 3 times per day (excluding green salad, potatoes, and carrots)."
+Q73,7,"During the past 7 days, you consumed other vegetables 4 or more times per day (excluding green salad, potatoes, and carrots)."
+Q74,1,"During the past 7 days, you never consumed soda or pop (excluding diet soda or diet pop)."
+Q74,2,"During the past 7 days, you consumed soda or pop 1 to 3 times (excluding diet soda or diet pop)."
+Q74,3,"During the past 7 days, you consumed soda or pop 4 to 6 times (excluding diet soda or diet pop)."
+Q74,4,"During the past 7 days, you consumed soda or pop 1 time per day (excluding diet soda or diet pop)."
+Q74,5,"During the past 7 days, you consumed soda or pop 2 times per day (excluding diet soda or diet pop)."
+Q74,6,"During the past 7 days, you consumed soda or pop 3 times per day (excluding diet soda or diet pop)."
+Q74,7,"During the past 7 days, you consumed soda or pop 4 or more times per day (excluding diet soda or diet pop)."
 Q75,1,"During the past 7 days, you never ate breakfast."
 Q75,2,"During the past 7 days, you ate breakfast on 1 day."
 Q75,3,"During the past 7 days, you ate breakfast on 2 days."
@@ -425,24 +425,24 @@ Q75,5,"During the past 7 days, you ate breakfast on 4 days."
 Q75,6,"During the past 7 days, you ate breakfast on 5 days."
 Q75,7,"During the past 7 days, you ate breakfast on 6 days."
 Q75,8,"During the past 7 days, you ate breakfast on 7 days."
-Q76,1,"In the past 7 days, you didn’t have any days where you were physically active for at least 60 minutes."
-Q76,2,"During the past 7 days, you were physically active for at least 60 minutes per day on 1 day."
-Q76,3,"During the past 7 days, you were physically active for at least 60 minutes per day on 2 days."
-Q76,4,"During the past 7 days, you were physically active for at least 60 minutes per day on 3 days."
-Q76,5,"During the past 7 days, you were physically active for at least 60 minutes per day on 4 days."
-Q76,6,"During the past 7 days, you were physically active for at least 60 minutes per day on 5 days."
-Q76,7,"During the past 7 days, you were physically active for at least 60 minutes per day on 6 days."
-Q76,8,"During the past 7 days, you were physically active for at least 60 minutes per day on 7 days."
+Q76,1,"During the past 7 days, you were physically active for a total of at least 60 minutes per day on 0 days; count activity that increased your heart rate and made you breathe hard some of the time."
+Q76,2,"During the past 7 days, you were physically active for a total of at least 60 minutes per day on 1 day; count activity that increased your heart rate and made you breathe hard some of the time."
+Q76,3,"During the past 7 days, you were physically active for a total of at least 60 minutes per day on 2 days; count activity that increased your heart rate and made you breathe hard some of the time."
+Q76,4,"During the past 7 days, you were physically active for a total of at least 60 minutes per day on 3 days; count activity that increased your heart rate and made you breathe hard some of the time."
+Q76,5,"During the past 7 days, you were physically active for a total of at least 60 minutes per day on 4 days; count activity that increased your heart rate and made you breathe hard some of the time."
+Q76,6,"During the past 7 days, you were physically active for a total of at least 60 minutes per day on 5 days; count activity that increased your heart rate and made you breathe hard some of the time."
+Q76,7,"During the past 7 days, you were physically active for a total of at least 60 minutes per day on 6 days; count activity that increased your heart rate and made you breathe hard some of the time."
+Q76,8,"During the past 7 days, you were physically active for a total of at least 60 minutes per day on 7 days; count activity that increased your heart rate and made you breathe hard some of the time."
 Q77,1,"On average, you do not attend any PE classes during a school week."
 Q77,2,"In an average school week, you attend PE classes on 1 day."
 Q77,3,"In an average school week, you attend PE classes on 2 days."
 Q77,4,"In an average school week, you attend PE classes on 3 days."
 Q77,5,"In an average school week, you attend PE classes on 4 days."
 Q77,6,"In an average school week, you attend PE classes on 5 days."
-Q78,1,"In the past 12 months, you didn’t play on any sports teams."
-Q78,2,"During the past 12 months, you played on 1 team."
-Q78,3,"During the past 12 months, you played on 2 teams."
-Q78,4,"During the past 12 months, you played on 3 or more teams."
+Q78,1,"During the past 12 months, you played on 0 sports teams run by your school or community groups."
+Q78,2,"During the past 12 months, you played on 1 sports team run by your school or community groups."
+Q78,3,"During the past 12 months, you played on 2 sports teams run by your school or community groups."
+Q78,4,"During the past 12 months, you played on 3 or more sports teams run by your school or community groups."
 Q79,1,"In the past 12 months, you didn’t experience a concussion from sports or physical activity."
 Q79,2,"During the past 12 months, you had a concussion from sports or physical activity 1 time."
 Q79,3,"During the past 12 months, you had a concussion from sports or physical activity 2 times."
@@ -456,9 +456,9 @@ Q80,5,You use social media about once a day.
 Q80,6,You use social media several times a day.
 Q80,7,You use social media about once an hour.
 Q80,8,You use social media more than once an hour.
-Q81,1,You have been tested for HIV in the past 12 months.
-Q81,2,You have not been tested for HIV in the past 12 months.
-Q81,3,You’re not sure whether you’ve been tested for HIV in the past 12 months.
+Q81,1,"You have been tested for HIV at some point in your life, not counting tests done when donating blood."
+Q81,2,"You have never been tested for HIV, not counting tests done when donating blood."
+Q81,3,"You are not sure whether you have ever been tested for HIV, not counting tests done when donating blood."
 Q82,1,You have been tested for STDs (other than HIV) in the past 12 months.
 Q82,2,You have not been tested for STDs (other than HIV) in the past 12 months.
 Q82,3,You’re not sure whether you’ve been tested for STDs (other than HIV) in the past 12 months.
@@ -467,11 +467,11 @@ Q83,2,You last saw a dentist between 12 and 24 months ago.
 Q83,3,You last saw a dentist more than 24 months ago.
 Q83,4,You’ve never been to a dentist.
 Q83,5,You’re not sure when you last saw a dentist.
-Q84,1,"In the past 30 days, you didn’t experience any mental health issues."
-Q84,2,"During the past 30 days, your mental health was not good rarely."
-Q84,3,"During the past 30 days, your mental health was not good sometimes."
-Q84,4,"In the past 30 days, your mental health wasn’t good most of the time."
-Q84,5,"In the past 30 days, you felt mentally unwell almost every day."
+Q84,1,"During the past 30 days, you never experienced poor mental health; poor mental health includes stress, anxiety, and depression."
+Q84,2,"During the past 30 days, you rarely experienced poor mental health; poor mental health includes stress, anxiety, and depression."
+Q84,3,"During the past 30 days, you sometimes experienced poor mental health; poor mental health includes stress, anxiety, and depression."
+Q84,4,"During the past 30 days, you experienced poor mental health most of the time; poor mental health includes stress, anxiety, and depression."
+Q84,5,"During the past 30 days, you always experienced poor mental health; poor mental health includes stress, anxiety, and depression."
 Q85,1,"On an average school night, you sleep for 4 or less hours."
 Q85,2,"On an average school night, you sleep for 5 hours."
 Q85,3,"On an average school night, you sleep for 6 hours."
@@ -480,50 +480,49 @@ Q85,5,"On an average school night, you sleep for 8 hours."
 Q85,6,"On an average school night, you sleep for 9 hours."
 Q85,7,"On an average school night, you sleep for 10 or more hours."
 Q86,1,"During the past 30 days, you usually slept in your parent's or guardian's home."
-Q86,2,"During the past 30 days, you usually slept in the home of a friend/family/other because you had to leave home or couldn't afford housing."
+Q86,2,"During the past 30 days, you usually slept in the home of a friend, family member, or another person because you had to leave your home or your parent or guardian could not afford housing."
 Q86,3,"During the past 30 days, you usually slept in a shelter or emergency housing."
 Q86,4,"During the past 30 days, you usually slept in a motel or hotel."
 Q86,5,"During the past 30 days, you usually slept in a car, park, campground, or other public place."
-Q86,6,"During the past 30 days, you do not have a usual place to sleep."
+Q86,6,"During the past 30 days, you did not have a usual place to sleep."
 Q86,7,"During the past 30 days, you usually slept somewhere else."
 Q87,1,"In the past 12 months, you would describe your grades in school as mostly A's."
 Q87,2,"In the past 12 months, you would describe your grades in school as mostly B's."
 Q87,3,"In the past 12 months, you would describe your grades in school as mostly C's."
 Q87,4,"In the past 12 months, you would describe your grades in school as mostly D's."
 Q87,5,"In the past 12 months, you would describe your grades in school as mostly F's."
-Q87,6,"In the past 12 months, you would describe your grades in school as none of these grades."
-Q87,7,"In the past 12 months, you would describe your grades in school as not sure."
-Q87,8,"In the past 12 months, you would describe your grades in school as missing."
+Q87,6,"Your grades during the past 12 months were not mostly A, B, C, D, or F grades."
+Q87,7,You are not sure how to describe your grades during the past 12 months.
 Q88,1,An adult or someone at least 5 years older than you has made you do sexual things that you did not want to do.
-Q88,2,No one at least 5 years older than you has ever made you do sexual things that you did not want to do.
-Q89,1,An adult in your home has never insulted you.
-Q89,2,An adult in your home has rarely insulted you.
-Q89,3,An adult in your home has insulted you sometimes.
-Q89,4,An adult in your home has insulted you most of the time.
-Q89,5,An adult in your home has always insulted you.
-Q90,1,An adult in your home has never physically hurt you.
-Q90,2,An adult in your home has rarely physically hurt you.
-Q90,3,An adult in your home has sometimes physically hurt you.
-Q90,4,An adult in your home has physically hurt you most of the time.
-Q90,5,An adult in your home has always physically hurt you.
-Q91,1,Adults in your home have never physically fought with each other.
-Q91,2,Adults in your home have rarely physically fought with each other.
-Q91,3,Adults in your home have sometimes physically fought with each other.
-Q91,4,Adults in your home have physically fought with each other most of the time.
-Q91,5,Adults in your home have always physically fought with each other.
-Q92,1,"During the past 30 days, you did not misuse prescription pain medicine."
-Q92,2,"During the past 30 days, you misused prescription pain medicine 1 or 2 times."
-Q92,3,"During the past 30 days, you misused prescription pain medicine 3 to 9 times."
-Q92,4,"During the past 30 days, you misused prescription pain medicine 10 to 19 times."
-Q92,5,"During the past 30 days, you misused prescription pain medicine 20 to 39 times."
-Q92,6,"During the past 30 days, you misused prescription pain medicine 40 or more times."
-Q93,1,You haven’t missed school because of transportation issues.
-Q93,2,You have skipped school because you had no transportation 1 or 2 times.
-Q93,3,You have skipped school because you had no transportation 3 to 9 times.
-Q93,4,You have skipped school because you had no transportation 10 to 19 times.
-Q93,5,You have skipped school because you had no transportation 20 to 39 times.
-Q93,6,You have skipped school because you had no transportation 40 or more times.
-Q94,1,
+Q88,2,Neither an adult nor a person at least 5 years older than you has ever made you do sexual things you did not want to do.
+Q89,1,"During your life, a parent or another adult in your home has never insulted you or put you down."
+Q89,2,"During your life, a parent or another adult in your home has rarely insulted you or put you down."
+Q89,3,"During your life, a parent or another adult in your home has sometimes insulted you or put you down."
+Q89,4,"During your life, a parent or another adult in your home has insulted you or put you down most of the time."
+Q89,5,"During your life, a parent or another adult in your home has always insulted you or put you down."
+Q90,1,"During your life, a parent or another adult in your home has never hit, beaten, kicked, or physically hurt you in any way."
+Q90,2,"During your life, a parent or another adult in your home has rarely hit, beaten, kicked, or physically hurt you in any way."
+Q90,3,"During your life, a parent or another adult in your home has sometimes hit, beaten, kicked, or physically hurt you in any way."
+Q90,4,"During your life, a parent or another adult in your home has hit, beaten, kicked, or physically hurt you in any way most of the time."
+Q90,5,"During your life, a parent or another adult in your home has always hit, beaten, kicked, or physically hurt you in any way."
+Q91,1,"During your life, your parents or other adults in your home have never slapped, hit, kicked, punched, or beaten each other up."
+Q91,2,"During your life, your parents or other adults in your home have rarely slapped, hit, kicked, punched, or beaten each other up."
+Q91,3,"During your life, your parents or other adults in your home have sometimes slapped, hit, kicked, punched, or beaten each other up."
+Q91,4,"During your life, your parents or other adults in your home have slapped, hit, kicked, punched, or beaten each other up most of the time."
+Q91,5,"During your life, your parents or other adults in your home have always slapped, hit, kicked, punched, or beaten each other up."
+Q92,1,"During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 0 times."
+Q92,2,"During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 1 or 2 times."
+Q92,3,"During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 3 to 9 times."
+Q92,4,"During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 10 to 19 times."
+Q92,5,"During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 20 to 39 times."
+Q92,6,"During the past 30 days, you took prescription pain medicine without a prescription or differently than instructed by a doctor 40 or more times."
+Q93,1,"During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 0 times."
+Q93,2,"During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 1 or 2 times."
+Q93,3,"During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 3 to 9 times."
+Q93,4,"During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 10 to 19 times."
+Q93,5,"During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 20 to 39 times."
+Q93,6,"During your life, you used hallucinogenic drugs, such as LSD, acid, PCP, angel dust, mescaline, or mushrooms, 40 or more times."
+Q94,1,You have never had sexual contact.
 Q94,2,"The last time you had sexual contact, you asked for consent verbally."
 Q94,3,"The last time you had sexual contact, you did not ask for consent verbally."
 Q95,1,"During the past 7 days, you did not drink any sports drinks such as Gatorade or PowerAde."
@@ -533,77 +532,53 @@ Q95,4,"During the past 7 days, you drank sports drinks such as Gatorade or Power
 Q95,5,"During the past 7 days, you drank sports drinks such as Gatorade or PowerAde 2 times per day."
 Q95,6,"During the past 7 days, you drank sports drinks such as Gatorade or PowerAde 3 times per day."
 Q95,7,"During the past 7 days, you drank sports drinks such as Gatorade or PowerAde 4 or more times per day."
-Q96,1,"During the past 7 days, you did not drink any water."
+Q96,1,"During the past 7 days, you did not drink a bottle or glass of plain water."
 Q96,2,"During the past 7 days, you drank plain water 1 to 3 times."
 Q96,3,"During the past 7 days, you drank plain water 4 to 6 times."
 Q96,4,"During the past 7 days, you drank plain water 1 time per day."
 Q96,5,"During the past 7 days, you drank plain water 2 times per day."
 Q96,6,"During the past 7 days, you drank plain water 3 times per day."
 Q96,7,"During the past 7 days, you drank plain water 4 or more times per day."
-Q97,1,You went the entire week without brushing your teeth.
-Q97,2,You only brushed your teeth once during the past 7 days.
-Q97,3,You brushed your teeth on 2 days in the past 7 days.
-Q97,4,You brushed your teeth on 3 days in the past 7 days.
-Q97,5,You brushed your teeth on 4 days in the past 7 days.
-Q97,6,You brushed your teeth on 5 days in the past 7 days.
-Q97,7,You brushed your teeth on 6 days in the past 7 days.
-Q97,8,You brushed your teeth on 7 days in the past 7 days.
-Q98,1,You haven’t seen a doctor or nurse for mental health reasons.
-Q98,2,You visited a doctor or nurse for mental health reasons 1 time.
-Q98,3,You visited a doctor or nurse for mental health reasons 2 times.
-Q98,4,You visited a doctor or nurse for mental health reasons 3 times.
-Q98,5,You visited a doctor or nurse for mental health reasons 4 times.
-Q98,6,You visited a doctor or nurse for mental health reasons 5 or more times.
-Q99,1,Youl never feel safe at school.
-Q99,2,You rarely feel safe at school.
-Q99,3,You feel safe at school sometimes.
-Q99,4,You feel safe at school most of the time.
-Q99,5,You always feel safe at school.
-Q100,1,You have lived with a parent or guardian who had problems with alcohol or drug use.
-Q100,2,You have never lived with a parent or guardian who had problems with alcohol or drug use.
+Q97,1,"During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 0 days."
+Q97,2,"During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 1 day."
+Q97,3,"During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 2 days."
+Q97,4,"During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 3 days."
+Q97,5,"During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 4 days."
+Q97,6,"During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 5 days."
+Q97,7,"During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 6 days."
+Q97,8,"During the past 7 days, you did exercises to strengthen or tone your muscles, such as push-ups, sit-ups, or weight lifting, on 7 days."
+Q98,1,"During the past 12 months, you had a sunburn 0 times."
+Q98,2,"During the past 12 months, you had a sunburn 1 time."
+Q98,3,"During the past 12 months, you had a sunburn 2 times."
+Q98,4,"During the past 12 months, you had a sunburn 3 times."
+Q98,5,"During the past 12 months, you had a sunburn 4 times."
+Q98,6,"During the past 12 months, you had a sunburn 5 or more times."
+Q99,1,"During your life, an adult in your household has never tried hard to meet your basic needs, such as looking after your safety and making sure you had clean clothes and enough to eat."
+Q99,2,"During your life, an adult in your household has rarely tried hard to meet your basic needs, such as looking after your safety and making sure you had clean clothes and enough to eat."
+Q99,3,"During your life, an adult in your household has sometimes tried hard to meet your basic needs, such as looking after your safety and making sure you had clean clothes and enough to eat."
+Q99,4,"During your life, an adult in your household has tried hard to meet your basic needs most of the time, such as looking after your safety and making sure you had clean clothes and enough to eat."
+Q99,5,"During your life, an adult in your household has always tried hard to meet your basic needs, such as looking after your safety and making sure you had clean clothes and enough to eat."
 Q100,1,You have lived with a parent or guardian who had a problem with alcohol or drug use.
 Q100,2,You have never lived with a parent or guardian who had a problem with alcohol or drug use.
 Q101,1,"You have lived with a parent or guardian who had severe depression, anxiety, another mental illness, or was suicidal."
-Q101,2,You have never lived with a parent or guardian who had a serious mental health problem.
-Q101,1,"You have lived with a parent or guardian who had severe depression, anxiety, another mental illness, or was suicidal."
-Q101,2,You have never lived with a parent or guardian who had serious mental health issues.
+Q101,2,"You have never lived with a parent or guardian who had severe depression, anxiety, another mental illness, or was suicidal."
 Q102,1,"You have been separated from a parent or guardian because they went to jail, prison, or a detention center."
 Q102,2,You have never been separated from a parent or guardian due to incarceration.
-Q102,1,"You have been separated from a parent or guardian because they went to jail, prison, or a detention center."
-Q102,2,You have never been separated from a parent or guardian due to incarceration.
-Q103,1,You strongly feel close to people at your school.
-Q103,2,You feel close to people at your school.
-Q103,3,You are not sure whether you feel close to people at your school.
-Q103,4,You disagree that you feel close to people at your school.
-Q103,5,You strongly disagree that you feel close to people at your school.
 Q103,1,You strongly agree that you feel close to people at your school.
-Q103,2,You feel close to people at your school.
+Q103,2,You agree that you feel close to people at your school.
 Q103,3,You are not sure whether you feel close to people at your school.
 Q103,4,You disagree that you feel close to people at your school.
 Q103,5,You strongly disagree that you feel close to people at your school.
-Q104,1,Your parents or other adults in your family never know where you are or who you are with.
-Q104,2,Your parents or other adults in your family rarely know where you are or who you are with.
-Q104,3,Your parents or other adults in your family sometimes know where you are or who you are with.
-Q104,4,Your parents or other adults in your family most of the time know where you are or who you are with.
-Q104,5,Your parents or other adults in your family always know where you are or who you are with.
-Q104,1,Your parents or other adults in your family never know where you are or who you are with.
-Q104,2,Your parents or other adults in your family rarely know where you are or who you are with.
-Q104,3,Your parents or other adults in your family sometimes know where you are or who you are with.
-Q104,4,Your parents or other adults in your family most of the time know where you are or who you are with.
-Q104,5,Your parents or other adults in your family always know where you are or who you are with.
-Q105,1,You have yes been unfairly disciplined at school during the past 12 months.
-Q105,2,You have no been unfairly disciplined at school during the past 12 months.
+Q104,1,Your parents or other adults in your family never know where you are going or with whom you will be.
+Q104,2,Your parents or other adults in your family rarely know where you are going or with whom you will be.
+Q104,3,Your parents or other adults in your family sometimes know where you are going or with whom you will be.
+Q104,4,Your parents or other adults in your family know where you are going or with whom you will be most of the time.
+Q104,5,Your parents or other adults in your family always know where you are going or with whom you will be.
 Q105,1,You have been unfairly disciplined at school during the past 12 months.
 Q105,2,You have not been unfairly disciplined at school during the past 12 months.
-Q106,1,"You have yes serious difficulty concentrating, remembering, or making decisions due to a physical, mental, or emotional problem."
-Q106,2,"You have no serious difficulty concentrating, remembering, or making decisions due to a physical, mental, or emotional problem."
 Q106,1,"You have serious difficulty concentrating, remembering, or making decisions due to a physical, mental, or emotional problem."
-Q106,2,"You do not have serious difficulty concentrating, remembering, or making decisions."
+Q106,2,"You do not have serious difficulty concentrating, remembering, or making decisions because of a physical, mental, or emotional problem."
 Q107,1,You speak English very well.
 Q107,2,You speak English well.
-Q107,3,You speak English not well.
-Q107,4,You speak English not at all.
-Q107,1,You speak English very well.
-Q107,2,You speak English well.
-Q107,3,You speak English not well.
-Q107,4,You speak English not at all.
+Q107,3,You do not speak English well.
+Q107,4,You do not speak English at all.
